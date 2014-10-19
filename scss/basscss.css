@@ -63,7 +63,7 @@ h6, small {
 
   .h2 {
     font-size: 2.1em;
-    line-height: 1.5em; }
+    line-height: 1.3em; }
 
   .h3 {
     font-size: 1.953em; }
@@ -73,14 +73,15 @@ h6, small {
     line-height: 1.4em; }
 
   .h5 {
-    font-size: 1.25em; }
+    font-size: 1em; }
 
   .h6 {
-    font-size: 1em; }
+    font-size: 0.8em; }
 
   p {
     font-size: 1.563em;
-    line-height: 1.4em; } }
+    line-height: 1.6em;
+    letter-spacing: .04em; } }
 .bold {
   font-weight: bold; }
 
@@ -621,9 +622,6 @@ body {
   background-image: url(../journal/woodsman/images/woodsman-header.jpg);
   background-position: center bottom; }
 
-.feature-meta {
-  border-top: 1px solid #a8a8a7; }
-
 .feature-meta h5 {
   line-height: 1em !important; }
 
@@ -825,6 +823,9 @@ progress::-moz-progress-bar {
   margin-right: -1rem;
   margin-left: -1rem; }
 
+.half-width {
+  width: 100%; }
+
 .col,
 .col-right,
 .col-center,
@@ -960,7 +961,10 @@ progress::-moz-progress-bar {
   .container-col-6 {
     max-width: 34rem;
     margin-right: auto;
-    margin-left: auto; } }
+    margin-left: auto; }
+
+  .half-width {
+    width: 50%; } }
 .mobile-table {
   display: table;
   width: 100%; }
@@ -1375,6 +1379,18 @@ a {
   .link-light-gray:hover {
     color: #c9c9c9;
     text-decoration: none; }
+
+.issue-title-box {
+  border: 8px solid white;
+  width: 64%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15%;
+  padding-bottom: 15%; }
+
+/*For Testing*/
+.border {
+  border: 5px solid red; }
 
 .nav-top {
   padding-top: -40px;

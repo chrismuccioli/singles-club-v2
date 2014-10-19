@@ -29,7 +29,7 @@ h4, dl, ol, ul  {
 }
 
 p {
-  font-size: $h3;
+  font-size: $p;
   line-height: 1.75em;
 }
 
@@ -48,7 +48,7 @@ h6, small {
     .h1 { font-size: $desktop-h1; }
     .h2 {
       font-size: $desktop-h2;
-      line-height: 1.5em;
+      line-height: 1.3em;
     }
     .h3 { font-size: $desktop-h3; }
     .h4 {
@@ -58,8 +58,9 @@ h6, small {
     .h5 { font-size: $desktop-h5; }
     .h6 { font-size: $desktop-h6; }
     p {
-      font-size: $desktop-h4;
-      line-height: 1.4em;
+      font-size: $desktop-p;
+      line-height: 1.6em;
+      letter-spacing: .04em;
     }
   }
 }

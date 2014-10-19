@@ -12,6 +12,10 @@
   margin-left: -$grid-gutter/2;
 }
 
+.half-width {
+  width: 100%;
+}
+
 .col,
 .col-right,
 .col-center,
@@ -51,6 +55,9 @@
     max-width: (6/12 * ($grid-max-width + $grid-gutter)) - $grid-gutter;
     margin-right: auto;
     margin-left: auto;
+  }
+  .half-width {
+    width: 50%;
   }
 }
 
