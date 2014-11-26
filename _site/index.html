@@ -21,9 +21,10 @@
   <!-- Angular JS + Plangular -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
   <script src="/../js/ng-plangular.min.js"></script>
+  <script type="text/javascript" src="/js/FeedEk.js"></script>
   <script src="//use.typekit.net/nbx4wrv.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <script>try{Typekit.load();}catch(e){}</script>
-
   <style>
   <!-- the .wf-loading class is used to control FOUT (flash of unstyled text) -->
   html { transition: opacity .2s ease; }
@@ -55,6 +56,32 @@
     $(document).click(function (e) {
         if ($(e.target).closest('#issue-sub').length > 0 || $(e.target).closest('#toggle-nav').length > 0) return;
         $('#issue-sub').slideUp(200);
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#purchase').hide().before('');
+    $('a#toggle-purchase').click(function (e) {
+        e.preventDefault();
+        $('#purchase').slideToggle(200);
+    });
+    $(document).click(function (e) {
+        if ($(e.target).closest('#purchase').length > 0 || $(e.target).closest('#toggle-purchase').length > 0) return;
+        $('#purchase').slideUp(200);
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#mobile-top-nav').hide().before('');
+    $('a#toggle-top-nav').click(function (e) {
+        e.preventDefault();
+        $('#mobile-top-nav').slideToggle(200);
+    });
+    $(document).click(function (e) {
+        if ($(e.target).closest('#mobile-top-nav').length > 0 || $(e.target).closest('#toggle-top-nav').length > 0) return;
+        $('#mobile-top-nav').slideUp(200);
     });
   });
 </script>
@@ -98,15 +125,27 @@
       //.log to determine when you want the
       //nav bar to stick.
       console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 280) {
+    if ($(window).scrollTop() > 900) {
       $('#issue-nav').addClass('issue-nav-fixed');
     }
-    if ($(window).scrollTop() < 281) {
+    if ($(window).scrollTop() < 901) {
       $('#issue-nav').removeClass('issue-nav-fixed');
     }
   });
 });
   </script>
+  <script type="text/javascript">
+$(document).ready(function () {
+$('#divRss').FeedEk({
+    FeedUrl : 'http://www.singlesclub.fm/blog/feed/',
+    MaxCount : 3,
+    ShowDesc : true,
+    ShowPubDate: false,
+    DescCharacterLimit:0,
+    TitleLinkTarget:'_blank'
+  });
+ });
+</script>
   <!--Google Tracking-->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -122,6 +161,31 @@
   <script type="text/javascript">
   window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
   </script>
+  <style>
+  .border-highlight { border-color: ; }
+  .bg-highlight { background-color: ; }
+  .button-highlight { background-color: ;}
+  .button-highlight:hover { background-color: ;}
+  .highlight { color: ; }
+  .bg-feature-2 { background-color: ; }
+  .feature-2-highlight { color: ; border-color:; }
+  .itemTitle {
+    background-color: ;
+      &:hover,
+      &:focus {
+        outline: none;
+        background-color: ;
+    }
+  }
+  ::selection {
+    background: ;
+    color: #fff; /* WebKit/Blink Browsers */
+    }
+    ::-moz-selection {
+      background: ; /* Gecko Browsers */
+      color: #fff;
+    }
+</style>
 </head>
 
 
@@ -146,48 +210,9 @@
 
 <body>
 
-<script type="text/javascript">
-  $(document).ready(function(){
-
-$('.bxslider').bxSlider({
-  controls: true,
-  pagerCustom: '#bx-pager',
-  auto: false,
-  infiniteLoop: true
-});
-  });
-</script>
-
-<script type="text/javascript">
-$(document).ready(function () {
-$('#divRss').FeedEk({
-    FeedUrl : 'http://www.singlesclub.fm/blog/feed/',
-    MaxCount : 3,
-    ShowDesc : true,
-    ShowPubDate: false,
-    DescCharacterLimit:0,
-    TitleLinkTarget:'_blank'
-  });
- });
-</script>
-
-<div class="bg-off-black slider pt6 pb4">
-<div class="container oh pb3">
-      <ul class="bxslider full-width">
-        <li><a href="http://shop.singlesclub.fm/artist/daniel-bachman"><img src="/images/3.jpg" /></li>
-        <li><a href="journal/small-sur"><img src="/images/2.jpg" /></li>
-      </ul>
-    <div class="right bg-dark-gray">
-      <div id="bx-pager">
-        <a data-slide-index="0" href="" class="px1">1</a>
-        <a data-slide-index="1" href="" class="px1">2</a>
-      </div>
-    </div>
-</div>
-
 <!--BLOG FEED-->
-<div class="white apercu px4 pb3 caps mobile-center">
-  <h3> The latest</h3>
+<div class="white px4 pb3 caps mobile-center">
+  <h3>The Blog</h3>
 </div>
 
 <div class="container oh m-px10 rss-feed">
@@ -198,7 +223,7 @@ $('#divRss').FeedEk({
 
 <!--ISSUES-->
 <div class="pt4" id="issues">
-<div class="white apercu px4 pb3 caps mobile-center">
+<div class="white px4 pb3 caps mobile-center">
   <h3>Issues</h3>
 </div>
   <div class="container clearfix white mb3 m-px10">
@@ -206,11 +231,11 @@ $('#divRss').FeedEk({
       <img src="images/issue-woodsman.jpg" class="fit left">
     </div>
     <div class="col-6 issue-label">
-      <div class="bg-red px3 apercu py2">
+      <div class="bg-red px3 py2">
         <h3>Issue 03 - Summer</h3>
       </div>
       <div class="featured-content bg-dark-gray px3 py3">
-        <h1 class="h1 py2 apercu">Woodsman</h1>
+        <h1 class="h1 py2">Woodsman</h1>
         <p>Woodsman is a Brooklyn via Denver psychedelic/free-form trio. Whether improvised or rehearsed, Woodsman’s sound remains intimate and meditative. Highly in-tune with one another, the group never shy from taking risks, allowing for consistent growth and progression.</p>
         <div class="table col-6 pt3">
           <div class="table-cell col-6">
@@ -236,7 +261,7 @@ $('#divRss').FeedEk({
       <div class="col col-4 white">
         <img src="images/issue-smallsur.jpg" class="fit flush">
         <div class="table pb5">
-          <div class="table-cell issue-meta mobile-col apercu mobile-col-8 col-8 bg-dark-gray">
+          <div class="table-cell issue-meta mobile-col  mobile-col-8 col-8 bg-dark-gray">
             <div class="px2">
               <h3>Small Sur</h3>
               <h5>Issue 02 - Spring</h5>
@@ -252,7 +277,7 @@ $('#divRss').FeedEk({
       <div class="col col-4 white">
         <img src="images/issue-danielbachman.jpg" class="fit flush">
         <div class="table pb5">
-          <div class="table-cell issue-meta mobile-col apercu mobile-col-8 col-8 bg-dark-gray">
+          <div class="table-cell issue-meta mobile-col  mobile-col-8 col-8 bg-dark-gray">
             <div class="px2">
               <h3>Daniel Bachman</h3>
               <h5>Issue 01 - Winter</h5>
@@ -268,7 +293,7 @@ $('#divRss').FeedEk({
       <div class="col col-4 white">
           <img src="images/issue-wisdomtooth.jpg" class="fit flush">
         <div class="table pb5">
-          <div class="table-cell issue-meta mobile-col apercu mobile-col-8 col-8 bg-dark-gray">
+          <div class="table-cell issue-meta mobile-col  mobile-col-8 col-8 bg-dark-gray">
             <div class="px2">
               <h3>Wisdom Tooth</h3>
               <h5>Issue 04 - Fall</h5>
@@ -283,7 +308,7 @@ $('#divRss').FeedEk({
   </div>
 </div>
 <div class="subscription oh py6 px4">
-<div class="dark-gray apercu-medium pb3 caps mobile-center">
+<div class="dark-gray pb3 caps mobile-center">
   <h3 class="ls05">The Subscription</h3>
 </div>
     <div class="row">
@@ -295,7 +320,7 @@ $('#divRss').FeedEk({
           <p>Every quarter we release a 45 single* featuring an exclusive track for the club along with a B-Side containing an interview with the artist. All paired with a digital journal containing written features, photo, video, and more available right here.</p>
         </div>
         <div class="row py2 mobile-center">
-            <h3 class="apercu-medium caps ls05 pb1">$65 Subscription includes</h3>
+            <h3 class="caps ls05 pb1">$65 Subscription includes</h3>
             <h5>All four releases from 2014, custom 45 box, Singles Club Pin, 45 adapter, digital download of each single.</h5>
         </div>
         <div class="row pt2 mobile-center">
@@ -310,7 +335,7 @@ $('#divRss').FeedEk({
 <div class="px4 m-px10 py6">
   <div class="row white">
     <div class="col col-4 mail-club">
-      <h3 class="caps white apercu"> Mail Club</h3>
+      <h3 class="caps white "> Mail Club</h3>
       <h5 class="pb2 pt1">Join our newsletter for new tunes, mix tapes, and features every month.</h5>
       <form class="form form-light" action="http://singlesclub.us6.list-manage.com/subscribe/post" method="POST">
         <label class="mr1" style="display:none;">Email:</label>
@@ -343,11 +368,6 @@ $('#divRss').FeedEk({
 <div class="copyright center mid-gray bg-off-black py3 m-px10 ">
   <h6> P.O. Box 550 Brooklyn NY 11211 © 2014 Singles Club LLC - All Rights Reserved - <a href="mailto:hello@singlesclub.fm" class="mid-gray">Questions / Comments</a> </h6>
 </div>
-
-<!--OFF CANVAS MENU
-
-<!-- </div>
-</div> -->
 
 </body>
 

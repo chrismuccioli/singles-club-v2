@@ -1,28 +1,15 @@
 // Base thematic styles
 
+
+/* Wrap entire feature in this to apply styles */
+.feature {
+  color: $black;
+  background-color: $white;
+}
+
 body {
-  color: $dark-gray;
-  background-color: $black;
-}
-
-a {
-  color: $blue;
-  text-decoration: underline;
-  &:hover {
-    color: darken($blue, 10%);
-    text-decoration: none;
-  }
-}
-
-.clean-link a {
-  text-decoration: none;
-}
-
-.white-link a {
-  color: $white;
-  &:hover {
-    color: $light-gray
-  }
+  color: $gray;
+  background-color: $off-black;
 }
 
 .link-light-gray {
@@ -34,6 +21,35 @@ a {
   }
 }
 
+.alert-plus {
+  margin-bottom: -5px;
+  padding-top: 20px;
+  // background-image: url(../journal/woodsman/images/woodsman-header.jpg);
+}
+
+.alert {
+  margin-bottom: -5px;
+}
+
+.transition-top {
+  transition: top .15s ease-out;
+}
+
+.rule {
+  height: $rule-height;
+}
+
+.alert-image {
+  padding-right: 50px;
+}
+
+.issue-title .rule {
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .issue-title-box {
   border: 8px solid white;
   width: 64%;
@@ -43,27 +59,39 @@ a {
   padding-bottom: 15%;
 }
 
+.site-footer a {
+  margin-right: 30px;
+}
+
+.site-footer li, .social-footer li {
+    display: inline;
+}
+
+.site-footer ul , .social-footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-footer {
+  font-size: $h6;
+}
+
+.social-footer a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/*issue footer*/
+
+.issue-footer a {
+  color: $dark-gray;
+}
+
 /*For Testing*/
 .border {
   border: 5px solid red;
-}
-
-.nav-top {
-  padding-top: -40px;
-  padding-bottom: -40px;
-}
-
-.main-nav {
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-  padding-bottom: .3rem;
-  padding-top: .7rem;
-  background-color: rgba(35,35,35, 0.95);
-}
-
-.tagline {
-  padding-top: .75rem;
 }
 
 // RSS Feed
@@ -89,9 +117,7 @@ a {
 }
 
 .itemTitle {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: $red;
+  padding: 20px;
   color: #fff;
   transition-duration: .2s;
   transition-timing-function: ease;
@@ -99,7 +125,7 @@ a {
   &:hover,
   &:focus {
     outline: none;
-    background-color: darken($red, 20%);
+    background-color: darken($light-gray, 20%);
   }
 }
 
@@ -113,8 +139,8 @@ a {
   padding-right: 0;
   padding-left: 0;
   border-right-style: solid;
-  border-width: 2px;
-  border-color: $off-black;
+  border-width: 20px;
+  border-color: $light-gray;
 }
 
 // Featured Issue
@@ -183,28 +209,36 @@ a {
     display: none;
   }
 
+  .feedEkList {
+    margin-right: -20px;
+  }
+
   .featured-content {
     height: auto;
   }
 
-  .subscription {
-    background: none;
+  .alert-image {
+  padding-right: 0px;
   }
 
-  .tagline {
-    padding-right: 1rem;
-    padding-left: 1rem;
+  .social-footer a {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
-  .slider {
-    padding-top: 6rem;
+  .site-footer a {
+    margin-right: 0px;
   }
 
-  //Footer
-
-  .social-footer {
-  float: none;
-  margin-right: 30px;
-}
+  .site-footer svg {
+    padding-bottom: 20px;
+  }
+  .site-footer li {
+      display: block;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
 
 }

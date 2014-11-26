@@ -30,7 +30,6 @@
     color: #fff;
     background-color: darken($mid-gray, 20%);
   }
-  &:focus {}
 }
 
 .button-red {
@@ -41,7 +40,11 @@
     color: #fff;
     background-color: darken($red, 20%);
   }
-  &:focus {}
+}
+
+.button-highlight {
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .button-purple {

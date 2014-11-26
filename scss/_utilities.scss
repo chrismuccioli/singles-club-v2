@@ -18,6 +18,13 @@
   &:after { clear: both; }
 }
 
+.no-hover {
+    &:hover {
+      text-decoration: none;
+      border-bottom: 0px;
+    }
+}
+
 .fit { max-width: 100%; }
 
 .full-width { width: 100%; }

@@ -1,9 +1,23 @@
 <div id="issue-nav">
+    <!--Sub Nav-->
+  <div id="issue-sub" class="bg-highlight py3">
+    <div class="table table-fixed white">
+      <div class="table-cell center">
+        <h4>Issue 1: Daniel Bachman</h4>
+      </div>
+      <div class="table-cell center">
+        <h4>Issue 2: Small Sur</h4>
+      </div>
+      <div class="table-cell center">
+        <h4>Issue 3: Woodsman</h4>
+      </div>
+    </div>
+  </div>
   <div class="issue-nav bg-off-black">
         <div class="issue-nav-element nav-home-button nav-mark bg-highlight">
           <div class="table mobile-table">
             <div class="table-cell mobile-table-cell">
-              <a href="#">
+              <a href="#" id="toggle-nav" class="no-hover">
                 <svg version="1.1" mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve" fill="#fff">
                   <path d="M553.5,515.4c2.9-78.6-40.8-131-142.7-174.7l-81.5-32c-46.6-20.4-87.4-40.8-104.8-58.2c-17.5-14.6-29.1-37.9-26.2-64.1
@@ -19,20 +33,10 @@
             </div>
           </div>
         </div>
-      <div class="issue-nav-element nav-issues px2">
-            <a href="#" id="toggle-nav">
-        <h4 class="h5 left white"><span class="issue-3">Issue 3: </span>Woodsman</h4>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="0 0 1.9 1.4" enable-background="new 0 0 1.9 1.4" xml:space="preserve" class="toggle-down">
-          <polygon points="1.9,0 1,1.4 0,0 "/>
-        </svg>
-
-            </a>
-      </div>
       <div class="issue-nav-element nav-player px2 white">
-          <div class="table mobile-table full-width">
-            <div class="track-title">
-              <h4>Side A: 'Further'</h4>
+          <div class="table mobile-table">
+            <div class="track-title center heavy-weight" style="width: 300px;">
+              <h5 class="h5 caps">{{ page.artist-name }} - '{{ page.track-name }}'</h4>
             </div>
               {% raw %}
               <div class="player-controls">
@@ -45,7 +49,7 @@
                   <svg ng-if="player.playing == track" viewBox=“0 0 32 32” plangular-icon="pause" class="popin"></svg>
                 </button>
               </div>
-              <div class="player full-width">
+              <div class="player" style="width: 100%;">
                 <progress class="bg-highlight" value="{{ currentTime / duration || 0 }}" ng-click="seek($event)">{{ currentTime / duration }}</progress>
               </div>
               {% endraw %}
@@ -65,21 +69,24 @@
           </div>
         </div>
       </div>
-      <div class="issue-nav-element nav-social px2 center">
-        <div style="margin-top:9px">
-          <a href="https://twitter.com/intent/tweet?text={{ page.description }}&url=http://singlesclub.fm{{ page.url }}" class="ss-icon">twitter</a>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=http://singlesclub.fm{{ page.url }}" class="ss-icon pl2">facebook</a>
+      <a href="#" id="toggle-purchase">
+        <div class="issue-nav-element nav-purchase px2 clear-padding right-align">
+          <a href="#" id="toggle-purchase">
+          <div class="button button-small button-highlight">
+            Purchase issue
+          </div>
+          </a>
         </div>
-      </div>
+      </a>
   </div>
   <!--Sub Nav-->
-  <div id="issue-sub" class="bg-highlight py3">
+  <div id="purchase" class="bg-highlight py3">
     <div class="table table-fixed white">
       <div class="table-cell center">
-        <h4>Issue 1: Daniel Bachman</h4>
+        <h4>BUY PHYSICAL</h4>
       </div>
       <div class="table-cell center">
-        <h4>Issue 2: Small Sur</h4>
+        <h4>BUY DIGITAL</h4>
       </div>
       <div class="table-cell center">
         <h4>Issue 3: Woodsman</h4>

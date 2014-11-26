@@ -1,3 +1,34 @@
+.main-nav {
+  top: 0;
+  padding-top: 50px;
+  z-index: 2000;
+  background-color: rgba(0,0,0,1);
+  border-top: 5px solid;
+}
+
+.main-nav .logo {
+  width: 120px;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+.top-nav-links a {
+  text-transform: uppercase;
+  color: $white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  letter-spacing: .1em;
+  &:hover {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+    text-decoration: none;
+  }
+
+
+}
+
 .site-wrapper {
     position: relative;
     overflow: hidden;
@@ -77,17 +108,6 @@
   width: 300px;
 }
 
-.nav-social {
-  width: 100px;
-  .ss-icon {
-    font-size: 18px;
-    color: $dark-gray;
-    &:hover {
-      color: darken($light-gray, 10%);
-      text-decoration: none;
-    }
-  }
-}
 .nav-mark, .nav-issues, .nav-player {
   border-right: 1px solid $dark-gray;
 }
@@ -136,7 +156,7 @@
   .toggle-down {
     fill: $blue;
   }
-  .nav-social, .issue-3, .nav-player {
+  .issue-3, .nav-player {
     display: none;
   }
   .mobile-player-controls {
@@ -145,9 +165,6 @@
 }
 
 @media screen and (max-width: $breakpoint-mobile) {
-  .nav-social {
-    display: none;
-  }
   .issue-wrapper {
     margin: 0;
   }
@@ -181,5 +198,9 @@
     padding-bottom: 8px;
     padding-left: 12px;
     padding-right: 12px;
+  }
+  .main-nav {
+    padding-top: 25px;
+    background-color: rgba(0,0,0,0);
   }
 }

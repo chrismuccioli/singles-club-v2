@@ -21,9 +21,10 @@
   <!-- Angular JS + Plangular -->
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
   <script src="/../js/ng-plangular.min.js"></script>
+  <script type="text/javascript" src="/js/FeedEk.js"></script>
   <script src="//use.typekit.net/nbx4wrv.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <script>try{Typekit.load();}catch(e){}</script>
-
   <style>
   <!-- the .wf-loading class is used to control FOUT (flash of unstyled text) -->
   html { transition: opacity .2s ease; }
@@ -55,6 +56,32 @@
     $(document).click(function (e) {
         if ($(e.target).closest('#issue-sub').length > 0 || $(e.target).closest('#toggle-nav').length > 0) return;
         $('#issue-sub').slideUp(200);
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#purchase').hide().before('');
+    $('a#toggle-purchase').click(function (e) {
+        e.preventDefault();
+        $('#purchase').slideToggle(200);
+    });
+    $(document).click(function (e) {
+        if ($(e.target).closest('#purchase').length > 0 || $(e.target).closest('#toggle-purchase').length > 0) return;
+        $('#purchase').slideUp(200);
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#mobile-top-nav').hide().before('');
+    $('a#toggle-top-nav').click(function (e) {
+        e.preventDefault();
+        $('#mobile-top-nav').slideToggle(200);
+    });
+    $(document).click(function (e) {
+        if ($(e.target).closest('#mobile-top-nav').length > 0 || $(e.target).closest('#toggle-top-nav').length > 0) return;
+        $('#mobile-top-nav').slideUp(200);
     });
   });
 </script>
@@ -98,15 +125,27 @@
       //.log to determine when you want the
       //nav bar to stick.
       console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 280) {
+    if ($(window).scrollTop() > 900) {
       $('#issue-nav').addClass('issue-nav-fixed');
     }
-    if ($(window).scrollTop() < 281) {
+    if ($(window).scrollTop() < 901) {
       $('#issue-nav').removeClass('issue-nav-fixed');
     }
   });
 });
   </script>
+  <script type="text/javascript">
+$(document).ready(function () {
+$('#divRss').FeedEk({
+    FeedUrl : 'http://www.singlesclub.fm/blog/feed/',
+    MaxCount : 3,
+    ShowDesc : true,
+    ShowPubDate: false,
+    DescCharacterLimit:0,
+    TitleLinkTarget:'_blank'
+  });
+ });
+</script>
   <!--Google Tracking-->
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -122,4 +161,29 @@
   <script type="text/javascript">
   window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
   </script>
+  <style>
+  .border-highlight { border-color: {{ page.highlight }}; }
+  .bg-highlight { background-color: {{ page.highlight }}; }
+  .button-highlight { background-color: {{ page.highlight }};}
+  .button-highlight:hover { background-color: {{ page.highlight-dark }};}
+  .highlight { color: {{ page.highlight }}; }
+  .bg-feature-2 { background-color: {{ page.highlight-light }}; }
+  .feature-2-highlight { color: {{ page.highlight-dark }}; border-color:{{ page.highlight-dark }}; }
+  .itemTitle {
+    background-color: {{ page.highlight }};
+      &:hover,
+      &:focus {
+        outline: none;
+        background-color: {{ page.highlight-dark }};
+    }
+  }
+  ::selection {
+    background: {{ page.highlight }};
+    color: #fff; /* WebKit/Blink Browsers */
+    }
+    ::-moz-selection {
+      background: {{ page.highlight }}; /* Gecko Browsers */
+      color: #fff;
+    }
+</style>
 </head>
