@@ -98,6 +98,7 @@ body {
 
 .rss-feed {
   margin-top: -45px;
+  margin-right: -20px;
 }
 
 .feedEkList {
@@ -207,6 +208,10 @@ body {
 @media screen and (max-width: $breakpoint-mobile) {
   .rss-feed-spacer {
     display: none;
+  }
+
+  .rss-feed {
+    margin-right: 0px;
   }
 
   .feedEkList {

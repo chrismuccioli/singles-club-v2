@@ -1534,7 +1534,8 @@ body {
   border: 5px solid red; }
 
 .rss-feed {
-  margin-top: -45px; }
+  margin-top: -45px;
+  margin-right: -20px; }
 
 .feedEkList {
   list-style: none;
@@ -1617,6 +1618,9 @@ body {
 @media screen and (max-width: 768px) {
   .rss-feed-spacer {
     display: none; }
+
+  .rss-feed {
+    margin-right: 0px; }
 
   .feedEkList {
     margin-right: -20px; }
