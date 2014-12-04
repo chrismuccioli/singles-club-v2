@@ -14,15 +14,6 @@
   }
 }
 
-.button-blue {
-  color: #fff;
-  background-color: $blue;
-  &:hover {
-    color: #fff;
-    background-color: darken($blue, 20%);
-  }
-}
-
 .button-gray {
   color: #fff;
   background-color: $mid-gray;
@@ -32,30 +23,9 @@
   }
 }
 
-.button-red {
-  color: #fff;
-  text-transform: uppercase;
-  background-color: $red;
-  &:hover {
-    color: #fff;
-    background-color: darken($red, 20%);
-  }
-}
-
 .button-highlight {
   color: #fff;
   text-transform: uppercase;
-}
-
-.button-purple {
-  color: #fff;
-  text-transform: uppercase;
-  background-color: $purple;
-  &:hover {
-    color: #fff;
-    background-color: darken($purple, 20%);
-  }
-  &:focus {}
 }
 
 .button-white {
@@ -68,11 +38,3 @@
   }
   &:focus {}
 }
-
-.button-inactive {
-  color: #fff;
-  background-color: $mid-gray;
-  cursor: text;
-  text-transform: uppercase;
-}
-

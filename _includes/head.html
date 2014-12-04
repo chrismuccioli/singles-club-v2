@@ -23,7 +23,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
   <script src="/../js/ng-plangular.min.js"></script>
   <script type="text/javascript" src="/js/FeedEk.js"></script>
-  <script src="//use.typekit.net/nbx4wrv.js"></script>
+  <script type="text/javascript" src="/js/FeedEk.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <script>try{Typekit.load();}catch(e){}</script>
   <style>
@@ -127,10 +127,29 @@
       //nav bar to stick.
       console.log($(window).scrollTop())
     if ($(window).scrollTop() > 900) {
-      $('#issue-nav').addClass('issue-nav-fixed');
+      $('#issue-nav').addClass('issue-nav-fixed slidedown');
+      $('#issue-nav').removeClass('hidden-nav slideup');
     }
     if ($(window).scrollTop() < 901) {
-      $('#issue-nav').removeClass('issue-nav-fixed');
+      $('#issue-nav').removeClass('issue-nav-fixed slidedown');
+      $('#issue-nav').addClass('hidden-nav slideup');
+    }
+  });
+});
+  </script>
+  <script>
+  $(document).ready(function() {
+
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the
+      //nav bar to stick.
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 910) {
+      $('#issue-nav').removeClass('slideup');
+    }
+    if ($(window).scrollTop() < 911) {
+      $('#issue-nav').addClass('slideup');
     }
   });
 });

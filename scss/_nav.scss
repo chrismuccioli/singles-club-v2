@@ -69,11 +69,19 @@
   width: 100%;
 }
 
+.hidden-nav {
+  // margin-top: -80px;
+  // position: fixed;
+  // display: none;
+  display: none;
+}
+
 .issue-nav-fixed {
   position:fixed;
   width: 100%;
   z-index: 9999;
   top:0;
+  display: block;
 }
 
 //Creates linking Singles Club mark in NAV

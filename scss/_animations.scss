@@ -32,9 +32,28 @@
     to { transform: translateY(0); }
 }
 .slidedown {
-  -webkit-animation: slidedown .1s ease;
-     -moz-animation: slidedown .1s ease;
-          animation: slidedown .1s ease;
+  -webkit-animation: slidedown .2s ease;
+     -moz-animation: slidedown .2s ease;
+          animation: slidedown .2s ease;
 }
 
+
+.slideup {
+  -webkit-animation: slideup 1s ease;
+     -moz-animation: slideup 1s ease;
+          animation: slideup 1s ease;
+}
+
+@-webkit-keyframes slideup {
+  from { -webkit-transform: translateY(100%); }
+    to { -webkit-transform: translateY(0); }
+}
+@-moz-keyframes slideup {
+  from { -moz-transform: translateY(100%); }
+    to { -moz-transform: translateY(0); }
+}
+@keyframes slideup {
+  from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
 
