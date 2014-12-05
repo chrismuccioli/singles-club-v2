@@ -189,14 +189,6 @@ $('#divRss').FeedEk({
   .highlight { color: #6600FF; }
   .bg-feature-2 { background-color: #f2effe; }
   .feature-2-highlight { color: #1E005F; border-color:#1E005F; }
-  .itemTitle {
-    background-color: #6600FF;
-      &:hover,
-      &:focus {
-        outline: none;
-        background-color: #1E005F;
-    }
-  }
   ::selection {
     background: #6600FF;
     color: #fff; /* WebKit/Blink Browsers */
@@ -344,7 +336,7 @@ $('#divRss').FeedEk({
       </div>
     </div>
   </div>
-  <div class="issue-nav bg-off-black">
+  <div class="issue-nav bg-dark-gray">
         <div class="issue-nav-element nav-home-button nav-mark bg-highlight">
           <div class="table mobile-table">
             <div class="table-cell mobile-table-cell">
@@ -404,7 +396,7 @@ $('#divRss').FeedEk({
         <div class="issue-nav-element nav-purchase px2 clear-padding right-align">
           <a href="#" id="toggle-purchase">
           <div class="button button-small button-highlight">
-            Buy / Subscribe
+            <span class="mobile-hide">Buy /</span> Subscribe
           </div>
           </a>
         </div>
@@ -707,7 +699,7 @@ $('#divRss').FeedEk({
   </div>
 </div>
     <!--Footer-->
-    <div class="container px2 gray issue-footer">
+    <div class="container px2 gray issue-footer link-mid-gray">
       <div class="row py4">
         <div class="col col-4 mobile-center py2">
   <h4 class="h4 pb2">
@@ -728,14 +720,14 @@ $('#divRss').FeedEk({
               Art Direction, Design
               & Photography
             </h5>
-            <h6 class="h6 white-link">
+            <h6 class="h6">
               <a href="www.chrismuccioli.com">Chris Muccioli</a><br>
             </h6>
           <div class="py2">
             <h5 class="h5 caps pb1">
               Editor
             </h5>
-            <h6 class="h6 white-link">
+            <h6 class="h6">
               <a href="www.chrismuccioli.com">Jeffrey Silverstein</a><br>
             </h6>
           </div>
@@ -743,7 +735,7 @@ $('#divRss').FeedEk({
             <h5 class="h5 caps pb1">
               Writers
             </h5>
-            <h6 class="h6 white-link">
+            <h6 class="h6">
               <a href="www.chrismuccioli.com">Mike Sheffield</a><br>
               <a href="www.chrismuccioli.com">Jeffrey Silverstein</a><br>
             </h6>
@@ -751,7 +743,7 @@ $('#divRss').FeedEk({
         </div>
         <div class="col col-3 py2">
             <h4 class="h4 pb2"> Pressing Info </h4>
-            <h5 class="h5 pb1">
+            <h5 class="h5 pb1 caps">
               Side A: Further
             </h5>
             <h5>
@@ -763,7 +755,7 @@ $('#divRss').FeedEk({
 
         <div class="col col-3">
           <div class="py2">
-            <h6 class="h5 pb1">
+            <h6 class="h5 pb1 caps">
               Side B: Woodsman
             </h6>
             <h5>
@@ -773,16 +765,6 @@ $('#divRss').FeedEk({
         </div>
       </div>
     </div>
-      <div class="oh">
-        <div class="row">
-          <div class="col col-6 bg-gray center button half-width">
-            <a href="#">Read Issue 2</a>
-          </div>
-          <div class="col col-6 bg-dark-gray button center half-width">
-            <a href="#">Preview Issue 4</a>
-          </div>
-        </div>
-      </div>
         <div class="bg-white support">
     <div class="container px2 gray py4">
       <div class="row pb4 px2">
@@ -923,7 +905,7 @@ $('#divRss').FeedEk({
     </div>
   </div>
 </div>
-<div class="bg-off-black center py2">
+<div class="bg-dark-gray center py2">
   <div class="container px2 social-footer py2">
         <ul>
           <li><a href="#">Twitter</a></li>

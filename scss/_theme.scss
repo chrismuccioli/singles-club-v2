@@ -9,16 +9,7 @@
 
 body {
   color: $gray;
-  background-color: $off-black;
-}
-
-.link-light-gray {
-  color: $light-gray;
-  text-decoration: underline;
-  &:hover {
-    color: darken($light-gray, 10%);
-    text-decoration: none;
-  }
+  background-color: $black;
 }
 
 .alert-plus {
@@ -118,16 +109,25 @@ body {
 }
 
 .itemTitle {
-  padding: 20px;
-  color: #fff;
+  padding: 30px;
+  min-height: 78px !important;
+  color: $black;
+  background-color: $white;
+  text-align: left;
   transition-duration: .2s;
   transition-timing-function: ease;
   transition-property: box-shadow , background-color;
   &:hover,
   &:focus {
     outline: none;
+    color: $white;
     background-color: darken($light-gray, 20%);
   }
+}
+
+.itemRead-more {
+  color: $light-gray;
+  padding-top: 10px;
 }
 
 .itemContent p {

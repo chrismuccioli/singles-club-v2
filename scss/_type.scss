@@ -117,17 +117,6 @@ a {
   }
 }
 
-.clean-link a {
-  text-decoration: none;
-}
-
-.white-link a {
-  color: $white;
-  &:hover {
-    color: $light-gray
-  }
-}
-
 .feature p, .serif {
   font-family: $serif !important;
   font-style: normal !important;
@@ -181,3 +170,4 @@ a {
   font-family: LydianBT-Bold, georgia;
   font-weight: normal;
 }
+

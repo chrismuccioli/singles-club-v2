@@ -50,7 +50,7 @@
                         }
                     }
 
-                    s += '<a href="' + item.link + '" target="' + def.TitleLinkTarget + '"><div class="itemTitle">' + item.title + '</div></a></div></li>';
+                    s += '<a href="' + item.link + '" target="' + def.TitleLinkTarget + '"><div class="itemTitle">' + item.title + '<h5 class="itemRead-more">read more</h5></div></a></div></li>';
                 });
                 $("#" + id).append('<ul class="feedEkList">' + s + "</ul>");
             }
