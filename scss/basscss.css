@@ -657,32 +657,9 @@ button:focus {
 .feature-meta h5 {
   line-height: 1em !important; }
 
-.issue-title-wrapper {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  padding-left: 50px; }
-
-.meta h5 {
-  font-size: 12px !important; }
-
-.feature-number {
-  border-radius: 50%;
-  width: 20px;
-  height: 100%;
-  height: 20px;
-  padding: 8px;
-  border: 1px solid #c7c7c7;
-  color: #c7c7c7;
-  text-align: center;
-  line-height: 20px; }
-
 @media screen and (max-width: 768px) {
   .Woodsman {
-    background-image: url(../journal/woodsman/images/woodsman-header-mobile.jpg); }
-
-  .issue-title-wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px; } }
+    background-image: url(../journal/woodsman/images/woodsman-header-mobile.jpg); } }
 @media screen and (min-width: 769px) {
   .support {
     background-image: url(../images/support-bg.jpg);
@@ -804,6 +781,27 @@ progress::-moz-progress-bar {
     transform: translateY(100%); }
   to {
     transform: translateY(0); } }
+.issue {
+  padding-top: 200px;
+  padding-bottom: 200px; }
+
+.issue-woodsman {
+  background: url(../journal/woodsman/images/woodsman-header.jpg);
+  background-repeat: no-repeat;
+  transition: background 0.5s ease;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%; }
+  .issue-woodsman:hover {
+    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url(../journal/woodsman/images/woodsman-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%; }
+
+.issue-label {
+  float: left; }
+
 .button {
   font-family: "Karla", sans-serif;
   font-weight: 700;
@@ -1469,6 +1467,11 @@ body {
   padding-top: 15%;
   padding-bottom: 15%; }
 
+.issue-title-wrapper {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 50px; }
+
 .site-footer a {
   margin-right: 30px; }
 
@@ -1588,6 +1591,11 @@ body {
 @media screen and (max-width: 768px) {
   .rss-feed-spacer {
     display: none; }
+
+  .issue-title-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0px; }
 
   .rss-feed {
     margin-right: 0px; }

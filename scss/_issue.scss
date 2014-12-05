@@ -11,35 +11,11 @@
   line-height: 1em !important;
 }
 
-.issue-title-wrapper {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  padding-left: 50px;
-}
 
-.meta h5 {
-  font-size: 12px !important;
-}
-
-.feature-number {
-    border-radius: 50%;
-    width: 20px;
-    height: 100%;
-    height: 20px;
-    padding: 8px;
-    border: 1px solid $gray;
-    color: $gray;
-    text-align: center;
-    line-height: 20px;
-}
 
 @media screen and (max-width: $breakpoint-mobile) {
   .Woodsman {
     background-image: url(../journal/woodsman/images/woodsman-header-mobile.jpg);
-  }
-  .issue-title-wrapper {
-    padding-top: 50px;
-    padding-bottom: 50px;
   }
 }
 

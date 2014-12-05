@@ -50,6 +50,12 @@ body {
   padding-bottom: 15%;
 }
 
+.issue-title-wrapper {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 50px;
+}
+
 .site-footer a {
   margin-right: 30px;
 }
@@ -208,6 +214,12 @@ body {
 @media screen and (max-width: $breakpoint-mobile) {
   .rss-feed-spacer {
     display: none;
+  }
+
+  .issue-title-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0px;
   }
 
   .rss-feed {
