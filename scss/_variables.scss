@@ -9,26 +9,15 @@ $line-height: 1.5 !default;
 $line-height-heading: 1.5 !default;
 $lydian-italic: LydianBT-Italic, georgia;
 
-// Mobile Type
+// Type
 $h1: 3.157em;                 $base-h1-lh: 1.1em;
 $h2: 2.369em;                 $base-h2-lh: 1.2em;
-$h3: 1.777em;                 $base-h3-lh: 1.3em;
+$h3: 1.777em;                 $base-h3-lh: 1.2em;
 $h4: 1.333em;                 $base-h4-lh: 1.4em;
 $h5: 1em;                     $base-h5-lh: 1.4em;
 $h6: 0.75em;                  $base-h6-lh: 1.4em;
-$p: 1em;                      $base-p-lh: 1.75em;
-$feature-p: 1.2em;            $feature-p-lh: 1.75em;
-
-// Desktop Type
-$responsive-type: true;
-$desktop-h1: 3.157em;         $desktop-h1-lh: 1.1em;
-$desktop-h2: 2.369em;         $desktop-h2-lh: 1.2em;
-$desktop-h3: 1.777em;         $desktop-h3-lh: 1.2em;
-$desktop-h4: 1.333em;         $desktop-h4-lh: 1.4em;
-$desktop-h5: 1em;             $desktop-h5-lh: 1.4em;
-$desktop-h6: .75em;           $desktop-h6-lh: 1.4em;
-$desktop-p: 1em;              $desktop-p-lh: 1.3em;
-$desktop-feature-p: 1.3125rem;  $desktop-feature-p-lh: 1.6em;
+$p: 1em;                      $base-p-lh: 1.3em;
+$feature-p: 1.3125em;            $feature-p-lh: 1.6em;
 
 // Typography
 $sans-serif-headline: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
