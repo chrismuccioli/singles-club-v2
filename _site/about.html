@@ -24,6 +24,8 @@
   <script src="/../js/ng-plangular.min.js"></script>
   <script type="text/javascript" src="/js/FeedEk.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+  <script src="//use.typekit.net/nbx4wrv.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
   <style>
   <!-- the .wf-loading class is used to control FOUT (flash of unstyled text) -->
@@ -58,6 +60,14 @@
         $('#issue-sub').slideUp(200);
     });
   });
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+$(".modal-close a").click(function(e) {
+    e.preventDefault();
+    $(".first-visit").hide();
+});
+});
 </script>
 <script type="text/javascript">
   $(document).ready(function () {

@@ -9,13 +9,16 @@
 h1, h2, h3, h4, h5, h6, p  {
   line-height: $line-height-heading;
   margin-bottom: 5px;
+  -webkit-font-smoothing:antialiased;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
-h5, h6 {
+h6 {
   font-weight: 700;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-weight: 400;
 }
 
@@ -34,14 +37,14 @@ p { font-size: $p; line-height: $base-p-lh; }
 // Responsive Type Scale
 @media screen and (min-width: $breakpoint-desktop) {
   p { font-size: $p; line-height: $base-p-lh; letter-spacing: .04em; }
-  .feature p { font-size: $feature-p; line-height: $feature-p-lh; letter-spacing: .04em; }
+  .feature p { font-size: $feature-p; line-height: $feature-p-lh; letter-spacing: .01em; }
   .mega { font-size : 4.157em; line-height: 1em; }
 }
 
 // Utilities
 .bold    { font-weight: bold; }
 .regular { font-weight: normal; }
-.italic  { font-style: italic; }
+.italic  { font-style: italic !important; }
 .caps    { text-transform: uppercase; letter-spacing: .11em; font-weight: 700; }
 
 // Prevent flashing fonts with fontdeck
@@ -111,6 +114,11 @@ a {
   }
 }
 
+.underline {
+  border-bottom: 1px solid;
+  padding-bottom: 3px;
+}
+
 .feature p, .serif {
   font-family: $serif !important;
   font-style: normal !important;
@@ -147,6 +155,11 @@ a {
   font-family: $sans-serif-light;
   font-weight: 300;
   font-style: normal;
+}
+
+.serif-strong {
+  font-family: $serif !important;
+  font-weight: 400;
 }
 
 .lydian-italic {

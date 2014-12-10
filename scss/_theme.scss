@@ -12,6 +12,18 @@ body {
   background-color: $black;
 }
 
+.first-visit {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 22222;
+}
+
+.first-visit-hide {
+  display: none;
+}
+
 .alert-plus {
   margin-bottom: -5px;
   padding-top: 20px;
@@ -48,6 +60,11 @@ body {
   margin-right: auto;
   padding-top: 15%;
   padding-bottom: 15%;
+}
+
+/*Fixes top alignment*/
+.float-image {
+  padding-top: 1.2rem !important;
 }
 
 .issue-title-wrapper {
@@ -129,6 +146,27 @@ body {
     color: $white;
     background-color: darken($light-gray, 20%);
   }
+}
+
+.videoWrapper-16-9 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper-vimeo {
+  position: relative;
+  padding-bottom: 55.25%; /* Johns Videos */
+  padding-top: 16px;
+  height: 0;
+}
+.videoWrapper-16-9, .videoWrapper-vimeo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .itemRead-more {
@@ -214,6 +252,13 @@ body {
 @media screen and (max-width: $breakpoint-mobile) {
   .rss-feed-spacer {
     display: none;
+  }
+
+  .videoWrapper-vimeo {
+  position: relative;
+  padding-bottom: 52%; /* Johns Videos */
+  padding-top: 20px;
+  height: 0;
   }
 
   .issue-title-wrapper {

@@ -1,6 +1,14 @@
 //Backgrounds
-.Woodsman {
+.woodsman {
   background-image: url(../journal/woodsman/images/woodsman-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%;
+}
+
+.wisdom-tooth {
+  background-image: url(../journal/wisdom-tooth/images/wisdom-tooth-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -11,7 +19,17 @@
   line-height: 1em !important;
 }
 
+// .good-dog {
+//   font-family: "gooddog-new";
+//   font-weight: 400;
+//   letter-spacing: 10px;
+// }
 
+.good-dog h1 {
+  font-family: 'Merienda One', cursive;
+  font-weight: 400;
+  line-height: 1.6em;
+}
 
 @media screen and (max-width: $breakpoint-mobile) {
   .Woodsman {
@@ -25,5 +43,16 @@
     background-image: url(../images/support-bg.jpg) ;
     background-position: right top;
     background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .support {
+    background-image: url(../images/support-bg.jpg) ;
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  .wisdomtooth-video {
+    padding-right: 0 !important;
   }
 }

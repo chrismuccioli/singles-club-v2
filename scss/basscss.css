@@ -22,12 +22,15 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1, h2, h3, h4, h5, h6, p {
   line-height: 1.5;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none; }
 
-h5, h6 {
+h6 {
   font-weight: 700; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-weight: 400; }
 
 h1 {
@@ -75,7 +78,7 @@ p {
   .feature p {
     font-size: 1.3125em;
     line-height: 1.6em;
-    letter-spacing: .04em; }
+    letter-spacing: .01em; }
 
   .mega {
     font-size: 4.157em;
@@ -87,7 +90,7 @@ p {
   font-weight: normal; }
 
 .italic {
-  font-style: italic; }
+  font-style: italic !important; }
 
 .caps {
   text-transform: uppercase;
@@ -163,6 +166,10 @@ a {
     padding-bottom: 3px;
     text-decoration: none; }
 
+.underline {
+  border-bottom: 1px solid;
+  padding-bottom: 3px; }
+
 .feature p, .serif {
   font-family: "leitura-news", "TimesNewRoman", "Times New Roman", serif !important;
   font-style: normal !important;
@@ -194,6 +201,10 @@ a {
   font-family: "aktiv-grotesk-std", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: normal; }
+
+.serif-strong {
+  font-family: "leitura-news", "TimesNewRoman", "Times New Roman", serif !important;
+  font-weight: 400; }
 
 .lydian-italic {
   font-family: LydianBT-Italic, georgia;
@@ -409,7 +420,11 @@ a {
     padding-right: 0 !important; }
 
   .clear-padding-top {
-    padding-top: 0 !important; } }
+    padding-top: 0 !important; }
+
+  .m-px2 {
+    padding-right: 1rem;
+    padding-left: 1rem; } }
 .inline {
   display: inline; }
 
@@ -446,6 +461,14 @@ a {
 
 .fit {
   max-width: 100%; }
+
+.fill {
+  width: 100%;
+  height: 100%; }
+
+.absolute-center {
+  margin-left: auto;
+  margin-right: auto; }
 
 .full-width {
   width: 100%; }
@@ -647,8 +670,15 @@ button:focus {
   padding: 0.1875rem 0.75rem;
   line-height: 1rem; }
 
-.Woodsman {
+.woodsman {
   background-image: url(../journal/woodsman/images/woodsman-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%; }
+
+.wisdom-tooth {
+  background-image: url(../journal/wisdom-tooth/images/wisdom-tooth-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -656,6 +686,11 @@ button:focus {
 
 .feature-meta h5 {
   line-height: 1em !important; }
+
+.good-dog h1 {
+  font-family: 'Merienda One', cursive;
+  font-weight: 400;
+  line-height: 1.6em; }
 
 @media screen and (max-width: 768px) {
   .Woodsman {
@@ -665,6 +700,14 @@ button:focus {
     background-image: url(../images/support-bg.jpg);
     background-position: right top;
     background-repeat: no-repeat; } }
+@media screen and (min-width: 769px) {
+  .support {
+    background-image: url(../images/support-bg.jpg);
+    background-position: right top;
+    background-repeat: no-repeat; }
+
+  .wisdomtooth-video {
+    padding-right: 0 !important; } }
 progress {
   display: block;
   width: 100%;
@@ -1437,6 +1480,16 @@ body {
   color: #c7c7c7;
   background-color: #000000; }
 
+.first-visit {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 22222; }
+
+.first-visit-hide {
+  display: none; }
+
 .alert-plus {
   margin-bottom: -5px;
   padding-top: 20px; }
@@ -1466,6 +1519,10 @@ body {
   margin-right: auto;
   padding-top: 15%;
   padding-bottom: 15%; }
+
+/*Fixes top alignment*/
+.float-image {
+  padding-top: 1.2rem !important; }
 
 .issue-title-wrapper {
   padding-top: 200px;
@@ -1531,6 +1588,27 @@ body {
     color: #ffffff;
     background-color: #bdbdbd; }
 
+.videoWrapper-16-9 {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+.videoWrapper-vimeo {
+  position: relative;
+  padding-bottom: 55.25%;
+  /* Johns Videos */
+  padding-top: 16px;
+  height: 0; }
+
+.videoWrapper-16-9, .videoWrapper-vimeo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 .itemRead-more {
   color: #f0f0f0;
   padding-top: 10px; }
@@ -1591,6 +1669,13 @@ body {
 @media screen and (max-width: 768px) {
   .rss-feed-spacer {
     display: none; }
+
+  .videoWrapper-vimeo {
+    position: relative;
+    padding-bottom: 52%;
+    /* Johns Videos */
+    padding-top: 20px;
+    height: 0; }
 
   .issue-title-wrapper {
     padding-top: 50px;

@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Issue 4 – Wisdom Tooth</title>
+  <meta name="description" content="Singles Club Issue 4: Wisdom Tooth">
+  <meta name="keywords" content="record club, vinyl, records, music, indie, lp">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link href="/../scss/basscss.css" rel="stylesheet" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://singlesclub.fm/journal/wisdom-tooth/index.htmlimages/smallsur_facebook.jpg">
+  <meta property="og:url" content="http://singlesclub.fm/journal/wisdom-tooth/index.html">
+  <meta property="og:title" content="Issue 4 – Wisdom Tooth">
+  <meta property="og:description" content="Singles Club Issue 4: Wisdom Tooth">
+  <meta property="fb:app_id" content="1450710301810527">
+  <!-- jQuery library (served from Google) -->
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Angular JS + Plangular -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+  <script src="/../js/ng-plangular.min.js"></script>
+  <script type="text/javascript" src="/js/FeedEk.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+  <script src="//use.typekit.net/nbx4wrv.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <style>
+  <!-- the .wf-loading class is used to control FOUT (flash of unstyled text) -->
+  html { transition: opacity .2s ease; }
+  .wf-loading { opacity: 0; }
+</style>
+<script type="text/javascript">
+  var html = document.getElementsByTagName('html')[0];
+  html.className += '  wf-loading';
+  setTimeout(function() {
+    html.className = html.className.replace(' wf-loading', '');
+  }, 5000);
+  WebFontConfig = { fontdeck: { id: '39874' } };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#issue-sub').hide().before('');
+    $('a#toggle-nav').click(function (e) {
+        e.preventDefault();
+        $('#issue-sub').slideToggle(200);
+    });
+    $(document).click(function (e) {
+        if ($(e.target).closest('#issue-sub').length > 0 || $(e.target).closest('#toggle-nav').length > 0) return;
+        $('#issue-sub').slideUp(200);
+    });
+  });
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+$(".modal-close a").click(function(e) {
+    e.preventDefault();
+    $(".first-visit").hide();
+});
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#purchase').hide().before('');
+    $('a#toggle-purchase').click(function (e) {
+        e.preventDefault();
+        $('#purchase').slideToggle(200);
+    });
+    $(document).click(function (e) {
+        if ($(e.target).closest('#purchase').length > 0 || $(e.target).closest('#toggle-purchase').length > 0) return;
+        $('#purchase').slideUp(200);
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#mobile-top-nav').hide().before('');
+    $('a#toggle-top-nav').click(function (e) {
+        e.preventDefault();
+        $('#mobile-top-nav').slideToggle(200);
+    });
+    $(document).click(function (e) {
+        if ($(e.target).closest('#mobile-top-nav').length > 0 || $(e.target).closest('#toggle-top-nav').length > 0) return;
+        $('#mobile-top-nav').slideUp(200);
+    });
+  });
+</script>
+<script type="text/javascript">
+  var $menu = $('#issue-nav'), // replace #menu with your selector
+      menuOffsetTop = $menu[0].offsetTop;
+
+  $(document).bind('ready scroll', function () {
+      var docScroll = $(this).scrollTop();
+
+      if (docScroll >= menuOffsetTop) {
+          $menu.addClass('fixed');
+      } else {
+          $menu.removeClass('fixed');
+      }
+  });
+</script>
+  <!--Smooth Anchor Scroll-->
+  <script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+  <script>
+  $(document).ready(function() {
+
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the
+      //nav bar to stick.
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 900) {
+      $('#issue-nav').addClass('issue-nav-fixed slidedown');
+      $('#issue-nav').removeClass('hidden-nav slideup');
+    }
+    if ($(window).scrollTop() < 901) {
+      $('#issue-nav').removeClass('issue-nav-fixed slidedown');
+      $('#issue-nav').addClass('hidden-nav slideup');
+    }
+  });
+});
+  </script>
+  <script>
+  $(document).ready(function() {
+
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the
+      //nav bar to stick.
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 910) {
+      $('#issue-nav').removeClass('slideup');
+    }
+    if ($(window).scrollTop() < 911) {
+      $('#issue-nav').addClass('slideup');
+    }
+  });
+});
+  </script>
+  <script type="text/javascript">
+$(document).ready(function () {
+$('#divRss').FeedEk({
+    FeedUrl : 'http://www.singlesclub.fm/blog/feed/',
+    MaxCount : 3,
+    ShowDesc : true,
+    ShowPubDate: false,
+    DescCharacterLimit:0,
+    TitleLinkTarget:'_blank'
+  });
+ });
+</script>
+  <!--Google Tracking-->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43089298-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+  <!--Twitter-->
+  <script type="text/javascript">
+  window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+  </script>
+  <style>
+  .border-highlight { border-color: #FF9A88; }
+  .bg-highlight { background-color: #FF9A88; }
+  .button-highlight { background-color: #FF9A88;}
+  .button-highlight:hover { background-color: #FD5A4B;}
+  .highlight { color: #FF9A88; }
+  .bg-feature-2 { background-color: #FFEAE8; }
+  .feature-2-highlight { color: #FD5A4B; border-color:#FD5A4B; }
+  ::selection {
+    background: #FF9A88;
+    color: #fff; /* WebKit/Blink Browsers */
+    }
+    ::-moz-selection {
+      background: #FF9A88; /* Gecko Browsers */
+      color: #fff;
+    }
+</style>
+</head>
+
+
+<body ng-app="plangular">
+
+  <div class="first-visit mobile-hide">
+    <div class="table fill">
+      <div class="table-cell">
+        <div class="bg-white center absolute-center py2"  style="max-width: 425px; max-height: 900px;">
+          <div class="modal-close absolute">
+            <a href="#">
+              <h6>Close</h6>
+            </a>
+          </div>
+          <div class="modal-copy center">
+            <div class="absolute-center center p2">
+              <img src="/../images/logo-hinted-black.svg" style="width: 150px;">
+            </div>
+            <h4 class="serif-strong dark-gray py2 italic px4">A subscription record club and music journal published quarterly delivering exclusive 7" records from incredible artists straight to your door and desktop. </h4>
+            <p class="px4 dark-gray">Want to know more about how it all works? Enter your email below and we'll be in touch.</p>
+          </div>
+          <form action="//singlesclub.us6.list-manage.com/subscribe/post?u=27badb2e91&amp;id=1781494ce0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="py2 validate" target="_blank" novalidate>
+            <input type="email" value="" name="EMAIL" class="email mb1 center" id="mce-EMAIL" placeholder="email address" style="height: 50px; padding-left: 15px; padding-right: 15px; width: 80%;" required>
+            <input type="submit" value="Lemme Know" name="subscribe" id="mc-embedded-subscribe" class="button-highlight button-small button submit-button" style="width: 65%;">
+          </form>
+          <h6 class="gray px4 pv2 gray">Oh, and while you're here, use code <span class="highlight">'firsttimer'</span> for <span class="highlight">15%</span> off your first order with us.</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div plangular="https://soundcloud.com/singlesclubfm/wisdom-tooth-sc0004-silver/s-iPl73">
+    <!--HEADER-->
+    <div class="issue-header-wrapper wisdom-tooth">
+      <style>
+
+
+/* COMMENT TO DISPLAY SMALL BANNER*/
+  .alert-plus {
+    display: none;
+  }
+
+/* COMMENT TO DISPLAY IMAGE BANNER*/
+
+  .alert {
+    display: none;
+  }
+
+</style>
+
+<!-- Mini Banner -->
+<div class="alert bg-white px2">
+    <h4 class="h4 white center dark-gray mobile-center py2">
+      Issue 2 still available in the shop <a href="#" class="caps" style="margin-left: 30px; margin-top: 10px;">Pick one up</a>
+    </h4>
+</div>
+
+<!-- Image Banner -->
+<div class="alert-plus bg-white px2 mobile-center">
+  <div class="table">
+    <div class="table-cell" style="width: 100%;">
+        <div class="table">
+          <div class="table-cell">
+            <h4 class="h4 white center dark-gray right-align mobile-center py2">
+              Subscriptions still available, <br>get 'em while they last!
+            </h4>
+          </div>
+          <div class="table-cell mobile-center py2 px3">
+            <a href="#">
+              <div class="button button-small button-highlight">
+                SUBSCRIBE
+              </div>
+            </a>
+          </div>
+        </div>
+    </div>
+    <div class="table-cell alert-image">
+        <img src="/images/record.png" style="width: 200px;" class="pt1">
+    </div>
+  </div>
+</div>
+
+      <div id="mobile-top-nav" class="bg-gray py3 center">
+  <ul class="list-reset white">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Issues</a></li>
+    <li><a href="#">Subscribe</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Mixtape</a></li>
+    <li><a href="#">The Shop</a></li>
+  </ul>
+</div>
+<div class="main-nav border-highlight px2">
+  <div class="px2">
+    <div class="table">
+      <div class="table-cell">
+        <div class="mobile-center">
+          <a href="http://www.tumblr.com" class="mobile-hide no-hover">
+            <img src="/images/logo-straight.svg" class="" style="width: 200px; padding-top: 25px; padding-bottom: 20px; padding-left: 20px;">
+          </a>
+          <a href="#" id="toggle-top-nav" class="desktop-hide no-hover">
+            <img src="/images/logo-hinted-white.svg" class="logo">
+          </a>
+        </div>
+      </div>
+      <div class="table-cell mobile-hide">
+        <div class="right-align top-nav-links">
+          <a href="#">About</a>
+          <a href="#">Issues</a>
+          <a href="#">Subscribe</a>
+          <a href="#">Blog</a>
+          <a href="#">Mixtapes</a>
+          <a href="#">The Shop</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="container white px2">
+  <div class="row issue-title-wrapper">
+    <div class="col col-4 mobile-center">
+          <div class="row py2 px2">
+            <img src="/images/sc.svg" style="width: 20px; margin-right: 10px" class="left mobile-hide">
+            <h6 class="caps" style="margin-top: 5px;">Vol 1 | Issue #4 | Winter 2014</h6>
+          </div>
+          <div class="row">
+            <h1 class="mega headline-type">Wisdom Tooth</h1>
+            <div class="rule">
+            </div>
+          </div>
+          <div class="row py2">
+            <div class="col col-12">
+              <h5>Audio is recommended for this feature. Just hit listen & begin.</h5>
+              <img src="/images/stereo.svg" viewBox="0 0 125 25" alt="Stereo" class="pt1">
+              <h5 style="margin-left: 3px; padding-top: 5px;">SC004</h5>
+            </div>
+          </div>
+          <div class="row py3">
+            <a href="#feature1">
+              <div ng-click="playPause()" class="button button-highlight py6 white">
+                Listen & Begin
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+</div>
+
+    </div>
+      <div id="issue-nav" class="hidden-nav">
+    <!--Sub Nav-->
+  <div id="issue-sub" class="bg-highlight py3">
+    <div class="table table-fixed white">
+      <div class="table-cell center">
+        <h4>Issue 1: Daniel Bachman</h4>
+      </div>
+      <div class="table-cell center">
+        <h4>Issue 2: Small Sur</h4>
+      </div>
+      <div class="table-cell center">
+        <h4>Issue 3: Woodsman</h4>
+      </div>
+    </div>
+  </div>
+  <div class="issue-nav bg-dark-gray">
+        <div class="issue-nav-element nav-home-button nav-mark bg-highlight">
+          <div class="table mobile-table">
+            <div class="table-cell mobile-table-cell">
+              <a href="#" id="toggle-nav" class="no-hover">
+                <svg version="1.1" mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve" fill="#fff">
+                  <path d="M553.5,515.4c2.9-78.6-40.8-131-142.7-174.7l-81.5-32c-46.6-20.4-87.4-40.8-104.8-58.2c-17.5-14.6-29.1-37.9-26.2-64.1
+                    c0-46.6,29.1-67,87.4-64.1c17.5,0,32,2.9,49.5,8.7c67,23.3,113.6,96.1,145.6,192.2c2.9,5.8,5.8,8.7,8.7,11.6c2.9,0,2.9,0,2.9-2.9
+                    c2.9,0,2.9-2.9,2.9-8.7V122.3c0-5.8-2.9-11.6-8.7-11.6c-5.8,0-8.7,5.8-8.7,8.7c-2.9,5.8-5.8,8.7-17.5,8.7c-5.8,0-11.6-8.7-32-14.6
+                    c-67-14.6-96.1-20.4-131-23.3C163.3,87.4,61.4,168.9,58.5,279.5c0,69.9,46.6,122.3,157.2,168.9l84.4,34.9
+                    c87.4,37.9,119.4,72.8,119.4,119.4c-2.9,49.5-37.9,67-99,64.1c-20.4,0-40.8,2.9-67-5.8c-32-11.6-58.2-32-84.4-64.1
+                    C122.6,538.7,93.4,480.4,76,419.3c0-5.8-5.8-11.6-8.7-11.6s-2.9,0-2.9,2.9c-5.8,2.9-5.8,5.8-5.8,11.6v253.3c0,5.8,2.9,8.7,5.8,11.6
+                    c0,0,0,0,2.9,0s5.8-2.9,8.7-8.7c2.9-8.7,11.6-11.6,23.3-11.6c8.7,0,11.6,2.9,37.9,8.7c72.8,17.5,136.9,23.3,183.4,26.2
+                    C445.8,704.6,550.6,628.9,553.5,515.4z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      <div class="issue-nav-element nav-player px2 white">
+          <div class="table mobile-table">
+            <div class="track-title center heavy-weight" style="width: 300px;">
+              <h5 class="h5 caps">Wisdom Tooth - 'Silver'</h4>
+            </div>
+              
+              <div class="player-controls">
+                <button style="float: right;" class="no-wrap play-pause" ng-click="playPause()">
+                  <!--Adds title to minimized mobile player -->
+                  <div class="light-gray ls05 mini-track-meta">
+                    <h5>Side A: Further</h5>
+                  </div>
+                  <svg ng-if="player.playing != track" viewBox=“0 0 32 32” plangular-icon="play" class="popin"></svg>
+                  <svg ng-if="player.playing == track" viewBox=“0 0 32 32” plangular-icon="pause" class="popin"></svg>
+                </button>
+              </div>
+              <div class="player" style="width: 100%;">
+                <progress class="bg-highlight" value="{{ currentTime / duration || 0 }}" ng-click="seek($event)">{{ currentTime / duration }}</progress>
+              </div>
+              
+          </div>
+      </div>
+      <div class="issue-nav-element nav-home-button mobile-player-controls">
+        <div class="table mobile-table">
+          <div class="table-cell mobile-table-cell">
+            
+              <div class="player-controls">
+              <button class="no-wrap play-pause" ng-click="playPause()">
+                <svg ng-if="player.playing != track" viewBox=“0 0 32 32” plangular-icon="play" class="popin"></svg>
+                <svg ng-if="player.playing == track" viewBox=“0 0 32 32” plangular-icon="pause" class="popin"></svg>
+              </button>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+      <a href="#" id="toggle-purchase">
+        <div class="issue-nav-element nav-purchase px2 clear-padding right-align">
+          <a href="#" id="toggle-purchase">
+          <div class="mobile-hide button button-small button-highlight">
+            Buy / Subscribe
+          </div>
+          </a>
+        </div>
+      </a>
+  </div>
+  <!--Sub Nav-->
+  <div id="purchase" class="bg-highlight py3">
+    <div class="table table-fixed white">
+      <div class="table-cell center">
+        <h4>BUY PHYSICAL</h4>
+      </div>
+      <div class="table-cell center">
+        <h4>BUY DIGITAL</h4>
+      </div>
+      <div class="table-cell center">
+        <h4>Issue 3: Woodsman</h4>
+      </div>
+    </div>
+  </div>
+  
+  <div class="full-player full-width">
+    <progress class="bg-highlight" value="{{ currentTime / duration || 0 }}" ng-click="seek($event)">{{ currentTime / duration }}</progress>
+  </div>
+  
+</div>
+</div>
+
+    </div>
+    <div class="feature py6">
+      <div id="feature1" class="container px2 pt6">
+        <!--FEATURE 1-->
+        <div class="row pb4 px2">
+          <img src="/images/sc-dark.svg" style="width: 20px; margin-right: 10px" class="left">
+          <h6 class="h6 caps" style="margin-top: 8px;">FEATURE 1 – WORDS BY Jeffrey Silverstein</h6>
+        </div>
+        <div class="row">
+          <div class="col col-10 col-offset-1 py3">
+            <div class="row py4 center good-dog px2">
+                <h1 class="mega">Story Of An Artist</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-8 col-offset-2 serif">
+            <h3 class="py2">Returning to any artistic endeavor after a prolonged hiatus can oftentimes prove to be arduous. There are certain questions, some far-flung and existential, others technical and specific that can cloud the true spirit a creator strives to attain. As more time elapses, it becomes easier and easier to simply ignore ones craft and attend to matters elsewhere. Self-doubt, procrastination, and general laziness together create a heavy fog of the mind that requires a certain level of allegiance to the creative psyche to lift. </h3>
+
+            <p class="py2">For someone like John Andrews, it's apparent there was never any fog to begin with. Nor are there any questions. He doesn't allow room for them. Upon retracing the steps leading to the reappearance of his Wisdom Tooth alias, it's evident that John is in every stretch of the word a true artist, incapable of ceasing to create.</p>
+            <img src="images/wisdom-tooth-4.jpg" class="full-width">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-8 col-offset-2">
+            <p class="py2">Having come from a musical background of jazz musicians and navy-band performers, music was "never something that was forced on me," Andrews explains during a rare moment of downtime during his fourth European tour this year with gypsy-folk act Quilt. After being "pushed" to take up violin and piano at an early age, it wasn't until his father,a musician himself passed down a '74 Fender sunburst Stratocaster that John began to experience that blanket, holy-shit feeling that comes with writing your first material. </p>
+
+            <div class="col-6 right p2 clear-padding float-image">
+              <img src="images/wisdom-tooth-5.jpg" class="fit">
+            </div>
+
+            <p class="py2">At age 16, foundations for some of the earliest Wisdom Tooth songs were being laid in a suburban New Jersey home, unbeknownst to nearly all friends and family.He had Garageband, some cassette recorders, and the nervous energy of a kid navigating the murky waters that are high school. While many teenagers would be debating which type of hair-gel to use or how they plan to ask out their crush, John on the other hand was quietly becoming a well-oiled songwriter, animator, and managing his own skateboard company, the Vinyl Children's Skateboard Club.</p>
+          </div>
+        </div>
+        <div class="row center image-set">
+          <img src="images/wisdom-tooth-16.jpg" class="full-width">
+        </div>
+        <div class="row">
+          <div class="col col-8 col-offset-2 serif">
+            <p class="py2"> An outsider at heart, the music scene in New Jersey was "always a much different one that I wanted to be apart of," he admits. Not particularly keen to start a hardcore or screamo act, he opted for his Dylan and Beatles records,never befriending the majority of kids who were performing in bands. Eventually finding his niche amongst some like-minded groups like PA's now-defunct Raise Up Roof Beams, John began to perform at house shows in and around central New Jersey, simultaneously plotting short tours via MySpace. </p>
+
+            <p class="py2"> Having met John before the onset of a 2009 tour reaching as far as Burlington VT, there was an immediate sense that he was always one, if not many steps ahead of the game. Ideas were visibly pouring out of his head. There were moments in the van where instead of reading or sleeping (most of what I was doing), John was cranking out new songs on a ukulele and a notepad. In my head I was like, "who is this kid?" Upon waking in Boston one morning at DIY mainstay the Whitehaus, John was nowhere to be found. When we finally heard from him again, he casually informed us that he had gone to a friends house to record Pianoskin, a collection of songs for his first release via Spookytown, a label run by members of psych-pop act Great Valley. This was all before 10 AM. Our trip to Boston also marked the first time John would meet future Quilt bandmates Anna Rochinski and Shane Butler, with whom we shared a bill with that evening.. Although immensely shy at the time, often opting to sing without a microphone, it was clear that John was beginning his crusade as a an artist.  </p>
+          </div>
+        </div>
+      </div>
+
+            <div class="image-set">
+              <div class="px4 clear-padding">
+                <img src="images/john-basement-1.jpg" class="half-width left">
+                <img src="images/john-basement-2.jpg" class="half-width">
+              </div>
+            </div>
+      <div class="container px2">
+        <div class="row">
+          <div class="col col-8 col-offset-2 serif">
+            <p class="py2"> After that tour, Andrews seemed to be untouchable in terms of output. Between Anuket, an EP entirely written and recorded during a trip to Egypt and multiple LPs (Baby Neptune, The Flying Mouth) chronicling some of his most notable, recurring fictional characters, he would continue touring sporadically throughout the US between 2009-2011 . With every release came a slew of hand-drawn animations, music videos, and drawings to accompany. Yet again adding to his arsenal of tricks. "I think it's weird if someone is an artist in one sense, but not the other," he tells us while describing his connection to visual art. For him drawing and making music go "hand-in-hand," although "some might argue against that point." Lyrically and stylistically, John is from another planet. Capable of telling even the most dismal tale with a cartooned sense of hope, it's hard not to conjure comparisons to Michael Hurley and Daniel Johnston.  </p>
+            <div class="col-6 right p2 clear-padding float-image">
+              <img src="images/john-quilt.jpg" class="fit">
+              <a href="http://www.skmstudios.com.au/">
+                <h6>Photo: Alex Marks</h6>
+              </a>
+            </div>
+            <p class="py2"> Having begun to spend more time there, John would leave New Jersey in February 2011 to move permanently to Boston, thus officially marking his entrance as the drummer for Quilt. Wisdom Tooth would be put on hold, but certainly not forgotten. Speaking with John around that time was incredible, as he was about to become a part of one of his favorite bands. Something that would happen again in 2013 when he would take over keys for Woods. This was an exceptional time to watch Quilt perform live, John adding a magic to their sound not previously heard. An unreasonably pleasant and appreciative person to work with, John can't but help be an asset to any project he touches. </p>
+
+            <p class="py2"> What has ensued since then has been a never ending cycle of writing, recording, and touring, both with Woods and Quilt. Between the two, "I'm pretty sure I've played over 200 shows this year alone," he divulges. "This kind of lifestyle was always something I wanted to do since I was a little kid...I always knew that I needed travel and feel like I've worked towards this for a very long time." Speaking of his grueling travel schedule, he also recounts the difficulties involved. "Me being away so much caused my whole living scenario in PA to kind of fall apart," he tell us, lamenting over the comfort only home can provide. However it was in Lancaster, on a third floor studio where he would begin to revisit Wisdom Tooth material left in the stratosphere for many years. </p>
+          </div>
+        </div>
+        <div class="row center image-set">
+          <img src="images/john-lancaster.jpg" class="full-width">
+        </div>
+        <div class="row">
+          <div class="col col-8 col-offset-2 serif">
+            <p class="py2"> While finishing up our conversation, John, now 24, let us know that this will be his first and last vinyl Wisdom Tooth release. Ahead of a full-length being released sometime next year, he’ll be releasing music under John Andrews and the Yawns. Earlier we had discussed the idea of both our taste-buds and music taste changing every seven years. Having known John personally for just about that long, it is with the utmost certainty that I know he will continue to create some of the most lucid and timeless work regardless of stage-name. "23 years old was definitely the weirdest year I've ever been alive," he added. Long live John Andrews. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="issue-wrapper bg-feature-2 feature-2-highlight py6">
+      <div class="container px2">
+        <div class="row pb4 px2">
+          <img src="/images/sc.svg" style="width: 20px; margin-right: 10px" class="left">
+          <h6 class="h6 caps white" style="margin-top: 5px;">FEATURE 2 – WORDS BY John Andrews</h6>
+        </div>
+        <div class="row center good-dog py4 px2">
+          <h1 class="mega">Hand Made</h1>
+        </div>
+      </div>
+      <div class="image-set px6 clear-padding oh">
+        <div class="row white">
+          <div class="col col-10 col-offset-1">
+            <div class="videoWrapper-vimeo">
+              <iframe src="//player.vimeo.com/video/113802162?title=0&amp;byline=0&amp;portrait=0&amp;color=FF9A88" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-8 col-offset-2 bg-highlight white">
+          <div class="p2 m-px2">
+            <h4 class="pb2">Such Lovely Teeth</h4>
+            <h5>"Such Lovely Teeth" was my first animation. I was 18 and had a terrible sleeping schedule so I worked on it during the wee hours of the night. There was originally an actual story written to Such Lovely Teeth and it was supposed to be much longer. I abandoned it and re-discovered it years later. I just sorta added some goofy voices and called it a day. </h5>
+
+           <h5> The Flying Mouth is a mythical creature that was in a few of my songs. I don't really know what it represents or anything. I just drew it one day. At the time i was reading a lot about Walt Disney and all the things he created from his characters. I wanted to do the same. I really wanted to see some of the characters I sang about come to life, and move around in front of my eyes. </h5>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="image-set px6 clear-padding oh">
+      <div class="row white">
+        <div class="col col-8 wisdomtooth-video">
+            <div class="videoWrapper-vimeo">
+              <iframe src="//player.vimeo.com/video/113802161?title=0&amp;byline=0&amp;portrait=0&amp;color=FF9A88" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col col-4 bg-highlight">
+          <div class="p2 m-px2">
+            <h4 class="pb2">Dumb Joe & The Psychic</h4>
+            <h5>I wrote the poem for "Dumb Joe & The Psychic" while in an auto mechanic's waiting room in New Jersey. I was reading this book about being dead called "Life After Life". I borrowed it from my friend Brian and never gave it back. (Oops). Got a little side tracked and the story line just kinda came to me and I wrote the words down on the last page of the book and was like, "thats a funny little story!". So iI started working on an animation for it. I worked on it in my house in Philly, and finished it months later after I moved to Lancaster, PA. Dumb Joe is definitely my alter ego. I can be really dumb sometimes. </h5>
+          </div>
+        </div>
+    </div>
+    </div>
+      <div class="image-set px6 clear-padding oh">
+      <div class="row white">
+        <div class="col col-6 wisdomtooth-video">
+          <div class="videoWrapper-vimeo">
+            <iframe src="//player.vimeo.com/video/113802163?title=0&amp;byline=0&amp;portrait=0&amp;color=FF9A88" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col col-6 bg-highlight">
+          <div class="p2 m-px2">
+            <h4 class="pb2">A Mean Watermelon</h4>
+            <h5> "A Mean Watermelon" I made on a snowy day in 201. It was before I owned a camera or any stop animation programs, so I individually scanned every frame and put it into photoshop. It took forever. I don't recommend ever doing that. I think I just had my heart broken or something and was being cranky. There was originally going to be "A Kind Banana" accompanying the mean watermelon, but I thought it'd be funnier without it. </h5>
+          </div>
+        </div>
+    </div>
+    </div>
+      <div class="image-set px6 clear-padding oh">
+        <div class="row white">
+          <div class="col col-10 col-offset-1">
+            <div class="videoWrapper-vimeo">
+              <iframe width="560" height="315" src="//www.youtube.com/embed/X4GA9axMGUc?rel=0&showinfo=0&autohide=1?modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-8 col-offset-2 bg-highlight white">
+          <div class="p2 m-px2">
+            <h4 class="pb2">Woods - New Light</h4>
+            <h5> Jeremy saw clips of my "Such Lovely Teeth" animation and asked me if I wanted to make a Woods music video. I think he originally wanted a similar, magazine cut out style animation, but I hadn't really done that in years and was really feeling hand drawn stuff. I pitched the idea to just animate some of his illustrations and he was into it. So he sent me old Woodsist flyers and art prints he's done and started drawing. I was living back in New Jersey, and was about to leave on tour with Woods and Quilt for two months, so I had a bit of a time crunch. I would literally work on it until my eyes got dizzy every day. I learned the most from that one.</h5>
+          </div>
+        </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<!-- Feature 3 -->
+
+<div class="feature py6 bg-dark-gray">
+  <div class="container">
+    <div class="row pb4 px2">
+      <img src="/images/sc-dark.svg" style="width: 20px; margin-right: 10px" class="left">
+      <h6 class="h6 caps" style="margin-top: 5px;">FEATURE 3 – WORDS BY John Andrews</h6>
+    </div>
+    <div class="row good-dog highlight pb2 center">
+      <h1>Rest in peace Wisdom Tooth.</h1>
+    </div>
+    <div class="row good-dog center">
+      <h1>If I could I would piss on your grave, but in a nice way. If you think about it, all I drink is coffee in the morning, coca cola during the day, and beer at night. It would be a nice combo of all the best liquids. Someday I'll bring my Oujia board and you can tell me about all the cool shows you played in heaven. I don't really believe in death though, so you'll have to really sell it to me and prove that you’re "dead".  Biff Rose once said "To be reincarnated is to be born again as a flower". He also said "I'll go to your funeral if you go to mine".</h1>
+    </div>
+  </div>
+</div>
+
+    <!--Footer-->
+    <div class="container px2 gray issue-footer link-mid-gray">
+      <div class="row py4">
+        <div class="col col-4 mobile-center py2">
+  <h4 class="h4 pb2">
+    Mail Club
+  </h4>
+  <p>Join our newsletter for new tunes, mix tapes, and features every month.</p>
+  <form action="//singlesclub.us6.list-manage.com/subscribe/post?u=27badb2e91&amp;id=1781494ce0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate py2" target="_blank" novalidate>
+    <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="email address" class="field-light full-width mb1 email" style="height: 50px; padding-left: 15px; padding-right: 15px;" required>
+    <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button button-small button-highlight">
+  </form>
+</div>
+
+        <div class="col col-3 col-offset-2 py2">
+            <h4 class="pb2"> Additional Credits </h4>
+            <h5 class="caps pb1">
+              Art Direction, Design
+              & Photography
+            </h5>
+            <h6>
+              <a href="www.chrismuccioli.com">Chris Muccioli</a><br>
+            </h6>
+          <div class="py2">
+            <h5 class="caps pb1">
+              Editor
+            </h5>
+            <h6>
+              <a href="www.chrismuccioli.com">Jeffrey Silverstein</a><br>
+            </h6>
+          </div>
+          <div class="py2">
+            <h5 class="caps pb1">
+              Writers
+            </h5>
+            <h6>
+              <a href="www.chrismuccioli.com">Mike Sheffield</a><br>
+              <a href="www.chrismuccioli.com">Jeffrey Silverstein</a><br>
+            </h6>
+          </div>
+        </div>
+        <div class="col col-3 py2">
+            <h4 class="pb2"> Pressing Info </h4>
+            <h5 class="pb1 caps">
+              Side A: Further
+            </h5>
+            <h5>
+              Written by Woodsman<br>
+              Produced by Daniel Schlett & Woodsman<br>
+              Recorded at Strange Weather by Daniel Schlett<br>
+            </h5>
+        </div>
+
+        <div class="col col-3">
+          <div class="py2">
+            <h6 class="pb1 caps">
+              Side B: Woodsman
+            </h6>
+            <h5>
+              Recorded & mixed by Chris Muccioli in Brooklyn, NY.
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="bg-white support">
+    <div class="container px2 gray py4">
+      <div class="row pb4 px2">
+        <img src="/images/sc.svg" style="width: 20px; margin-right: 10px" class="left">
+        <h6 class="h6 caps white" style="margin-top: 5px;">SUPPORT SINGLES CLUB</h6>
+      </div>
+      <div class="row dark-gray px2">
+        <div class="col col-8">
+          <div class="row">
+            <h2 class="h2 dark-gray">
+            Like what you see & hear?
+            </h2>
+            <h2 class="h2 dark-gray pb3">
+              This is just the half of it.
+            </h2>
+          </div>
+          <div class="row">
+            <h4 class="h4"> We tell stories through both digital journals and physical records. Subscribe to the club and own the A-Side track featured above PLUS the B-Side featuring an interview with Bob Keal from Small Sur.
+            </h4>
+            <h4 class="h4">
+            You'll also receive Issue #1 featuring Daniel Bachman and get the remaining two issues mailed to you upon release. All for $65 including shipping.
+            </h4>
+          </div>
+          <div class="row pt4">
+              <h5 class="h5 caps pb2">Subscriptions Include</h5>
+              <p> All four releases from 2014, custom 45 box, Singles Club Pin, 45 adapter, digital download of each single. </p>
+              <a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription">
+                <div class="button button-highlight mt2 white">
+                  Learn more & Subscribe
+                </div>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="bg-light-gray">
+  <div class="container py4 px2 gray">
+    <div class="row px2">
+      <div class="latest py3">
+        <h5 class="h5 caps pb3">LATEST FROM THE BLOG</h5>
+        <div class="oh rss-feed">
+          <div class="center" id="divRss">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="bg-black site-footer">
+  <div class="container px2">
+    <div class="row py4">
+      <div class="col col-4 mobile-center">
+        <svg version="1.1" class="fit" style="width: 120px;" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 206.5 94.8" enable-background="new 0 0 206.5 94.8" xml:space="preserve">
+                <path fill="#FFFFFF" d="M96.1,93.5c0,0.3-0.3,0.5-0.8,0.5H77.8c-0.4,0-0.8-0.2-0.8-0.5c0-0.3,0.4-0.5,0.7-0.5c3.1-0.2,3.5-1,3.5-6.6
+                V62.7c0-3.5-0.2-4.7-1.1-5.9c-0.7-1-1.6-1.4-3.1-1.6c-0.4,0-0.7-0.2-0.8-0.5c0-0.3,0.3-0.6,0.7-0.6c4.7-1,10.7-2.6,14.2-3.7
+                c0.4-0.1,0.8,0.1,0.8,0.6v35.5c0,5.6,0.4,6.4,3.5,6.6C95.8,93,96.1,93.2,96.1,93.5z M154.6,64c-2.8,0-5.5,1-8.1,3.1
+                c0,0-0.1,0-0.1,0.1c0,0,0,0,0-0.1V50.9c0-0.4-0.4-0.7-0.8-0.6c-3.2,1.1-9.4,2.7-14.2,3.7c-0.4,0.1-0.7,0.4-0.6,0.7
+                c0.1,0.3,0.5,0.5,0.8,0.5c1.5,0.1,2.3,0.6,3.1,1.6c0.9,1.1,1.1,2.4,1.1,5.9V94c0,0.4,0.2,0.8,0.5,0.8c0.3,0,0.5-0.4,0.6-0.7
+                c0.4-1.2,1.1-1.7,2.2-1.7c0.5,0,0.7,0,1.7,0.4c5.1,1.7,6.2,2,9,2c9.3,0,16.3-7.3,16.3-17C166.1,69.8,161.3,64,154.6,64z M149.7,93.1
+                c-2.3,0-3.3-1.7-3.3-6V70c0-0.3,0.2-0.6,0.3-0.8c1.1-1.1,1.9-1.7,2.9-1.7c3.7,0,5.2,3.6,5.2,12.4C154.9,88.9,153.2,93.1,149.7,93.1z
+                M131.7,89.6c-2.7-0.5-3.4-1.8-3.4-6.3V64.7c0-0.4-0.3-0.7-0.8-0.7c-4.1,0.7-10.4,1.4-13.5,1.5c-0.4,0-0.7,0.2-0.7,0.5
+                c0,0.3,0.3,0.5,0.7,0.5c3,0.3,3.7,1.5,3.7,6.6v14.5c0,0.3-0.2,0.6-0.3,0.8c-1.3,1.2-2.4,1.8-3.6,1.8c-1.1,0-2.2-0.5-2.7-1.3
+                c-0.4-0.8-0.6-1.8-0.6-3.8V64.7c0-0.4-0.3-0.7-0.8-0.7c-4.1,0.7-10.4,1.4-13.5,1.5c-0.4,0-0.7,0.2-0.7,0.5c0,0.3,0.3,0.5,0.7,0.5
+                c3,0.3,3.7,1.5,3.7,6.6v12.9c0,3.2,0.3,4.8,1.3,6.1c1.2,1.5,3.5,2.6,5.8,2.6c2.4,0,5-0.8,7.3-2.3c0.9-0.6,1.7-1.2,3.4-2.8
+                c0,0,0,0,0.1,0c0,0,0,0,0,0.1V94c0,0.4,0.4,0.7,0.8,0.6l6.7-2.1c2.2-0.7,4.1-1.2,6.5-1.7c0.4-0.1,0.7-0.3,0.7-0.6
+                C132.4,89.9,132,89.7,131.7,89.6z M194.5,25.6c0.6,0,1.2,0.1,1.9,0.3c3.4,1,6.3,5.5,7.2,11.2c0,0.3,0.2,0.7,0.5,0.8
+                c0.3,0.1,0.6-0.2,0.6-0.6l1.8-8.2c0.1-0.4-0.1-0.8-0.4-1c-3.4-2-6.1-3.3-9-4.1c-1.6-0.4-3.1-0.7-4.6-0.7c-5.1,0-9,2.5-10.2,6.6
+                c-1.2,4.1,1,7.7,7.4,12.3l2.4,1.8c3.4,2.4,4.4,4,3.7,6.4c-0.4,1.4-1.3,2.1-2.9,2.1c-0.6,0-1.4-0.1-2.2-0.3c-4.7-1.3-8-6.9-9.3-15.4
+                c0-0.3-0.2-0.7-0.5-0.8c-0.3-0.1-0.6,0.2-0.7,0.6L178,46.6c-0.1,0.4,0.1,0.9,0.4,1.1c4.2,3,8.4,5.4,11.1,6.1
+                c1.6,0.4,3.1,0.7,4.6,0.7c5.4,0,9.5-2.8,10.8-7.4c1.1-4-0.8-7.4-6.2-11l-3.4-2.3c-3.1-2.1-4.3-4.2-3.7-6.3
+                C192.1,25.9,193.4,25.6,194.5,25.6z M175.5,24.1c-2-3.9-5.8-6.6-10.5-7.5c-1-0.2-2-0.3-2.9-0.3c-7.6,0-14.2,5.5-15.5,13
+                c-0.7,4,0.2,8.1,2.5,11.3c2.3,3.2,5.9,5.4,10.1,6.2c0.9,0.2,1.9,0.3,2.8,0.3c3.4,0,6.6-1.1,9.1-3.3c1.9-1.7,3.1-3.1,4.7-5.8
+                c0.6-1-0.3-1.8-1.2-0.9c-2.2,2.1-4.1,3.4-6.7,3.4c-0.7,0-1.5-0.1-2.3-0.2c-5.7-1-8.2-4.5-7.6-10.5c0-0.2,0.2-0.3,0.4-0.3l17.8,3.2
+                c0.1,0,0.1,0,0.1,0c0.4,0,0.6-0.2,0.7-0.6l0-0.5C177,28.4,176.7,26.4,175.5,24.1z M166.6,28.4c0,0.2-0.2,0.3-0.4,0.3l-7.7-1.4
+                c-0.1,0-0.2-0.1-0.2-0.1c-0.1-0.1-0.1-0.2-0.1-0.3c1.1-5.7,2.8-8.3,5.3-8.3c0.2,0,0.5,0,0.7,0.1c1.9,0.3,3.1,0.7,3.1,3.4
+                C167.3,23.6,167.1,25.3,166.6,28.4z M36.3,34.4c-1.5-4.9-5.4-7.3-12.5-7.8l-5.7-0.4c-3.3-0.2-6.3-0.8-7.8-1.4
+                c-1.4-0.5-2.6-1.8-3.1-3.4c-0.9-2.8,0.5-4.8,4.1-5.9c1-0.3,2.1-0.5,3.2-0.5c4.7,0,9.5,3,13.5,8.4c0.2,0.3,0.6,0.5,0.8,0.4
+                c0.1,0,0.2-0.1,0.2-0.2c0.1-0.2,0.1-0.4,0-0.7l-4.5-12.5c-0.1-0.4-0.5-0.6-0.7-0.6c-0.3,0.1-0.4,0.6-0.4,0.8c0,0.5-0.2,0.7-0.8,0.9
+                c-0.4,0.1-1.2,0.3-2.6,0.4c-4.6,0.3-6.5,0.6-8.8,1.3C3,15.9-1.6,23.1,0.5,30.1c1.4,4.5,5.4,6.7,13.3,7.3l6.1,0.4
+                c6.1,0.4,9,1.9,10,4.9c0.9,3.1-0.5,5.1-4.4,6.3c-1.4,0.4-3,0.9-4.7,0.9c-2.2,0-4.3-0.7-6.7-2.2c-4.1-2.5-7.5-5.6-9.9-9.1
+                c-0.2-0.3-0.5-0.5-0.8-0.5c-0.1,0-0.2,0.1-0.2,0.2c-0.1,0.2-0.1,0.4,0,0.7l5.4,15.8c0.1,0.3,0.4,0.6,0.6,0.6c0,0,0.1,0,0.1,0
+                c0.2-0.1,0.4-0.3,0.4-0.8c0.1-0.6,0.4-0.9,1.3-1.2c0.5-0.2,1.1-0.2,2.8-0.4c5-0.4,9.5-1.2,12.4-2.1C34.1,48.7,38.5,41.5,36.3,34.4z
+                M75.5,17.4c1-0.1,2,0.4,2.4,1.2c0.6,0.9,0.7,2,1,6.5L79.6,36c0.2,3,0.1,3.5-0.1,4.2c-0.2,0.7-0.7,1.1-1.5,1.3
+                c-0.4,0.1-0.7,0.3-0.7,0.6c0,0.3,0.3,0.5,0.7,0.5l0.1,0c4.7-0.3,9.4-0.4,14-0.5l0.3,0c0.3,0,0.6,0,0.9,0c0.2,0,0.4-0.1,0.5-0.2
+                c0.1-0.1,0.2-0.3,0.2-0.5c0-0.4-0.3-0.7-0.8-0.7c-2.5-0.2-2.8-0.8-3-5.2l-0.9-14.9c-0.2-3.2-0.7-4.8-1.7-6c-1.2-1.5-3.5-2.3-6.2-2.1
+                c-3.7,0.2-6.4,1.8-9.9,5.8c0,0,0,0,0,0c0,0,0,0,0,0l-0.3-4.4c0-0.4-0.4-0.7-0.8-0.5c-5.4,2.2-9.4,3.7-13.9,5
+                c-0.4,0.1-0.7,0.4-0.6,0.7c0.1,0.3,0.5,0.4,0.8,0.4c1.5,0.1,2.4,0.5,3.1,1.4c0.9,1.1,1.3,2.4,1.5,5.9l0.6,9.5c0.3,5.8-0.1,6.5-4,6.9
+                c-0.5,0-0.9,0-1.2,0c-2.5,0-3-0.8-3.5-5.9l-2.3-21.6c0-0.4-0.5-0.7-0.8-0.5c-3.3,1.6-9,4-13.7,5.6c-0.3,0.1-0.7,0.4-0.6,0.7
+                c0.1,0.3,0.5,0.4,0.8,0.4c1.5,0,2.4,0.3,3.2,1.2c1,1.1,1.4,2.4,1.7,5.8l1,9.4c0.6,5.5,0.3,7.2-2.8,7.9c-0.4,0.1-0.7,0.3-0.7,0.6
+                c0,0.2,0.3,0.4,0.6,0.4l0,0c0.1,0,0.1,0,0.2,0c2.5-0.5,16-2.9,34.9-4.1c0.3,0,0.5-0.1,0.6-0.3c0.1-0.1,0.1-0.2,0.1-0.3
+                c0-0.3-0.4-0.5-0.7-0.5c-1.7-0.2-2.1-1-2.3-5.3l-1-15.9c0-0.2,0.1-0.6,0.3-0.8C73.2,18.4,74.4,17.5,75.5,17.4z M129.3,3.6
+                c1.5,0.3,2.3,0.8,3,1.9c0.8,1.2,0.9,2.5,0.6,6l-2.7,28.9c0,0.3,0,0.9,0.1,1.2c0,0.2,0.1,0.3,0.1,0.5c0.1,0.4,0.4,0.7,0.8,0.8
+                l12.8,1.2c0,0,0.1,0,0.1,0c0.4,0,0.7-0.2,0.7-0.4c0-0.3-0.3-0.5-0.7-0.6c-3-0.5-3.4-1.3-2.8-6.9l3.3-35.4c0-0.2,0-0.4-0.1-0.5
+                C144.2,0,144,0,143.8,0c-3.5,0.8-9.6,1.8-14.4,2.4c-0.4,0.1-0.7,0.3-0.7,0.6C128.6,3.3,129,3.5,129.3,3.6z M117.1,34.6
+                c-1,0-2.6,0-3.9,0c-1.6,0.1-3,0.1-3.9,0.1c-4.8-0.1-6.5-1.1-6.5-3.6c0-0.7,0.3-1.2,1-1.9c0.2-0.1,0.5-0.2,0.7-0.1
+                c2.2,0.8,4,1.1,6.2,1.2l0.1,0c0.1,0,0.2,0,0.4,0c7.2,0,13-4.3,13.1-9.7c0.1-2.5-1.2-4.9-3.5-6.6c-2.4-1.7-5.4-2.9-7.8-3l-0.7,0
+                c0,0-0.1,0-0.3,0c0,0-0.1,0-0.1,0l0-0.2c0.1-3,0.9-3.5,1.8-3.5c0.6,0,1,0.3,2.1,1.5c1.2,1.3,2.2,1.8,3.6,1.9c2.4,0,4.3-2,4.3-4.6
+                c0.1-2.8-2.2-5-5.3-5.1c-0.1,0-0.1,0-0.2,0c-4.3,0-7.2,3.6-7.3,9.2l0,0.5c0,0.2-0.2,0.3-0.4,0.4c-3,0.1-4.9,0.6-7,1.7
+                c-3.7,1.9-5.9,4.8-6,7.9c-0.1,3.5,1.7,6.1,5,7.7c0.1,0,0.1,0.1,0.1,0.1c0,0,0,0-0.1,0.1c-4.4,2.7-6.4,5.6-6.5,9.1
+                c-0.1,3.3,1.9,5.7,5.7,7c-3.7,1.5-5.7,3.6-5.7,6.1c-0.1,4.2,4.9,6.9,12.9,7.1c0.2,0,0.5,0,0.7,0c10,0,17.7-5.6,17.9-13
+                C127.8,39.1,123.4,34.8,117.1,34.6z M106.8,19.9c0.1-5.9,1.8-7.1,4.1-7.1c1.1,0,2,0.4,2.7,1.1c1.2,1.2,1.7,3.7,1.6,7.5
+                c-0.1,6-1.6,7.2-4.1,7.2c-1.2,0-2.1-0.4-2.7-1.1C107.2,26.3,106.7,23.8,106.8,19.9z M112.7,55.8c-0.1,0-0.3,0-0.4,0
+                c-6.2-0.2-10.1-3-10-7.2c0-1.5,0.4-2.4,1.3-3.2c0.1-0.1,0.4-0.2,0.6-0.2c0.1,0,0.1,0,0.2,0c1.6,0.3,2.6,0.4,4,0.4c0.6,0,1.4,0,2.3,0
+                l0.9,0c1.7,0,2.6-0.1,3.1-0.1c4.1,0.1,6.3,1.8,6.2,4.8C120.9,53.7,117.7,55.8,112.7,55.8z M44,13.7c0.2,0,0.5,0,0.7,0
+                c1.7-0.2,3.2-1,4.2-2.3c1.1-1.3,1.6-2.9,1.4-4.6C50,3.4,47.3,1,44,1c-0.2,0-0.5,0-0.7,0c-3.5,0.4-6,3.5-5.6,7
+                C38,11.3,40.8,13.7,44,13.7z M73.2,77.7c-0.3,0-0.5,0.3-0.6,0.7c-1,3.7-2.2,6.4-4.1,9.2c-2.9,4.5-5.6,5.1-8.1,5.1
+                c-2.1,0-4.8-0.3-6.4-2.6c-2.3-3.5-3.3-8.2-3.3-15.2c0-12.3,2.7-18.3,8.2-18.3c2.9,0,5.4,0.6,8,3.8c2.3,2.9,3.9,5.8,5.2,9.6
+                c0.1,0.3,0.4,0.7,0.6,0.7c0.1,0,0.2,0,0.3-0.1c0.1-0.1,0.2-0.4,0.2-0.6l-0.9-14.3c0-0.4-0.2-0.7-0.5-0.7c-0.2,0-0.5,0.2-0.7,0.6
+                c-0.2,0.4-0.5,0.5-1,0.5c-0.7,0-1.4-0.1-3.1-0.5c-2.8-0.7-5.7-1-7.8-1c-11.8,0-21,8.8-21,20.1c0,11.4,9.6,20.4,21.8,20.4
+                c1.6,0,4.3-0.2,5.5-0.5c3.9-0.8,5.1-1,5.7-1c0.5,0,0.8,0.2,0.9,0.6c0.2,0.5,0.4,0.7,0.6,0.7c0.3,0,0.5-0.3,0.5-0.8l0.5-15.4
+                c0-0.3-0.1-0.5-0.2-0.6C73.4,77.7,73.3,77.7,73.2,77.7z"/>
+        </svg>
+      </div>
+      <div class="col col-8 right-align">
+        <div class="row pb1">
+          <ul>
+            <li><a href="#">Issues</a></li>
+            <li><a href="#">Subscribe</a></li>
+            <li><a href="#">The Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Mixtapes</a></li>
+            <li><a href="#">Image Grid</a></li>
+            <li><a href="#">Stockists</a></li>
+          </ul>
+        </div>
+         <div class="row pb1">
+            <ul>
+              <li><a href="#">Change Of Address</a></li>
+              <li><a href="#">Partnerships</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-dark-gray center py2">
+  <div class="container px2 social-footer py2">
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Soundcloud</a></li>
+          <li><a href="#">Youtube</a></li>
+          <li><a href="#">Vimeo</a></li>
+        </ul>
+        <h5 class="h5 gray pt1"> P.O. Box 550 Brooklyn NY 11211 © 2014 Singles Club LLC - All Rights Reserved</h5>
+  </div>
+</div>}
+
+
+</body>
