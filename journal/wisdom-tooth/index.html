@@ -10,7 +10,7 @@ artist-name: "Wisdom Tooth"
 track-name: "Silver"
 volume-number: "1"
 issue-number: "4"
-quarter: "Winter"
+quarter: "Fall"
 purchase-url: ""
 year: "2014"
 release-number: "004"
@@ -20,31 +20,7 @@ release-number: "004"
 
 <body ng-app="plangular">
 
-  <div class="first-visit mobile-hide">
-    <div class="table fill">
-      <div class="table-cell">
-        <div class="bg-white center absolute-center py2"  style="max-width: 425px; max-height: 900px;">
-          <div class="modal-close absolute">
-            <a href="#">
-              <h6>Close</h6>
-            </a>
-          </div>
-          <div class="modal-copy center">
-            <div class="absolute-center center p2">
-              <img src="/../images/logo-hinted-black.svg" style="width: 150px;">
-            </div>
-            <h4 class="serif-strong dark-gray py2 italic px4">A subscription record club and music journal published quarterly delivering exclusive 7" records from incredible artists straight to your door and desktop. </h4>
-            <p class="px4 dark-gray">Want to know more about how it all works? Enter your email below and we'll be in touch.</p>
-          </div>
-          <form action="//singlesclub.us6.list-manage.com/subscribe/post?u=27badb2e91&amp;id=1781494ce0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="py2 validate" target="_blank" novalidate>
-            <input type="email" value="" name="EMAIL" class="email mb1 center" id="mce-EMAIL" placeholder="email address" style="height: 50px; padding-left: 15px; padding-right: 15px; width: 80%;" required>
-            <input type="submit" value="Lemme Know" name="subscribe" id="mc-embedded-subscribe" class="button-highlight button-small button submit-button" style="width: 65%;">
-          </form>
-          <h6 class="gray px4 pv2 gray">Oh, and while you're here, use code <span class="highlight">'firsttimer'</span> for <span class="highlight">15%</span> off your first order with us.</h6>
-        </div>
-      </div>
-    </div>
-  </div>
+{% include _first-visit-modal.html %}
 
   <div plangular="{{ page.soundcloud-url }}">
     <!--HEADER-->
@@ -55,7 +31,7 @@ release-number: "004"
     </div>
       {% include _player-nav.html %}
     </div>
-    <div class="feature py6">
+    <div class="feature feature-wrapper py6">
       <div id="feature1" class="container px2 pt6">
         <!--FEATURE 1-->
         <div class="row pb4 px2">
