@@ -27,6 +27,9 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
 
+.sans-serif h1, .sans-serif h2, .sans-serif h3 {
+  letter-spacing: -0.03em; }
+
 h6 {
   font-weight: 700; }
 
@@ -43,22 +46,22 @@ h2 {
 
 h3 {
   font-size: 1.777em;
-  line-height: 1.2em; }
+  line-height: 1.45em; }
 
 h4 {
   font-size: 1.333em;
-  line-height: 1.4em; }
+  line-height: 1.45em; }
 
 h5 {
   font-size: 1em;
-  line-height: 1.4em; }
+  line-height: 1.45em; }
 
 h6 {
   font-size: 0.75em;
-  line-height: 1.4em; }
+  line-height: 1.45em; }
 
 p {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.3em; }
 
 .feature p {
@@ -71,7 +74,7 @@ p {
 
 @media screen and (min-width: 769px) {
   p {
-    font-size: 1em;
+    font-size: 1.2em;
     line-height: 1.3em;
     letter-spacing: .04em; }
 
@@ -712,27 +715,27 @@ button:focus {
   background-position: center top;
   height: 100%; }
 
-.feature-meta h5 {
-  line-height: 1em !important; }
-
 .good-dog h1 {
   font-family: 'Merienda One', cursive;
   font-weight: 400;
   line-height: 1.6em; }
+
+.oswald h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  line-height: 1.6em;
+  letter-spacing: .05em; }
 
 @media screen and (max-width: 768px) {
   .Woodsman {
     background-image: url(../journal/woodsman/images/woodsman-header-mobile.jpg); } }
 @media screen and (min-width: 769px) {
   .support {
-    background-image: url(../images/support-bg.jpg);
-    background-position: right top;
-    background-repeat: no-repeat; } }
-@media screen and (min-width: 769px) {
-  .support {
-    background-image: url(../images/support-bg.jpg);
-    background-position: right top;
-    background-repeat: no-repeat; }
+    background-image: url(../images/subscription.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    height: 100%; }
 
   .wisdomtooth-video {
     padding-right: 0 !important; } }
@@ -857,14 +860,54 @@ progress::-moz-progress-bar {
   padding-bottom: 200px; }
 
 .issue-woodsman {
-  background: url(../journal/woodsman/images/woodsman-header.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../journal/woodsman/images/woodsman-header.jpg);
   background-repeat: no-repeat;
-  transition: background 0.5s ease;
   background-size: cover;
   background-position: center bottom;
   height: 100%; }
   .issue-woodsman:hover {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url(../journal/woodsman/images/woodsman-header.jpg);
+    background: linear-gradient(transparent, transparent), url(../journal/woodsman/images/woodsman-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%; }
+
+.issue-daniel-bachman {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../journal/daniel-bachman/images/daniel-bachman-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%; }
+  .issue-daniel-bachman:hover {
+    background: linear-gradient(transparent, transparent), url(../journal/daniel-bachman/images/daniel-bachman-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%; }
+
+.issue-small-sur {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../journal/small-sur/images/hero-smallsur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%; }
+  .issue-small-sur:hover {
+    background: linear-gradient(transparent, transparent), url(../journal/small-sur/images/hero-smallsur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%; }
+
+.issue-wisdom-tooth {
+  transition: background 0.5s ease;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../journal/wisdom-tooth/images/wisdom-tooth-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%; }
+  .issue-wisdom-tooth:hover {
+    transition: background 0.5s ease;
+    background: linear-gradient(transparent, transparent), url(../journal/wisdom-tooth/images/wisdom-tooth-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -1816,6 +1859,11 @@ body {
   color: #c7c7c7; }
   .link-gray a:hover {
     color: #e2e2e2 !important; }
+
+.link-white a {
+  color: #ffffff !important; }
+  .link-white a:hover {
+    color: #111111 !important; }
 
 .link-light-gray a {
   color: #f0f0f0; }

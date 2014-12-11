@@ -16,180 +16,9 @@
   <meta property="og:title" content="Issue 3 – Woodsman">
   <meta property="og:description" content="Singles Club Issue 3: Woodsman">
   <meta property="fb:app_id" content="1450710301810527">
-  <!-- jQuery library (served from Google) -->
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!-- Angular JS + Plangular -->
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
-  <script src="/../js/ng-plangular.min.js"></script>
-  <script type="text/javascript" src="/js/FeedEk.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
-  <script src="//use.typekit.net/nbx4wrv.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-  <style>
-  <!-- the .wf-loading class is used to control FOUT (flash of unstyled text) -->
-  html { transition: opacity .2s ease; }
-  .wf-loading { opacity: 0; }
-</style>
-<script type="text/javascript">
-  var html = document.getElementsByTagName('html')[0];
-  html.className += '  wf-loading';
-  setTimeout(function() {
-    html.className = html.className.replace(' wf-loading', '');
-  }, 5000);
-  WebFontConfig = { fontdeck: { id: '39874' } };
-  (function() {
-    var wf = document.createElement('script');
-    wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-    wf.type = 'text/javascript';
-    wf.async = 'true';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(wf, s);
-  })();
-</script>
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('#issue-sub').hide().before('');
-    $('a#toggle-nav').click(function (e) {
-        e.preventDefault();
-        $('#issue-sub').slideToggle(200);
-    });
-    $(document).click(function (e) {
-        if ($(e.target).closest('#issue-sub').length > 0 || $(e.target).closest('#toggle-nav').length > 0) return;
-        $('#issue-sub').slideUp(200);
-    });
-  });
-</script>
-<script type="text/javascript">
-$(document).ready(function () {
-$(".modal-close a").click(function(e) {
-    e.preventDefault();
-    $(".first-visit").hide();
-});
-});
-</script>
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('#purchase').hide().before('');
-    $('a#toggle-purchase').click(function (e) {
-        e.preventDefault();
-        $('#purchase').slideToggle(200);
-    });
-    $(document).click(function (e) {
-        if ($(e.target).closest('#purchase').length > 0 || $(e.target).closest('#toggle-purchase').length > 0) return;
-        $('#purchase').slideUp(200);
-    });
-  });
-</script>
-<script type="text/javascript">
-  $(document).ready(function () {
-    $('#mobile-top-nav').hide().before('');
-    $('a#toggle-top-nav').click(function (e) {
-        e.preventDefault();
-        $('#mobile-top-nav').slideToggle(200);
-    });
-    $(document).click(function (e) {
-        if ($(e.target).closest('#mobile-top-nav').length > 0 || $(e.target).closest('#toggle-top-nav').length > 0) return;
-        $('#mobile-top-nav').slideUp(200);
-    });
-  });
-</script>
-<script type="text/javascript">
-  var $menu = $('#issue-nav'), // replace #menu with your selector
-      menuOffsetTop = $menu[0].offsetTop;
-
-  $(document).bind('ready scroll', function () {
-      var docScroll = $(this).scrollTop();
-
-      if (docScroll >= menuOffsetTop) {
-          $menu.addClass('fixed');
-      } else {
-          $menu.removeClass('fixed');
-      }
-  });
-</script>
-  <!--Smooth Anchor Scroll-->
-  <script>
-  $(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top
-          }, 1000);
-          return false;
-        }
-      }
-    });
-  });
-  </script>
-  <script>
-  $(document).ready(function() {
-
-  $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the
-      //nav bar to stick.
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 900) {
-      $('#issue-nav').addClass('issue-nav-fixed slidedown');
-      $('#issue-nav').removeClass('hidden-nav slideup');
-    }
-    if ($(window).scrollTop() < 901) {
-      $('#issue-nav').removeClass('issue-nav-fixed slidedown');
-      $('#issue-nav').addClass('hidden-nav slideup');
-    }
-  });
-});
-  </script>
-  <script>
-  $(document).ready(function() {
-
-  $(window).scroll(function () {
-      //if you hard code, then use console
-      //.log to determine when you want the
-      //nav bar to stick.
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 910) {
-      $('#issue-nav').removeClass('slideup');
-    }
-    if ($(window).scrollTop() < 911) {
-      $('#issue-nav').addClass('slideup');
-    }
-  });
-});
-  </script>
-  <script type="text/javascript">
-$(document).ready(function () {
-$('#divRss').FeedEk({
-    FeedUrl : 'http://www.singlesclub.fm/blog/feed/',
-    MaxCount : 3,
-    ShowDesc : true,
-    ShowPubDate: false,
-    DescCharacterLimit:0,
-    TitleLinkTarget:'_blank'
-  });
- });
-</script>
-  <!--Google Tracking-->
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-43089298-1', 'auto');
-  ga('send', 'pageview');
-
-  </script>
-  <!--Twitter-->
-  <script type="text/javascript">
-  window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
-  </script>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <style>
   .border-highlight { border-color: #6600FF; }
   .bg-highlight { background-color: #6600FF; }
@@ -262,14 +91,14 @@ $('#divRss').FeedEk({
   </div>
 </div>
 
-      <div id="mobile-top-nav" class="bg-gray py3 center">
-  <ul class="list-reset white">
-    <li><a href="#">About</a></li>
-    <li><a href="#">Issues</a></li>
-    <li><a href="#">Subscribe</a></li>
-    <li><a href="#">Blog</a></li>
-    <li><a href="#">Mixtape</a></li>
-    <li><a href="#">The Shop</a></li>
+      <div id="mobile-top-nav" class="bg-highlight py3 center">
+  <ul class="list-reset white" style="line-height: 30px; letter-spacing: .1em; text-transform: uppercase;" class="link-white">
+<!--     <li class="link-white"><a href="#">About</a></li> -->
+    <li class="link-white"><a href="#">Issues</a></li>
+    <li class="link-white"><a href="http://singles-club.myshopify.com/products/singles-club-2014-subscription">Subscribe</a></li>
+    <li class="link-white"><a href="http://www.singlesclub.fm/blog">Blog</a></li>
+<!--     <li class="link-white"><a href="#">Mixtape</a></li> -->
+    <li class="link-white"><a href="http://shop.singlesclub.fm">The Shop</a></li>
   </ul>
 </div>
 <div class="main-nav border-highlight px2">
@@ -277,7 +106,7 @@ $('#divRss').FeedEk({
     <div class="table">
       <div class="table-cell">
         <div class="mobile-center">
-          <a href="http://www.tumblr.com" class="mobile-hide no-hover">
+          <a href="http://www.singlesclub.fm" class="mobile-hide no-hover">
             <img src="/images/logo-straight.svg" class="" style="width: 200px; padding-top: 25px; padding-bottom: 20px; padding-left: 20px;">
           </a>
           <a href="#" id="toggle-top-nav" class="desktop-hide no-hover">
@@ -287,12 +116,12 @@ $('#divRss').FeedEk({
       </div>
       <div class="table-cell mobile-hide">
         <div class="right-align top-nav-links">
-          <a href="#">About</a>
-          <a href="#">Issues</a>
-          <a href="#">Subscribe</a>
-          <a href="#">Blog</a>
-          <a href="#">Mixtapes</a>
-          <a href="#">The Shop</a>
+<!--           <a href="#">About</a> -->
+          <a href="/issues">Issues</a>
+          <a href="http://singles-club.myshopify.com/products/singles-club-2014-subscription">Subscribe</a>
+          <a href="http://www.singlesclub.fm/blog">Blog</a>
+<!--           <a href="#">Mixtapes</a> -->
+          <a href="http://shop.singlesclub.fm">The Shop</a>
         </div>
       </div>
     </div>
@@ -301,29 +130,31 @@ $('#divRss').FeedEk({
 
       <div class="container white px2">
   <div class="row issue-title-wrapper">
-    <div class="col col-4 mobile-center">
+    <div class="col col-6 mobile-center">
           <div class="row py2 px2">
             <img src="/images/sc.svg" style="width: 20px; margin-right: 10px" class="left mobile-hide">
             <h6 class="caps" style="margin-top: 5px;">Vol 1 | Issue #3 | Summer 2014</h6>
           </div>
           <div class="row">
-            <h1 class="mega headline-type">Woodsman</h1>
-            <div class="rule">
+            <div class="col col-12">
+              <h1 class="mega headline-type">Woodsman</h1>
             </div>
           </div>
           <div class="row py2">
             <div class="col col-12">
-              <h5>Audio is recommended for this feature. Just hit listen & begin.</h5>
+              <h5>Audio is recommended for this feature. <br> Just hit listen & begin.</h5>
               <img src="/images/stereo.svg" viewBox="0 0 125 25" alt="Stereo" class="pt1">
               <h5 style="margin-left: 3px; padding-top: 5px;">SC003</h5>
             </div>
           </div>
           <div class="row py3">
-            <a href="#feature1">
-              <div ng-click="playPause()" class="button button-highlight py6 white">
-                Listen & Begin
-              </div>
-            </a>
+            <div class="col col-12">
+              <a href="#feature1">
+                <div ng-click="playPause()" class="button button-highlight py6 white">
+                  Listen & Begin
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -332,16 +163,14 @@ $('#divRss').FeedEk({
     </div>
       <div id="issue-nav" class="hidden-nav">
     <!--Sub Nav-->
-  <div id="issue-sub" class="bg-highlight py3">
+  <div id="issue-sub" class="bg-highlight py3" style="line-height: 32px; letter-spacing: .1em;">
     <div class="table table-fixed white">
-      <div class="table-cell center">
-        <h4>Issue 1: Daniel Bachman</h4>
-      </div>
-      <div class="table-cell center">
-        <h4>Issue 2: Small Sur</h4>
-      </div>
-      <div class="table-cell center">
-        <h4>Issue 3: Woodsman</h4>
+      <div class="table-cell center left-align link-white">
+<!--         <a href="#" style="margin-left: 20px; margin-right: 20px;">ABOUT</a> -->
+        <a href="/issues" style="margin-left: 20px; margin-right: 20px;">ISSUES</a>
+        <a href="http://singles-club.myshopify.com/products/singles-club-2014-subscription" style="margin-left: 20px; margin-right: 20px;">SUBSCRIBE</a>
+        <a href="http://www.singlesclub.fm/blog" style="margin-left: 20px; margin-right: 20px;">BLOG</a>
+        <a href="http://shop.singlesclub.fm" style="margin-left: 20px; margin-right: 20px;">THE SHOP</a>
       </div>
     </div>
   </div>
@@ -367,7 +196,7 @@ $('#divRss').FeedEk({
         </div>
       <div class="issue-nav-element nav-player px2 white">
           <div class="table mobile-table">
-            <div class="track-title center heavy-weight" style="width: 300px;">
+            <div class="track-title center heavy-weight" style="width: 330px;">
               <h5 class="h5 caps">Woodsman - 'Further'</h4>
             </div>
               
@@ -401,9 +230,18 @@ $('#divRss').FeedEk({
           </div>
         </div>
       </div>
-      <a href="#" id="toggle-purchase">
+<!--       <a href="#" id="toggle-purchase">
         <div class="issue-nav-element nav-purchase px2 clear-padding right-align">
           <a href="#" id="toggle-purchase">
+          <div class="mobile-hide button button-small button-highlight">
+            Buy / Subscribe
+          </div>
+          </a>
+        </div>
+      </a> -->
+      <a href="http://singles-club.myshopify.com/products/singles-club-2014-subscription">
+        <div class="issue-nav-element nav-purchase px2 clear-padding right-align">
+          <a href="http://singles-club.myshopify.com/products/singles-club-2014-subscription">
           <div class="mobile-hide button button-small button-highlight">
             Buy / Subscribe
           </div>
@@ -434,7 +272,7 @@ $('#divRss').FeedEk({
 </div>
 
 
-    <div class="feature">
+    <div class="feature feature-wrapper">
       <div id="feature1" class="container px2 pt6">
         <!--FEATURE 1-->
         <div class="row pb4 px2">
@@ -642,21 +480,23 @@ $('#divRss').FeedEk({
             </h4>
           </div>
         </div>
-    <div class="oh full-width mobile-center pt6">
-      <div class="col col-8 col-offset-1">
-        <img src="images/cdr-front.jpg" class="fit py2">
-      </div>
-      <div class="col col-2 pt7 clear-padding-top">
-        <h4>First CDR (2007)</h4>
-        <h5>The first Woodsman release. Recorded as a two-piece prior to the addition of Mark and Dylan.</h5>
-      </div>
-    </div>
-    <div class=" oh full-width">
-        <div class="col col-8 col-offset-2">
-          <img src="images/cdr-back.jpg" class="fit py2">
+    <div class="py3">
+      <div class="oh full-width mobile-center">
+        <div class="col col-8 col-offset-1">
+          <img src="images/cdr-front.jpg" class="fit py2">
         </div>
+        <div class="col col-2 pt7 clear-padding-top">
+          <h4>First CDR (2007)</h4>
+          <h5>The first Woodsman release. Recorded as a two-piece prior to the addition of Mark and Dylan.</h5>
+        </div>
+      </div>
+      <div class=" oh full-width">
+          <div class="col col-8 col-offset-2">
+            <img src="images/cdr-back.jpg" class="fit py2">
+          </div>
+      </div>
     </div>
-    <div class="oh full-width mobile-center pt4">
+    <div class="oh full-width mobile-center py3">
       <div class="col-7 col col-offset-2">
         <img src="images/poster.jpg" class="fit py2">
       </div>
@@ -665,14 +505,14 @@ $('#divRss').FeedEk({
         <h5>Trevor and Eston. Early Woodsman show in Denver as a four piece. Poster handmade by Trevor.</h5>
       </div>
     </div>
-    <div class=" oh full-width mobile-center py6">
+    <div class=" oh full-width mobile-center py3">
       <div class="col col-10 col-offset-1">
         <img src="images/woodsman-tape.jpg" class="fit py2">
         <h4 class="pt2">Tour Tape (2009)</h4>
         <h5 class="col-4">The first release of Woodsman in full band form. After playing for about a year they dubbed this in a week in the fall to preceding their debut Mexican Summer release in December.</h5>
       </div>
     </div>
-    <div class=" oh full-width mobile-center py6">
+    <div class=" oh full-width mobile-center py3">
       <div class="col col-6 col-offset-2">
         <img src="images/polaroid.jpg" class="fit py2">
       </div>
@@ -698,7 +538,7 @@ $('#divRss').FeedEk({
 </div>
 
         <div class="col col-3 col-offset-2 py2">
-            <h4 class="pb2"> Additional Credits </h4>
+            <h4 class="pb2"> Issue Credits </h4>
             <h5 class="caps pb1">
               Art Direction, Design
               & Photography
@@ -711,7 +551,7 @@ $('#divRss').FeedEk({
               Editor
             </h5>
             <h6>
-              <a href="www.chrismuccioli.com">Jeffrey Silverstein</a><br>
+              <a href="https://twitter.com/futuremyth">Jeffrey Silverstein</a><br>
             </h6>
           </div>
           <div class="py2">
@@ -719,8 +559,8 @@ $('#divRss').FeedEk({
               Writers
             </h5>
             <h6>
-              <a href="www.chrismuccioli.com">Mike Sheffield</a><br>
-              <a href="www.chrismuccioli.com">Jeffrey Silverstein</a><br>
+              <a href="http://heavensgate.bandcamp.com/">Mike Sheffield</a><br>
+              <a href="https://twitter.com/futuremyth">Jeffrey Silverstein</a><br>
             </h6>
           </div>
         </div>
@@ -732,7 +572,7 @@ $('#divRss').FeedEk({
             <h5>
               Written by Woodsman<br>
               Produced by Daniel Schlett & Woodsman<br>
-              Recorded at Strange Weather by Daniel Schlett<br>
+              Recorded at Strange Weather by Daniel Schlett in Brooklyn, NY<br>
             </h5>
         </div>
 
@@ -749,37 +589,32 @@ $('#divRss').FeedEk({
       </div>
     </div>
         <div class="bg-white support">
-    <div class="container px2 gray py4">
-      <div class="row pb4 px2">
-        <img src="/images/sc.svg" style="width: 20px; margin-right: 10px" class="left">
-        <h6 class="h6 caps white" style="margin-top: 5px;">SUPPORT SINGLES CLUB</h6>
-      </div>
-      <div class="row dark-gray px2">
+    <div class="container px2 dark-gray">
+      <div class="row py4">
         <div class="col col-8">
-          <div class="row">
-            <h2 class="h2 dark-gray">
-            Like what you see & hear?
-            </h2>
-            <h2 class="h2 dark-gray pb3">
-              This is just the half of it.
-            </h2>
-          </div>
-          <div class="row">
-            <h4 class="h4"> We tell stories through both digital journals and physical records. Subscribe to the club and own the A-Side track featured above PLUS the B-Side featuring an interview with Bob Keal from Small Sur.
-            </h4>
-            <h4 class="h4">
-            You'll also receive Issue #1 featuring Daniel Bachman and get the remaining two issues mailed to you upon release. All for $65 including shipping.
-            </h4>
-          </div>
-          <div class="row pt4">
-              <h5 class="h5 caps pb2">Subscriptions Include</h5>
-              <p> All four releases from 2014, custom 45 box, Singles Club Pin, 45 adapter, digital download of each single. </p>
-              <a href="http://shop.singlesclub.fm/product/singles-club-2014-subscription">
-                <div class="button button-highlight mt2 white">
-                  Learn more & Subscribe
-                </div>
-              </a>
-          </div>
+          <h2 class="h2">
+          Like what you see & hear?
+          </h2>
+          <h2 class="h2">
+            This is just the half of it.
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-6">
+          <p class="pb2"> Subscribe to Singles Club: Volume One today to grab the entire box set featuring limited edition 7"s from all our featured artists, including what you just heard. On the a-side you'll hear an exclusive single recorded for just for the club. The b-side yields an interview. $65 including shipping gets you our entire Volume One catalogue. </p>
+          <p> Volume One featured artists include: Daniel Bachman, Small Sur, Woodsman, and Wisdom Tooth. </p>
+        </div>
+      </div>
+      <div class="row py4">
+        <div class="col col-6">
+          <h5 class="caps">Subscriptions Include</h5>
+          <p> All four releases from 2014, custom 45 box, Singles Club Pin, 45 adapter, digital download of each single. </p>
+          <a href="http://singles-club.myshopify.com/products/singles-club-2014-subscription">
+            <div class="button button-standard mt2 white">
+              Learn more & Subscribe
+            </div>
+          </a>
         </div>
       </div>
     </div>
@@ -805,7 +640,7 @@ $('#divRss').FeedEk({
       <div class="col col-4 mobile-center">
         <svg version="1.1" class="fit" style="width: 120px;" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 206.5 94.8" enable-background="new 0 0 206.5 94.8" xml:space="preserve">
-                <path fill="#FFFFFF" d="M96.1,93.5c0,0.3-0.3,0.5-0.8,0.5H77.8c-0.4,0-0.8-0.2-0.8-0.5c0-0.3,0.4-0.5,0.7-0.5c3.1-0.2,3.5-1,3.5-6.6
+                <path fill="#c7c7c7" d="M96.1,93.5c0,0.3-0.3,0.5-0.8,0.5H77.8c-0.4,0-0.8-0.2-0.8-0.5c0-0.3,0.4-0.5,0.7-0.5c3.1-0.2,3.5-1,3.5-6.6
                 V62.7c0-3.5-0.2-4.7-1.1-5.9c-0.7-1-1.6-1.4-3.1-1.6c-0.4,0-0.7-0.2-0.8-0.5c0-0.3,0.3-0.6,0.7-0.6c4.7-1,10.7-2.6,14.2-3.7
                 c0.4-0.1,0.8,0.1,0.8,0.6v35.5c0,5.6,0.4,6.4,3.5,6.6C95.8,93,96.1,93.2,96.1,93.5z M154.6,64c-2.8,0-5.5,1-8.1,3.1
                 c0,0-0.1,0-0.1,0.1c0,0,0,0,0-0.1V50.9c0-0.4-0.4-0.7-0.8-0.6c-3.2,1.1-9.4,2.7-14.2,3.7c-0.4,0.1-0.7,0.4-0.6,0.7
@@ -866,24 +701,22 @@ $('#divRss').FeedEk({
         </svg>
       </div>
       <div class="col col-8 right-align">
-        <div class="row pb1">
+        <div class="row pb1 caps">
           <ul>
-            <li><a href="#">Issues</a></li>
-            <li><a href="#">Subscribe</a></li>
-            <li><a href="#">The Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Mixtapes</a></li>
-            <li><a href="#">Image Grid</a></li>
-            <li><a href="#">Stockists</a></li>
+            <li><a href="/issues">Issues</a></li>
+            <li><a href="http://singles-club.myshopify.com/products/singles-club-2014-subscription">Subscribe</a></li>
+            <li><a href="http://www.singlesclub.fm/blog">Blog</a></li>
+            <li><a href="http://singles-club.myshopify.com">The Shop</a></li>
+            <li><a href="mailto:hello@singlesclub.fm">Contact</a></li>
           </ul>
         </div>
-         <div class="row pb1">
+<!--          <div class="row pb1">
             <ul>
               <li><a href="#">Change Of Address</a></li>
               <li><a href="#">Partnerships</a></li>
               <li><a href="#">Contact Us</a></li>
             </ul>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -891,16 +724,182 @@ $('#divRss').FeedEk({
 <div class="bg-dark-gray center py2">
   <div class="container px2 social-footer py2">
         <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Soundcloud</a></li>
-          <li><a href="#">Youtube</a></li>
-          <li><a href="#">Vimeo</a></li>
+          <li><a href="http://www.twitter.com/singlesclubfm">Twitter</a></li>
+          <li><a href="http://www.instagram.com/singlesclubfm">Instagram</a></li>
+          <li><a href="https://www.facebook.com/singlesclubfm">Facebook</a></li>
+          <li><a href="http://www.soundcloud.com/singlesclubfm">Soundcloud</a></li>
         </ul>
         <h5 class="h5 gray pt1"> P.O. Box 550 Brooklyn NY 11211 © 2014 Singles Club LLC - All Rights Reserved</h5>
   </div>
-</div>}
+</div>
+<!-- jQuery library (served from Google) -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- Angular JS + Plangular -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+<script src="/../js/ng-plangular.min.js"></script>
+<script type="text/javascript" src="/js/FeedEk.js"></script>
+<script src="//use.typekit.net/nbx4wrv.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript">
+  var html = document.getElementsByTagName('html')[0];
+  html.className += '  wf-loading';
+  setTimeout(function() {
+    html.className = html.className.replace(' wf-loading', '');
+  }, 5000);
+  WebFontConfig = { fontdeck: { id: '39874' } };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'http://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#issue-sub').hide().before('');
+    $('a#toggle-nav').click(function (e) {
+        e.preventDefault();
+        $('#issue-sub').slideToggle(200);
+    });
+    $(document).click(function (e) {
+        if ($(e.target).closest('#issue-sub').length > 0 || $(e.target).closest('#toggle-nav').length > 0) return;
+        $('#issue-sub').slideUp(200);
+    });
+  });
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+$(".modal-close a").click(function(e) {
+    e.preventDefault();
+    $(".first-visit").hide();
+});
+});
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#purchase').hide().before('');
+    $('a#toggle-purchase').click(function (e) {
+        e.preventDefault();
+        $('#purchase').slideToggle(200);
+    });
+    $(document).click(function (e) {
+        if ($(e.target).closest('#purchase').length > 0 || $(e.target).closest('#toggle-purchase').length > 0) return;
+        $('#purchase').slideUp(200);
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#mobile-top-nav').hide().before('');
+    $('a#toggle-top-nav').click(function (e) {
+        e.preventDefault();
+        $('#mobile-top-nav').slideToggle(200);
+    });
+    $(document).click(function (e) {
+        if ($(e.target).closest('#mobile-top-nav').length > 0 || $(e.target).closest('#toggle-top-nav').length > 0) return;
+        $('#mobile-top-nav').slideUp(200);
+    });
+  });
+</script>
+<script type="text/javascript">
+  var $menu = $('#issue-nav'), // replace #menu with your selector
+      menuOffsetTop = $menu[0].offsetTop;
+
+  $(document).bind('ready scroll', function () {
+      var docScroll = $(this).scrollTop();
+
+      if (docScroll >= menuOffsetTop) {
+          $menu.addClass('fixed');
+      } else {
+          $menu.removeClass('fixed');
+      }
+  });
+</script>
+  <!--Smooth Anchor Scroll-->
+  <script>
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+  </script>
+  <script>
+  $(document).ready(function() {
+
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the
+      //nav bar to stick.
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 900) {
+      $('#issue-nav').addClass('issue-nav-fixed slidedown');
+      $('#issue-nav').removeClass('hidden-nav slideup');
+    }
+    if ($(window).scrollTop() < 901) {
+      $('#issue-nav').removeClass('issue-nav-fixed slidedown');
+      $('#issue-nav').addClass('hidden-nav slideup');
+    }
+  });
+});
+  </script>
+  <script>
+  $(document).ready(function() {
+
+  $(window).scroll(function () {
+      //if you hard code, then use console
+      //.log to determine when you want the
+      //nav bar to stick.
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 910) {
+      $('#issue-nav').removeClass('slideup');
+    }
+    if ($(window).scrollTop() < 911) {
+      $('#issue-nav').addClass('slideup');
+    }
+  });
+});
+  </script>
+  <script type="text/javascript">
+$(document).ready(function () {
+$('#divRss').FeedEk({
+    FeedUrl : 'http://www.singlesclub.fm/blog/feed/',
+    MaxCount : 3,
+    ShowDesc : true,
+    ShowPubDate: false,
+    DescCharacterLimit:0,
+    TitleLinkTarget:'_blank'
+  });
+ });
+</script>
+<!--Google Tracking-->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-43089298-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!--Twitter-->
+<script type="text/javascript">
+window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+</script>
+
 
 
 </body>

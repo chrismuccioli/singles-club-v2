@@ -31,6 +31,8 @@
   height: 100%;
 }
 
+// Small Sur
+
 .smallsur-neil {
   background-image: url(../journal/small-sur/images/softcat.jpg);
   background-repeat: no-repeat;
@@ -47,20 +49,19 @@
   height: 100%;
 }
 
-.feature-meta h5 {
-  line-height: 1em !important;
-}
-
-// .good-dog {
-//   font-family: "gooddog-new";
-//   font-weight: 400;
-//   letter-spacing: 10px;
-// }
+//Woodsman
 
 .good-dog h1 {
   font-family: 'Merienda One', cursive;
   font-weight: 400;
   line-height: 1.6em;
+}
+
+.oswald h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  line-height: 1.6em;
+  letter-spacing: .05em;
 }
 
 @media screen and (max-width: $breakpoint-mobile) {
@@ -69,20 +70,13 @@
   }
 }
 
-
 @media screen and (min-width: $breakpoint-desktop) {
   .support {
-    background-image: url(../images/support-bg.jpg) ;
-    background-position: right top;
+    background-image: url(../images/subscription.jpg);
     background-repeat: no-repeat;
-  }
-}
-
-@media screen and (min-width: $breakpoint-desktop) {
-  .support {
-    background-image: url(../images/support-bg.jpg) ;
-    background-position: right top;
-    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;
+    height: 100%;
   }
   .wisdomtooth-video {
     padding-right: 0 !important;

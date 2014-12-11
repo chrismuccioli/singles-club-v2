@@ -39,6 +39,13 @@
   }
 }
 
+.link-white a {
+  color: $white !important;
+  &:hover {
+    color: $dark-gray !important;
+  }
+}
+
 .link-light-gray a {
   color: $light-gray;
   &:hover {

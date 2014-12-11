@@ -4,19 +4,100 @@
 }
 
 .issue-woodsman {
-  background: url(../journal/woodsman/images/woodsman-header.jpg);
-  background-repeat: no-repeat;
-  transition: background 0.5s ease;
-  background-size: cover;
-  background-position: center bottom;
-  height: 100%;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../journal/woodsman/images/woodsman-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
   &:hover {
     background:
     linear-gradient(
-      rgba(255, 0, 0, 0.45),
-      rgba(255, 0, 0, 0.45)
+      rgba(0, 0, 0, 0.0),
+      rgba(0, 0, 0, 0.0)
     ),
     url(../journal/woodsman/images/woodsman-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+  }
+}
+
+.issue-daniel-bachman {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../journal/daniel-bachman/images/daniel-bachman-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+  &:hover {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.0),
+      rgba(0, 0, 0, 0.0)
+    ),
+    url(../journal/daniel-bachman/images/daniel-bachman-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+  }
+}
+
+.issue-small-sur {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../journal/small-sur/images/hero-smallsur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+  &:hover {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.0),
+      rgba(0, 0, 0, 0.0)
+    ),
+    url(../journal/small-sur/images/hero-smallsur.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+  }
+}
+
+.issue-wisdom-tooth {
+    transition: background 0.5s ease;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../journal/wisdom-tooth/images/wisdom-tooth-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+  &:hover {
+    transition: background 0.5s ease;
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.0),
+      rgba(0, 0, 0, 0.0)
+    ),
+    url(../journal/wisdom-tooth/images/wisdom-tooth-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
