@@ -53,18 +53,6 @@ p { font-size: $p; line-height: $base-p-lh; }
 .italic  { font-style: italic !important; }
 .caps    { text-transform: uppercase; letter-spacing: .11em; font-weight: 700; }
 
-// Prevent flashing fonts with fontdeck
-// The recommended method flashes the entire body - not sure what the psychological
-// impact of perceived load time is, but my guess is not that much better.
-// Instead this method only hides elements styled with the fonts that are loading
-//.wf-loading body {
-// .wf-loading {
-//   .apercu,
-//   .apercu-medium,
-//   .apercu-bold {
-//     visibility: hidden;
-//   }
-// }
 
 // Alignment
 .left-align   { text-align: left; }
@@ -140,7 +128,7 @@ a {
   text-size-adjust: none;
 }
 
-.sans-serif, .sans-serif-light, .lydian-italic, .lydian, .lydian-bold, .serif {
+.sans-serif, .sans-serif-light, .serif {
   -webkit-font-smoothing:antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
@@ -166,21 +154,5 @@ a {
 .serif-strong {
   font-family: $serif !important;
   font-weight: 400;
-}
-
-.lydian-italic {
-  font-family: $lydian-italic;
-  font-weight: lighter;
-}
-
-.lydian {
-  font-family: LydianBT-Roman, georgia;
-  font-weight: normal;
-  letter-spacing: $ls1;
-}
-
-.lydian-bold {
-  font-family: LydianBT-Bold, georgia;
-  font-weight: normal;
 }
 

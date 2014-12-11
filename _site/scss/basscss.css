@@ -186,7 +186,7 @@ a {
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
 
-.sans-serif, .sans-serif-light, .lydian-italic, .lydian, .lydian-bold, .serif {
+.sans-serif, .sans-serif-light, .serif {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
@@ -208,19 +208,6 @@ a {
 .serif-strong {
   font-family: "leitura-news", "TimesNewRoman", "Times New Roman", serif !important;
   font-weight: 400; }
-
-.lydian-italic {
-  font-family: LydianBT-Italic, georgia;
-  font-weight: lighter; }
-
-.lydian {
-  font-family: LydianBT-Roman, georgia;
-  font-weight: normal;
-  letter-spacing: 0.1em; }
-
-.lydian-bold {
-  font-family: LydianBT-Bold, georgia;
-  font-weight: normal; }
 
 .m0 {
   margin: 0; }
