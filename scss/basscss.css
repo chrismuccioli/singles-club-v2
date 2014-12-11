@@ -1737,9 +1737,15 @@ body {
 .mail-club h5 {
   max-width: 300px; }
 
+.email {
+  width: 100%; }
+
 @media screen and (max-width: 768px) {
   .rss-feed-spacer {
     display: none; }
+
+  .email {
+    width: 80%; }
 
   .videoWrapper-vimeo {
     position: relative;

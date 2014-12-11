@@ -20,7 +20,7 @@ release-number: "004"
 
 <body ng-app="plangular">
 
-{% include _first-visit-modal.html %}
+<!-- {% include _first-visit-modal.html %} -->
 
   <div plangular="{{ page.soundcloud-url }}">
     <!--HEADER-->
@@ -115,7 +115,10 @@ release-number: "004"
           <h6 class="h6 caps feature-2-highlight" style="margin-top: 5px;">FEATURE 2 – WORDS BY John Andrews</h6>
         </div>
         <div class="row center good-dog py4 px2">
-          <h1 class="mega">Handmade</h1>
+          <div class="col col-10 col-offset-1">
+            <h1 class="mega">Handmade</h1>
+            <h3 class="serif">A selection of hand-drawn animations with commentary from none other than John Andrews himself.</h3>
+          </div>
         </div>
       </div>
       <div class="image-set px6 clear-padding oh">
@@ -190,16 +193,19 @@ release-number: "004"
 <!-- Feature 3 -->
 
 <div class="feature py6 bg-dark-gray">
-  <div class="container">
-    <div class="row pb4 px2">
+  <div class="container px2">
+    <div class="row pb4 ">
       <img src="/images/sc-light-gray.svg" style="width: 20px; margin-right: 10px" class="left">
       <h6 class="h6 caps" style="margin-top: 5px;">FEATURE 3 – A eulogy by John Andrews</h6>
     </div>
-    <div class="row good-dog highlight pb2 center">
+    <div class="row good-dog highlight py2 center px4">
       <h1>Rest in peace Wisdom Tooth.</h1>
     </div>
-    <div class="row good-dog center">
+    <div class="row good-dog center px4">
       <h1>If I could I would piss on your grave, but in a nice way. If you think about it, all I drink is coffee in the morning, coca cola during the day, and beer at night. It would be a nice combo of all the best liquids. Someday I'll bring my Oujia board and you can tell me about all the cool shows you played in heaven. I don't really believe in death though, so you'll have to really sell it to me and prove that you’re "dead".  Biff Rose once said "To be reincarnated is to be born again as a flower". He also said "I'll go to your funeral if you go to mine".</h1>
+    </div>
+    <div class="row center py4 px4">
+      <img src="images/praying-hands.svg" style="width: 100px;">
     </div>
   </div>
 </div>

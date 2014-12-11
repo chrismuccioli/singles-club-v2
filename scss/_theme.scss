@@ -248,10 +248,25 @@ body {
   max-width: 300px;
 }
 
+  .email {
+    width: 100%;
+  }
+
+
+// @media screen and (min-width: $breakpoint-desktop) {
+//   .email {
+//     width: 100%;
+//   }
+// }
+
 // Mobile Styling
 @media screen and (max-width: $breakpoint-mobile) {
   .rss-feed-spacer {
     display: none;
+  }
+
+  .email {
+    width: 80%;
   }
 
   .videoWrapper-vimeo {
