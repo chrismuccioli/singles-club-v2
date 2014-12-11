@@ -11,8 +11,8 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link href="/../scss/basscss.css" rel="stylesheet" />
   <meta property="og:type" content="website">
-  <meta property="og:image" content="http://singlesclub.fm/journal/woodsman/index.htmlimages/smallsur_facebook.jpg">
-  <meta property="og:url" content="http://singlesclub.fm/journal/woodsman/index.html">
+  <meta property="og:image" content="/images/smallsur_facebook.jpg">
+  <meta property="og:url" content="/journal/woodsman/index.html">
   <meta property="og:title" content="Issue 3 – Woodsman">
   <meta property="og:description" content="Singles Club Issue 3: Woodsman">
   <meta property="fb:app_id" content="1450710301810527">
@@ -91,7 +91,16 @@
   </div>
 </div>
 
-      <div id="mobile-top-nav" class="bg-highlight py3 center">
+      <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="mobile-top-nav" class="bg-highlight py3 center">
   <ul class="list-reset white" style="line-height: 30px; letter-spacing: .1em; text-transform: uppercase;" class="link-white">
 <!--     <li class="link-white"><a href="#">About</a></li> -->
     <li class="link-white"><a href="#">Issues</a></li>
@@ -535,6 +544,9 @@
     <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Email" class="field-light mb1 email" style="height: 50px; padding-left: 15px; padding-right: 15px;" required>
     <input type="submit" value="Sign Up" name="subscribe" id="mc-embedded-subscribe" class="button button-small button-highlight">
   </form>
+  <div class="py2">
+    <div class="fb-like" data-href="http://www.singlesclub.fm//journal/woodsman/index.html" data-layout="standard" data-action="recommend" data-show-faces="true" data-share="true" data-colorscheme="dark" ></div>
+  </div>
 </div>
 
         <div class="col col-3 col-offset-2 py2">
@@ -699,6 +711,9 @@
                 c1.6,0,4.3-0.2,5.5-0.5c3.9-0.8,5.1-1,5.7-1c0.5,0,0.8,0.2,0.9,0.6c0.2,0.5,0.4,0.7,0.6,0.7c0.3,0,0.5-0.3,0.5-0.8l0.5-15.4
                 c0-0.3-0.1-0.5-0.2-0.6C73.4,77.7,73.3,77.7,73.2,77.7z"/>
         </svg>
+        <div class="pt2 mobile-hide">
+            <div class="fb-like" data-href="http://www.facebook.com/singlesclubfm" data-layout="standard" data-action="like" data-colorscheme="dark" data-show-faces="true" data-share="true"></div>
+        </div>
       </div>
       <div class="col col-8 right-align">
         <div class="row pb1 caps">
