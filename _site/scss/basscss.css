@@ -23,18 +23,16 @@ h1, h2, h3, h4, h5, h6, p {
 h1, h2, h3, h4, h5, h6, p {
   line-height: 1.5;
   margin-bottom: 5px;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
 
-.sans-serif h1, .sans-serif h2, .sans-serif h3 {
-  letter-spacing: -0.03em; }
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p {
+  font-weight: 400 !important; }
 
-h6 {
-  font-weight: 700; }
-
-h1, h2, h3, h4, h5 {
-  font-weight: 400; }
+.bold h1, .bold h2, .bold h3, .bold h4, .bold h5, .bold h6, .bold p {
+  font-weight: 700 !important; }
 
 h1 {
   font-size: 3.157em;
@@ -49,19 +47,19 @@ h3 {
   line-height: 1.45em; }
 
 h4 {
-  font-size: 1.333em;
+  font-size: 1.4em;
   line-height: 1.45em; }
 
 h5 {
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.45em; }
 
 h6 {
-  font-size: 0.75em;
+  font-size: 0.875em;
   line-height: 1.45em; }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 1.3em; }
 
 .feature p {
@@ -74,9 +72,8 @@ p {
 
 @media screen and (min-width: 769px) {
   p {
-    font-size: 1.2em;
-    line-height: 1.3em;
-    letter-spacing: .04em; }
+    font-size: 1.1em;
+    line-height: 1.3em; }
 
   .feature p {
     font-size: 1.3125em;
@@ -151,7 +148,6 @@ body {
 
 p {
   font-family: "Karla", sans-serif;
-  font-weight: 400;
   -webkit-font-smoothing: antialiased !important;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
@@ -208,6 +204,34 @@ a {
 .serif-strong {
   font-family: "leitura-news", "TimesNewRoman", "Times New Roman", serif !important;
   font-weight: 400; }
+
+.lydian-italic {
+  font-family: LydianBT-Italic, georgia;
+  font-weight: lighter;
+  font-style: normal;
+  text-transform: uppercase; }
+
+.lydian {
+  font-family: LydianBT-Roman, georgia;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase; }
+
+.lydian-bold {
+  font-family: LydianBT-Bold, georgia;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase; }
+
+.lydia-italic {
+  font-family: "Lydia Bold Condensed Italic", 'Avenir Next Condensed', 'Helvetica Neue Condensed', 'Arial Narrow', sans-serif;
+  font-weight: bold;
+  font-style: italic; }
+
+.lydia {
+  font-family: "Lydia Bold Condensed", 'Avenir Next Condensed', 'Helvetica Neue Condensed', 'Arial Narrow', sans-serif;
+  font-weight: bold;
+  font-style: normal; }
 
 .m0 {
   margin: 0; }
@@ -688,6 +712,13 @@ button:focus {
   background-position: center bottom;
   height: 100%; }
 
+.monster-rally {
+  background-image: url(../journal/monster-rally/images/monster-rally.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%; }
+
 .smallsur-neil {
   background-image: url(../journal/small-sur/images/softcat.jpg);
   background-repeat: no-repeat;
@@ -903,6 +934,41 @@ progress::-moz-progress-bar {
 .issue-label {
   float: left; }
 
+.year1-subscription {
+  background: url(..//images/year1-subscription.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 600px;
+  padding-bottom: 50px; }
+
+.subscribe-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/ted-poster.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%; }
+
+.single-issue {
+  z-index: 2000;
+  margin-top: -400px; }
+  .single-issue img {
+    max-width: 600px;
+    width: 100%; }
+
+.subscribe-icon {
+  vertical-align: top !important;
+  padding-right: 15px;
+  padding-top: 15px; }
+  .subscribe-icon img {
+    width: 65px; }
+
+.border-top {
+  border-top: 3px solid #ff0022; }
+
+.border-bottom {
+  border-bottom: 3px solid #ff0022; }
+
 .button {
   font-family: "Karla", sans-serif;
   font-weight: 700;
@@ -936,6 +1002,7 @@ progress::-moz-progress-bar {
 
 .button {
   border-radius: 0;
+  text-transform: uppercase;
   transition-duration: .2s;
   transition-timing-function: ease;
   transition-property: box-shadow , background-color; }
@@ -1535,7 +1602,7 @@ html:hover [class^="ss-"] {
   background-color: #ffffff; }
 
 body {
-  color: #c7c7c7;
+  color: #111111;
   background-color: #000000; }
 
 .first-visit {
@@ -1554,6 +1621,12 @@ body {
 
 .alert {
   margin-bottom: -5px; }
+
+.soft-page {
+  background-color: white;
+  padding: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
 
 .transition-top {
   transition: top .15s ease-out; }
@@ -1599,7 +1672,7 @@ body {
   padding: 0; }
 
 .social-footer {
-  font-size: 0.75em; }
+  font-size: 0.875em; }
 
 .social-footer a {
   margin-left: 20px;

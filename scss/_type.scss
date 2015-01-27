@@ -9,23 +9,26 @@
 h1, h2, h3, h4, h5, h6, p  {
   line-height: $line-height-heading;
   margin-bottom: 5px;
+  font-weight: 400;
   -webkit-font-smoothing:antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
 
-.sans-serif {
-  h1, h2, h3 {
-  letter-spacing: -0.03em;
+// h1, h2, h3, h4, h5, h6 {
+//   letter-spacing: -0.03em;
+// }
+
+.light {
+  h1, h2, h3, h4, h5, h6, p {
+  font-weight: 400 !important;
   }
 }
 
-h6 {
-  font-weight: 700;
-}
-
-h1, h2, h3, h4, h5 {
-  font-weight: 400;
+.bold {
+  h1, h2, h3, h4, h5, h6, p {
+    font-weight: 700 !important;
+  }
 }
 
 
@@ -42,7 +45,7 @@ p { font-size: $p; line-height: $base-p-lh; }
 
 // Responsive Type Scale
 @media screen and (min-width: $breakpoint-desktop) {
-  p { font-size: $p; line-height: $base-p-lh; letter-spacing: .04em; }
+  p { font-size: $p; line-height: $base-p-lh;}
   .feature p { font-size: $feature-p; line-height: $feature-p-lh; letter-spacing: .01em; }
   .mega { font-size : 4.157em; line-height: 1em; }
 }
@@ -87,7 +90,6 @@ body {
 
 p {
   font-family: $sans-serif;
-  font-weight: 400;
   -webkit-font-smoothing: antialiased !important;
   -webkit-text-size-adjust: none;
           text-size-adjust: none;
@@ -154,5 +156,38 @@ a {
 .serif-strong {
   font-family: $serif !important;
   font-weight: 400;
+}
+
+.lydian-italic {
+  font-family: LydianBT-Italic, georgia;
+  font-weight: lighter;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.lydian {
+  font-family: LydianBT-Roman, georgia;
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.lydian-bold {
+  font-family: LydianBT-Bold, georgia;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.lydia-italic {
+  font-family:"Lydia Bold Condensed Italic", 'Avenir Next Condensed', 'Helvetica Neue Condensed', 'Arial Narrow', sans-serif;
+  font-weight: bold;
+  font-style:italic ;
+}
+
+.lydia {
+  font-family:"Lydia Bold Condensed", 'Avenir Next Condensed', 'Helvetica Neue Condensed', 'Arial Narrow', sans-serif;
+  font-weight:bold;
+  font-style:normal;
 }
 

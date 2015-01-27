@@ -40,6 +40,7 @@
 
 .button {
   border-radius: $border-radius;
+  text-transform: uppercase;
   transition-duration: .2s;
   transition-timing-function: ease;
   transition-property: box-shadow , background-color;
