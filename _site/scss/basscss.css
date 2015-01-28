@@ -236,6 +236,9 @@ a {
   font-weight: bold;
   font-style: normal; }
 
+.lydia, .lydia-italic {
+  letter-spacing: .025em; }
+
 .m0 {
   margin: 0; }
 
