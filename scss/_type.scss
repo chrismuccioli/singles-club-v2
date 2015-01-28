@@ -54,7 +54,8 @@ p { font-size: $p; line-height: $base-p-lh; }
 .bold    { font-weight: bold; }
 .regular { font-weight: normal; }
 .italic  { font-style: italic !important; }
-.caps    { text-transform: uppercase; letter-spacing: .11em; font-weight: 700; }
+.title-caps    { text-transform: uppercase; letter-spacing: .11em; font-weight: 700; }
+.caps    { text-transform: uppercase;}
 
 
 // Alignment

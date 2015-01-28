@@ -45,3 +45,16 @@
 .border-bottom {
   border-bottom: 3px solid #ff0022;
 }
+
+@media screen and (max-width: $breakpoint-mobile) {
+
+.single-issue {
+  z-index: 2000;
+  margin-top: -300px;
+  img {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+}
