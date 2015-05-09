@@ -1,6 +1,78 @@
 // Base thematic styles
 
 
+// Scratch
+
+.faq {
+  h6 {
+    padding-bottom: 20px;
+  }
+}
+
+.year1-subscription {
+  background: url(../images/year1-subscription.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 600px;
+  padding-bottom: 50px;
+}
+
+.subscribe-bg {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../images/ted-poster.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.single-issue {
+  z-index: 2000;
+  margin-top: -400px;
+  img {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+.subscribe-icon {
+  img {
+    width: 65px;
+  }
+  vertical-align: top !important;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.border-top {
+  border-top: 3px solid #ff0022;
+}
+
+.border-bottom {
+  border-bottom: 3px solid #ff0022;
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+
+.single-issue {
+  z-index: 2000;
+  margin-top: 0px;
+  padding-top: 30px;
+  img {
+    max-width: 600px;
+    width: 100%;
+  }
+  color: #111 !important;
+}
+
+}
+
+
 /* Wrap entire feature in this to apply styles */
 .feature-wrapper {
   color: $black;
@@ -36,7 +108,7 @@ body {
 
 .soft-page {
   background-color: white;
-  padding: 4*$space;
+  padding: 3*$space;
   margin-top: 4*$space;
   margin-bottom: 4*$space;
 }

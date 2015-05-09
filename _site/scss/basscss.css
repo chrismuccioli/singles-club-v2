@@ -940,48 +940,6 @@ progress::-moz-progress-bar {
 .issue-label {
   float: left; }
 
-.year1-subscription {
-  background: url(..//images/year1-subscription.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding-top: 600px;
-  padding-bottom: 50px; }
-
-.subscribe-bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/ted-poster.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
-  height: 100%; }
-
-.single-issue {
-  z-index: 2000;
-  margin-top: -400px; }
-  .single-issue img {
-    max-width: 600px;
-    width: 100%; }
-
-.subscribe-icon {
-  vertical-align: top !important;
-  padding-right: 15px;
-  padding-top: 15px; }
-  .subscribe-icon img {
-    width: 65px; }
-
-.border-top {
-  border-top: 3px solid #ff0022; }
-
-.border-bottom {
-  border-bottom: 3px solid #ff0022; }
-
-@media screen and (max-width: 768px) {
-  .single-issue {
-    z-index: 2000;
-    margin-top: -300px; }
-    .single-issue img {
-      max-width: 600px;
-      width: 100%; } }
 .button {
   font-family: "Karla", sans-serif;
   font-weight: 700;
@@ -1313,7 +1271,7 @@ progress::-moz-progress-bar {
   text-align: center; }
 
 .nav-mark svg {
-  width: 30px; }
+  width: 41px; }
 
 .nav-issues {
   width: 300px; }
@@ -1609,6 +1567,53 @@ html:hover [class^="ss-"] {
 .ss-fivehundredpx:before, .ss-fivehundredpx.right:after {
   content: ''; }
 
+.faq h6 {
+  padding-bottom: 20px; }
+
+.year1-subscription {
+  background: url(../images/year1-subscription.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 600px;
+  padding-bottom: 50px; }
+
+.subscribe-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/ted-poster.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%; }
+
+.single-issue {
+  z-index: 2000;
+  margin-top: -400px; }
+  .single-issue img {
+    max-width: 600px;
+    width: 100%; }
+
+.subscribe-icon {
+  vertical-align: top !important;
+  padding-right: 15px;
+  padding-top: 15px; }
+  .subscribe-icon img {
+    width: 65px; }
+
+.border-top {
+  border-top: 3px solid #ff0022; }
+
+.border-bottom {
+  border-bottom: 3px solid #ff0022; }
+
+@media screen and (max-width: 768px) {
+  .single-issue {
+    z-index: 2000;
+    margin-top: 0px;
+    padding-top: 30px;
+    color: #111 !important; }
+    .single-issue img {
+      max-width: 600px;
+      width: 100%; } }
 /* Wrap entire feature in this to apply styles */
 .feature-wrapper {
   color: #000000;
@@ -1637,7 +1642,7 @@ body {
 
 .soft-page {
   background-color: white;
-  padding: 4rem;
+  padding: 3rem;
   margin-top: 4rem;
   margin-bottom: 4rem; }
 
