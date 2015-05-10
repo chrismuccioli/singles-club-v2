@@ -84,6 +84,7 @@ p { font-size: $p; line-height: $base-p-lh; }
 body {
   font-family: $sans-serif;
   font-weight: 700;
+  letter-spacing: -0.03em!important;
   -webkit-font-smoothing: antialiased !important;
   -webkit-text-size-adjust: none;
           text-size-adjust: none;
@@ -117,6 +118,7 @@ a {
 }
 
 .feature p, .serif {
+  letter-spacing: 0 !important;
   font-family: $serif !important;
   font-style: normal !important;
   font-weight: 300;
@@ -126,6 +128,7 @@ a {
   font-family: $serif;
   font-weight: 700;
   font-style: regular;
+  letter-spacing: 0em !important;
   -webkit-font-smoothing:antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;

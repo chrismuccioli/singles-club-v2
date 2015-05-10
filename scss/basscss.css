@@ -44,7 +44,7 @@ h2 {
 
 h3 {
   font-size: 1.777em;
-  line-height: 1.45em; }
+  line-height: 1.25em; }
 
 h4 {
   font-size: 1.4em;
@@ -145,6 +145,7 @@ p {
 body {
   font-family: "Karla", sans-serif;
   font-weight: 700;
+  letter-spacing: -0.03em !important;
   -webkit-font-smoothing: antialiased !important;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
@@ -173,6 +174,7 @@ a {
   padding-bottom: 3px; }
 
 .feature p, .serif {
+  letter-spacing: 0 !important;
   font-family: "leitura-news", "TimesNewRoman", "Times New Roman", serif !important;
   font-style: normal !important;
   font-weight: 300; }
@@ -181,6 +183,7 @@ a {
   font-family: "leitura-news", "TimesNewRoman", "Times New Roman", serif;
   font-weight: 700;
   font-style: regular;
+  letter-spacing: 0em !important;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
@@ -888,18 +891,19 @@ progress::-moz-progress-bar {
   padding-top: 200px;
   padding-bottom: 200px; }
 
+.issue-monster-rally {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../journal/monster-rally/images/ted-cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%; }
+
 .issue-woodsman {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../journal/woodsman/images/woodsman-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
   height: 100%; }
-  .issue-woodsman:hover {
-    background: linear-gradient(transparent, transparent), url(../journal/woodsman/images/woodsman-header.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 100%; }
 
 .issue-daniel-bachman {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../journal/daniel-bachman/images/daniel-bachman-hero.jpg);
@@ -907,25 +911,13 @@ progress::-moz-progress-bar {
   background-size: cover;
   background-position: center bottom;
   height: 100%; }
-  .issue-daniel-bachman:hover {
-    background: linear-gradient(transparent, transparent), url(../journal/daniel-bachman/images/daniel-bachman-hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 100%; }
 
 .issue-small-sur {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../journal/small-sur/images/hero-smallsur.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
   height: 100%; }
-  .issue-small-sur:hover {
-    background: linear-gradient(transparent, transparent), url(../journal/small-sur/images/hero-smallsur.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 100%; }
 
 .issue-wisdom-tooth {
   transition: background 0.5s ease;
@@ -934,13 +926,6 @@ progress::-moz-progress-bar {
   background-size: cover;
   background-position: center bottom;
   height: 100%; }
-  .issue-wisdom-tooth:hover {
-    transition: background 0.5s ease;
-    background: linear-gradient(transparent, transparent), url(../journal/wisdom-tooth/images/wisdom-tooth-hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-    height: 100%; }
 
 .issue-label {
   float: left; }
@@ -1812,15 +1797,13 @@ body {
   padding-right: .5rem; }
 
 .subscription {
-  background: url(../images/subscription.jpg) no-repeat;
+  background: url(../images/singlesclub-5.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 90%;
+  background-size: 100%;
   background-position: center center;
   background-color: #fff; }
-  .subscription .logo {
-    width: 150px; }
 
 .nav-logo {
   max-width: 150px; }

@@ -11,12 +11,12 @@
   <link rel="icon" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link href="/../scss/basscss.css?v=1" rel="stylesheet" />
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="http://www.singlesclub.fm/images/smallsur_facebook.jpg">
-  <meta property="og:url" content="http://www.singlesclub.fm/journal/woodsman/index.html">
-  <meta property="og:title" content="Issue 3 – Woodsman">
-  <meta property="og:description" content="Singles Club Issue 3: Woodsman">
-  <meta property="fb:app_id" content="1450710301810527">
+  <meta property="og:type"        content="article"/>
+  <meta property="og:url"         content="/journal/woodsman/index.html" />
+  <meta property="og:title"       content="Issue 3 – Woodsman" />
+  <meta property="og:image"       content="images/woodsman-social.jpg" />
+  <meta property="og:description" content="Singles Club Issue 3: Woodsman" />
+  <meta property="fb:app_id"      content="1450710301810527">
   <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Passion+One:900' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
@@ -104,6 +104,14 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div id="mobile-top-nav" class="bg-highlight py3 center" style="display: none;">
   <ul class="list-reset white" style="line-height: 30px; letter-spacing: .1em; text-transform: uppercase;" class="link-white">
 <!--     <li class="link-white"><a href="#">About</a></li> -->
@@ -273,10 +281,10 @@
   <div id="purchase" class="bg-highlight py3">
         <div class="table table-fixed white">
       <div class="table-cell center left-align link-white">
-        <a href="/issues" style="margin-left: 20px; margin-right: 20px;">SINGLE</a>
-        <a href="/subscribe" style="margin-left: 20px; margin-right: 20px;">SUBSCRIBE</a>
-        <a href="http://shop.singlesclub.fm" style="margin-left: 20px; margin-right: 20px;">BUNDLES</a>
-        <a href="http://shop.singlesclub.fm" style="margin-left: 20px; margin-right: 20px;">ALL</a>
+        <a href="https://singles-club.myshopify.com/admin/products/207216861" style="margin-left: 20px; margin-right: 20px;">SINGLE</a>
+        <a href="https://singles-club.myshopify.com/admin/products/207216861" style="margin-left: 20px; margin-right: 20px;">SUBSCRIBE</a>
+        <a href="https://singles-club.myshopify.com/admin/products/207216861" style="margin-left: 20px; margin-right: 20px;">BUNDLES</a>
+        <a href="https://singles-club.myshopify.com/admin/products/207216861" style="margin-left: 20px; margin-right: 20px;">ALL</a>
       </div>
     </div>
   </div>
@@ -619,7 +627,7 @@
   <div class="container px2">
     <div class="row py4">
       <div class="col col-4 mobile-center">
-        <div class="pt2 mobile-hide">
+        <div class="mobile-hide">
             <div class="fb-like" data-href="http://www.facebook.com/singlesclubfm" data-layout="standard" data-action="like" data-colorscheme="dark" data-show-faces="true" data-share="true"></div>
         </div>
       </div>
@@ -653,15 +661,16 @@
           <li><a href="https://www.facebook.com/singlesclubfm">Facebook</a></li>
           <li><a href="http://www.soundcloud.com/singlesclubfm">Soundcloud</a></li>
         </ul>
-        <h6 class="gray pt1"> P.O. Box 550 Brooklyn NY 11211 © 2015 Singles Club LLC - All Rights Reserved</h6>
+        <h6 class="gray pt1"> 29 Spencer Place Apt 6D, Brooklyn NY 11216 © 2015 Singles Club LLC - All Rights Reserved</h6>
   </div>
 </div>
 <!-- jQuery library (served from Google) -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- Angular JS + Plangular -->
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 <script src="/../js/ng-plangular.min.js"></script>
+<!-- <script src="/../js/plangular.js"></script> -->
 <script type="text/javascript" src="/js/FeedEk.js"></script>
 <script src="//use.typekit.net/nbx4wrv.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>

@@ -11,12 +11,12 @@
   <link rel="icon" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link href="/../scss/basscss.css?v=1" rel="stylesheet" />
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="http://www.singlesclub.fm/images/smallsur_facebook.jpg">
-  <meta property="og:url" content="http://www.singlesclub.fm/issues/index.html">
-  <meta property="og:title" content="Issues - Singles Club">
-  <meta property="og:description" content="Singles Club Issue Index">
-  <meta property="fb:app_id" content="1450710301810527">
+  <meta property="og:type"        content="article"/>
+  <meta property="og:url"         content="/issues/index.html" />
+  <meta property="og:title"       content="Issues - Singles Club" />
+  <meta property="og:image"       content="" />
+  <meta property="og:description" content="Singles Club Issue Index" />
+  <meta property="fb:app_id"      content="1450710301810527">
   <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Passion+One:900' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
@@ -24,19 +24,19 @@
   <link rel="stylesheet" href="//f.fontdeck.com/s/css/Piuf3SasQFzFybbZcBo1hAovuis/DOMAIN_NAME/39874.css" type="text/css" />
   <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false" class="modal-2" ></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us6.list-manage.com","uuid":"27badb2e91","lid":"1781494ce0"}) })</script>
   <style>
-  .border-highlight { border-color: #6600FF; }
-  .bg-highlight { background-color: #6600FF; }
-  .button-highlight { background-color: #6600FF;}
-  .button-highlight:hover { background-color: #1E005F;}
-  .highlight { color: #6600FF; }
-  .bg-feature-2 { background-color: #f2effe; }
-  .feature-2-highlight { color: #1E005F; border-color:#1E005F; }
+  .border-highlight { border-color: #00e78d; }
+  .bg-highlight { background-color: #00e78d; }
+  .button-highlight { background-color: #00e78d;}
+  .button-highlight:hover { background-color: #00b36d;}
+  .highlight { color: #00e78d; }
+  .bg-feature-2 { background-color: #00fc9a; }
+  .feature-2-highlight { color: #00b36d; border-color:#00b36d; }
   ::selection {
-    background: #6600FF;
+    background: #00e78d;
     color: #fff; /* WebKit/Blink Browsers */
     }
     ::-moz-selection {
-      background: #6600FF; /* Gecko Browsers */
+      background: #00e78d; /* Gecko Browsers */
       color: #fff;
     }
 </style>
@@ -100,6 +100,14 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div id="mobile-top-nav" class="bg-highlight py3 center" style="display: none;">
   <ul class="list-reset white" style="line-height: 30px; letter-spacing: .1em; text-transform: uppercase;" class="link-white">
 <!--     <li class="link-white"><a href="#">About</a></li> -->
@@ -139,52 +147,87 @@
   </div>
 </div>
 
-  <div class="oh">
-  <div class="row px2">
-    <a href="/journal/wisdom-tooth">
-    <div class="col col-6 bg-black issue issue-wisdom-tooth">
-      <div class="row full-height">
-        <div class="issue-label bg-dark-gray p2 right-align white">
-          <h6 class="caps" style="margin-top: 5px;">Issue #004 | Vol 1</h6>
-          <h2>Wisdom Tooth</h2>
-        </div>
+
+<div class="issue-monster-rally issue">
+  <div class="container px3">
+    <div class="row mobile-center white">
+      <div class="col col-12">
+        <h6 class="caps" style="margin-top: 5px;">Issue 5 | Vol 2</h6>
+        <h2>Monster Rally</h2>
+        <a href="#">
+          <div class="button button-highlight mt2 white">
+            Coming Soon
+          </div>
+        </a>
       </div>
     </div>
-    </a>
-    <a href="/journal/woodsman">
-    <div class="col col-6 bg-black issue issue-woodsman">
-            <div class="row full-height">
-        <div class="issue-label bg-dark-gray p2 right-align white">
-          <h6 class="caps" style="margin-top: 5px;">Issue #003 | Vol 1</h6>
-          <h2>Woodsman</h2>
-        </div>
-      </div>
-    </div>
-    </a>
   </div>
-  <div class="row px2">
-    <a href="/journal/small-sur">
-    <div class="col col-4 bg-black issue issue-small-sur">
-            <div class="row full-height">
-        <div class="issue-label bg-dark-gray p2 right-align white">
-          <h6 class="caps" style="margin-top: 5px;">Issue #002 | Vol 1</h6>
-          <h2>Small Sur</h2>
-        </div>
+</div>
+
+<div class="issue-wisdom-tooth issue">
+  <div class="container px2">
+    <div class="row mobile-center white">
+      <div class="col col-12">
+        <h6 class="caps" style="margin-top: 5px;">Issue 4 | Vol 1</h6>
+        <h2>Wisdom Tooth</h2>
+        <a href="../journal/wisdom-tooth">
+          <div class="button button-highlight mt2 white">
+            Read & Listen
+          </div>
+        </a>
       </div>
     </div>
-    </a>
-    <a href="/journal/daniel-bachman">
-    <div class="col col-8 bg-black issue issue-daniel-bachman">
-            <div class="row full-height">
-        <div class="issue-label bg-dark-gray p2 right-align white">
-          <h6 class="caps" style="margin-top: 5px;">Issue #001 | Vol 1</h6>
-          <h2>Daniel Bachman</h2>
-        </div>
+  </div>
+</div>
+
+<div class="issue-woodsman issue">
+  <div class="container px2">
+    <div class="row mobile-center white">
+      <div class="col col-12">
+        <h6 class="caps" style="margin-top: 5px;">Issue 3 | Vol 1</h6>
+        <h2>Woodsman</h2>
+        <a href="../journal/woodsman">
+          <div class="button button-highlight mt2 white">
+            Read & Listen
+          </div>
+        </a>
       </div>
     </div>
-    </a>
   </div>
+</div>
+
+<div class="issue-small-sur issue">
+  <div class="container px2">
+    <div class="row mobile-center white">
+      <div class="col col-12">
+        <h6 class="caps" style="margin-top: 5px;">Issue 2 | Vol 1</h6>
+        <h2>Small Sur</h2>
+        <a href="../journal/small-sur">
+          <div class="button button-highlight mt2 white">
+            Read & Listen
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
+</div>
+
+<div class="issue-daniel-bachman issue">
+  <div class="container px2">
+    <div class="row mobile-center white">
+      <div class="col col-12">
+        <h6 class="caps" style="margin-top: 5px;">Issue 1 | Vol 1</h6>
+        <h2>Daniel Bachman</h2>
+        <a href="../journal/daniel-bachman">
+          <div class="button button-highlight mt2 white">
+            Read & Listen
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="bg-mid-gray">
   <div class="container py4 px2 gray">
     <div class="row px2">
@@ -203,7 +246,7 @@
   <div class="container px2">
     <div class="row py4">
       <div class="col col-4 mobile-center">
-        <div class="pt2 mobile-hide">
+        <div class="mobile-hide">
             <div class="fb-like" data-href="http://www.facebook.com/singlesclubfm" data-layout="standard" data-action="like" data-colorscheme="dark" data-show-faces="true" data-share="true"></div>
         </div>
       </div>
@@ -237,15 +280,16 @@
           <li><a href="https://www.facebook.com/singlesclubfm">Facebook</a></li>
           <li><a href="http://www.soundcloud.com/singlesclubfm">Soundcloud</a></li>
         </ul>
-        <h6 class="gray pt1"> P.O. Box 550 Brooklyn NY 11211 © 2015 Singles Club LLC - All Rights Reserved</h6>
+        <h6 class="gray pt1"> 29 Spencer Place Apt 6D, Brooklyn NY 11216 © 2015 Singles Club LLC - All Rights Reserved</h6>
   </div>
 </div>
 <!-- jQuery library (served from Google) -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <!-- Angular JS + Plangular -->
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 <script src="/../js/ng-plangular.min.js"></script>
+<!-- <script src="/../js/plangular.js"></script> -->
 <script type="text/javascript" src="/js/FeedEk.js"></script>
 <script src="//use.typekit.net/nbx4wrv.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
