@@ -9,7 +9,7 @@
 h1, h2, h3, h4, h5, h6, p  {
   line-height: $line-height-heading;
   margin-bottom: 5px;
-  font-weight: 400;
+  font-weight: 600;
   -webkit-font-smoothing:antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
@@ -124,8 +124,8 @@ a {
 
 .pull-quote h2 {
   font-family: $serif;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 700;
+  font-style: regular;
   -webkit-font-smoothing:antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;

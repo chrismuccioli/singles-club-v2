@@ -3,6 +3,11 @@
 
 // Scratch
 
+img {
+  text-decoration: none;
+  border-bottom: none !important;
+}
+
 .faq {
   h6 {
     padding-bottom: 20px;
@@ -31,6 +36,11 @@
     height: 100%;
 }
 
+.no-link {
+  text-decoration: none;
+  border-bottom: none !important;
+}
+
 .single-issue {
   z-index: 2000;
   margin-top: -400px;
@@ -50,7 +60,7 @@
 }
 
 .border-top {
-  border-top: 3px solid #ff0022;
+  border-top: 1px solid $light-gray;
 }
 
 .border-bottom {

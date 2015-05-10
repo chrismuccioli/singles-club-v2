@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6, p {
 h1, h2, h3, h4, h5, h6, p {
   line-height: 1.5;
   margin-bottom: 5px;
-  font-weight: 400;
+  font-weight: 600;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
@@ -48,7 +48,7 @@ h3 {
 
 h4 {
   font-size: 1.4em;
-  line-height: 1.45em; }
+  line-height: 1.2em; }
 
 h5 {
   font-size: 1.1em;
@@ -179,8 +179,8 @@ a {
 
 .pull-quote h2 {
   font-family: "leitura-news", "TimesNewRoman", "Times New Roman", serif;
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 700;
+  font-style: regular;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
@@ -1572,6 +1572,10 @@ html:hover [class^="ss-"] {
 .ss-fivehundredpx:before, .ss-fivehundredpx.right:after {
   content: ''; }
 
+img {
+  text-decoration: none;
+  border-bottom: none !important; }
+
 .faq h6 {
   padding-bottom: 20px; }
 
@@ -1590,6 +1594,10 @@ html:hover [class^="ss-"] {
   background-position: center bottom;
   height: 100%; }
 
+.no-link {
+  text-decoration: none;
+  border-bottom: none !important; }
+
 .single-issue {
   z-index: 2000;
   margin-top: -400px; }
@@ -1605,7 +1613,7 @@ html:hover [class^="ss-"] {
     width: 65px; }
 
 .border-top {
-  border-top: 3px solid #ff0022; }
+  border-top: 1px solid #f0f0f0; }
 
 .border-bottom {
   border-bottom: 3px solid #ff0022; }

@@ -132,7 +132,7 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<div id="mobile-top-nav" class="bg-highlight py3 center">
+<div id="mobile-top-nav" class="bg-highlight py3 center" style="display: none;">
   <ul class="list-reset white" style="line-height: 30px; letter-spacing: .1em; text-transform: uppercase;" class="link-white">
 <!--     <li class="link-white"><a href="#">About</a></li> -->
     <li class="link-white"><a href="/issues">Issues</a></li>
@@ -206,7 +206,7 @@
     </div>
       <div id="issue-nav" class="hidden-nav">
     <!--Sub Nav-->
-  <div id="issue-sub" class="bg-highlight py3" style="line-height: 32px; letter-spacing: .1em;">
+  <div id="issue-sub" class="bg-highlight py3" style="line-height: 32px; letter-spacing: .1em; display: none;">
     <div class="table table-fixed white">
       <div class="table-cell center left-align link-white">
 <!--         <a href="#" style="margin-left: 20px; margin-right: 20px;">ABOUT</a> -->
@@ -222,21 +222,22 @@
           <div class="table mobile-table">
             <div class="table-cell mobile-table-cell">
               <a href="#" id="toggle-nav" class="no-hover">
-                <svg version="1.1" mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <img src="/images/sc.svg" style="max-width: 30px;">
+<!--                 <svg version="1.1" mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 612 612" enable-background="new 0 0 600 600" xml:space="preserve" fill="#fff" style="padding-top: 10px;">
-<!--                   <path d="M553.5,515.4c2.9-78.6-40.8-131-142.7-174.7l-81.5-32c-46.6-20.4-87.4-40.8-104.8-58.2c-17.5-14.6-29.1-37.9-26.2-64.1
+                  <path d="M553.5,515.4c2.9-78.6-40.8-131-142.7-174.7l-81.5-32c-46.6-20.4-87.4-40.8-104.8-58.2c-17.5-14.6-29.1-37.9-26.2-64.1
                     c0-46.6,29.1-67,87.4-64.1c17.5,0,32,2.9,49.5,8.7c67,23.3,113.6,96.1,145.6,192.2c2.9,5.8,5.8,8.7,8.7,11.6c2.9,0,2.9,0,2.9-2.9
                     c2.9,0,2.9-2.9,2.9-8.7V122.3c0-5.8-2.9-11.6-8.7-11.6c-5.8,0-8.7,5.8-8.7,8.7c-2.9,5.8-5.8,8.7-17.5,8.7c-5.8,0-11.6-8.7-32-14.6
                     c-67-14.6-96.1-20.4-131-23.3C163.3,87.4,61.4,168.9,58.5,279.5c0,69.9,46.6,122.3,157.2,168.9l84.4,34.9
                     c87.4,37.9,119.4,72.8,119.4,119.4c-2.9,49.5-37.9,67-99,64.1c-20.4,0-40.8,2.9-67-5.8c-32-11.6-58.2-32-84.4-64.1
                     C122.6,538.7,93.4,480.4,76,419.3c0-5.8-5.8-11.6-8.7-11.6s-2.9,0-2.9,2.9c-5.8,2.9-5.8,5.8-5.8,11.6v253.3c0,5.8,2.9,8.7,5.8,11.6
                     c0,0,0,0,2.9,0s5.8-2.9,8.7-8.7c2.9-8.7,11.6-11.6,23.3-11.6c8.7,0,11.6,2.9,37.9,8.7c72.8,17.5,136.9,23.3,183.4,26.2
-                    C445.8,704.6,550.6,628.9,553.5,515.4z"/> -->
+                    C445.8,704.6,550.6,628.9,553.5,515.4z"/>
                     <path d="M82.7,297.2h21c25.5,112,77.3,170.3,141.4,170.3c41.9,0,68.1-25.5,68.1-66.8c0-51.1-38-64.2-103.5-93
       c-36-15.7-70.7-28.2-97.6-58.9c-21-23.6-31.4-53.1-31.4-86.5c0-85.8,69.4-149.3,172.9-149.3c36,0,76.6,8.5,124.4,23.6v134.9h-17.7
       c-23.6-89.7-60.3-133.6-112-133.6c-39.9,0-66.8,26.2-66.8,62.2c0,32.1,20.3,56.3,62.9,73.4c50.4,20.3,89.1,31.4,110.7,46.5
       c47.1,32.1,68.1,65.5,68.1,117.9c0,93-68.1,154.6-185.3,154.6c-52.4,0-104.8-9.8-155.2-28.8V297.2z"/>
-                </svg>
+                </svg> -->
               </a>
             </div>
           </div>
@@ -277,7 +278,7 @@
           </div>
         </div>
       </div>
-<!--       <a href="#" id="toggle-purchase">
+      <a href="#" id="toggle-purchase">
         <div class="issue-nav-element nav-purchase px2 clear-padding right-align">
           <a href="#" id="toggle-purchase">
           <div class="mobile-hide button button-small button-highlight">
@@ -285,8 +286,8 @@
           </div>
           </a>
         </div>
-      </a> -->
-      <a href="http://singles-club.myshopify.com/products/singles-club-2014-subscription">
+      </a>
+<!--       <a href="http://singles-club.myshopify.com/products/singles-club-2014-subscription">
         <div class="issue-nav-element nav-purchase px2 clear-padding right-align">
           <a href="http://singles-club.myshopify.com/products/singles-club-2014-subscription">
           <div class="mobile-hide button button-small button-highlight">
@@ -294,19 +295,16 @@
           </div>
           </a>
         </div>
-      </a>
+      </a> -->
   </div>
   <!--Sub Nav-->
   <div id="purchase" class="bg-highlight py3">
-    <div class="table table-fixed white">
-      <div class="table-cell center">
-        <h4>BUY PHYSICAL</h4>
-      </div>
-      <div class="table-cell center">
-        <h4>BUY DIGITAL</h4>
-      </div>
-      <div class="table-cell center">
-        <h4>Issue 3: Woodsman</h4>
+        <div class="table table-fixed white">
+      <div class="table-cell center left-align link-white">
+        <a href="/issues" style="margin-left: 20px; margin-right: 20px;">SINGLE</a>
+        <a href="/subscribe" style="margin-left: 20px; margin-right: 20px;">SUBSCRIBE</a>
+        <a href="http://shop.singlesclub.fm" style="margin-left: 20px; margin-right: 20px;">BUNDLES</a>
+        <a href="http://shop.singlesclub.fm" style="margin-left: 20px; margin-right: 20px;">ALL</a>
       </div>
     </div>
   </div>
@@ -728,6 +726,8 @@
 <script type="text/javascript" src="/js/FeedEk.js"></script>
 <script src="//use.typekit.net/nbx4wrv.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
+
+
 <script type="text/javascript">
   $(document).ready(function () {
     $('#issue-sub').hide().before('');
