@@ -690,6 +690,13 @@ button:focus {
   padding: 0.1875rem 0.75rem;
   line-height: 1rem; }
 
+.monster-rally {
+  background-image: url(../journal/monster-rally/images/ted-cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%; }
+
 .woodsman {
   background-image: url(../journal/woodsman/images/woodsman-header.jpg);
   background-repeat: no-repeat;
@@ -718,13 +725,6 @@ button:focus {
   background-position: center bottom;
   height: 100%; }
 
-.monster-rally {
-  background-image: url(../journal/monster-rally/images/monster-rally.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 100%; }
-
 .smallsur-neil {
   background-image: url(../journal/small-sur/images/softcat.jpg);
   background-repeat: no-repeat;
@@ -749,6 +749,11 @@ button:focus {
   font-weight: 600;
   line-height: 1.6em;
   letter-spacing: .05em; }
+
+.monoton h1 {
+  font-family: 'Passion One', sans-serif;
+  line-height: 1.6em;
+  text-transform: uppercase !important; }
 
 @media screen and (max-width: 768px) {
   .Woodsman {
