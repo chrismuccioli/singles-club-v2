@@ -1,0 +1,113 @@
+---
+title: "Issues - Singles Club"
+description: "Singles Club Issue Index"
+socialimage: "images/smallsur_facebook.jpg"
+highlight: "#FF003A"
+highlight-light: "#FC1A55"
+highlight-dark: "#AA002D"
+---
+
+{% include head.html %}
+<body>
+{% include _alert-banner.html %}
+{% include _top-nav.html %}
+
+<div class="issue-you-blew-it issue">
+  <div class="container px3">
+    <div class="row mobile-center white">
+      <div class="col col-12">
+        <h6 class="caps" style="margin-top: 5px;">Issue 6 | Vol 2</h6>
+        <h2>You Blew It!</h2>
+        <a href="../journal/you-blew-it">
+          <div class="button button-highlight mt2 white">
+            Read & Listen
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="issue-monster-rally issue">
+  <div class="container px3">
+    <div class="row mobile-center white">
+      <div class="col col-12">
+        <h6 class="caps" style="margin-top: 5px;">Issue 5 | Vol 2</h6>
+        <h2>Monster Rally</h2>
+        <a href="../journal/monster-rally">
+          <div class="button button-highlight mt2 white">
+            Read & Listen
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="issue-wisdom-tooth issue">
+  <div class="container px2">
+    <div class="row mobile-center white">
+      <div class="col col-12">
+        <h6 class="caps" style="margin-top: 5px;">Issue 4 | Vol 1</h6>
+        <h2>Wisdom Tooth</h2>
+        <a href="../journal/wisdom-tooth">
+          <div class="button button-highlight mt2 white">
+            Read & Listen
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="issue-woodsman issue">
+  <div class="container px2">
+    <div class="row mobile-center white">
+      <div class="col col-12">
+        <h6 class="caps" style="margin-top: 5px;">Issue 3 | Vol 1</h6>
+        <h2>Woodsman</h2>
+        <a href="../journal/woodsman">
+          <div class="button button-highlight mt2 white">
+            Read & Listen
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="issue-small-sur issue">
+  <div class="container px2">
+    <div class="row mobile-center white">
+      <div class="col col-12">
+        <h6 class="caps" style="margin-top: 5px;">Issue 2 | Vol 1</h6>
+        <h2>Small Sur</h2>
+        <a href="../journal/small-sur">
+          <div class="button button-highlight mt2 white">
+            Read & Listen
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="issue-daniel-bachman issue">
+  <div class="container px2">
+    <div class="row mobile-center white">
+      <div class="col col-12">
+        <h6 class="caps" style="margin-top: 5px;">Issue 1 | Vol 1</h6>
+        <h2>Daniel Bachman</h2>
+        <a href="../journal/daniel-bachman">
+          <div class="button button-highlight mt2 white">
+            Read & Listen
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include _footer.html %}
+</body>
+</html>

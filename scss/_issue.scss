@@ -1,7 +1,23 @@
 //Backgrounds
 
+.you-blew-it {
+  background-image: url(../journal/you-blew-it/images/hero-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  height: 100%;
+}
+
 .monster-rally {
   background-image: url(../journal/monster-rally/images/ted-cover.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  height: 100%;
+}
+
+.michael-nau {
+  background-image: url(../journal/michael-nau/images/michael-cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -63,6 +79,18 @@
 .good-dog h1 {
   font-family: 'Merienda One', cursive;
   font-weight: 400;
+  line-height: 1.6em;
+}
+
+.source h1 {
+  font-family: 'font-family: 'Source Code Pro', ;', cursive;
+  font-weight: 900;
+  line-height: 1.6em;
+}
+
+.playfair h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
   line-height: 1.6em;
 }
 

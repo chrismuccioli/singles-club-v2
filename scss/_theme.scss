@@ -36,6 +36,20 @@ img {
     height: 100%;
 }
 
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .no-link {
   text-decoration: none;
   border-bottom: none !important;
@@ -91,7 +105,7 @@ img {
 
 body {
   color: $dark-gray;
-  background-color: $black;
+  background-color: $off-black;
 }
 
 .first-visit {
@@ -318,12 +332,12 @@ body {
 //Subscription
 
 .subscription {
-  background: url(../images/singlesclub-5.jpg) no-repeat;
+  background: url(../images/year-2-subscribe.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: 100%;
-  background-position: center center;
+  background-position: center bottom;
   background-color: #fff;
 }
 

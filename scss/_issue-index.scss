@@ -3,6 +3,19 @@
   padding-bottom: 200px;
 }
 
+.issue-you-blew-it {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../journal/you-blew-it/images/hero-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+}
+
 .issue-monster-rally {
     background:
     linear-gradient(
@@ -38,7 +51,7 @@
     url(../journal/daniel-bachman/images/daniel-bachman-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center center;
     height: 100%;
 }
 
@@ -65,7 +78,7 @@
     url(../journal/wisdom-tooth/images/wisdom-tooth-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center center;
     height: 100%;
   // &:hover {
   //   transition: background 0.5s ease;
