@@ -1,42 +1,230 @@
 // Base thematic styles
 
-body {
-  color: $dark-gray;
-  background-color: #000;
+
+// Scratch
+
+img {
+  text-decoration: none;
+  border-bottom: none !important;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
-  &:hover {
-    color: darken($red, 10%);
-    text-decoration: none;
+.faq {
+  h6 {
+    padding-bottom: 20px;
   }
 }
 
-.nav-top {
-  padding-top: -40px;
-  padding-bottom: -40px;
+.christmas {
+  background: url(../images/christmas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center center;
 }
 
-.main-nav {
-  position: fixed;
+.year1-subscription {
+  background: url(../images/year1-subscription.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 600px;
+  padding-bottom: 50px;
+}
+
+.subscribe-bg {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../images/ted-poster.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    height: 100%;
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  z-index: 3;
-  padding-bottom: .3rem;
-  padding-top: .7rem;
-  background-color: rgba(35,35,35, 0.95);
+  height: 100%;
 }
 
-.tagline {
-  padding-top: .75rem;
+.no-link {
+  text-decoration: none;
+  border-bottom: none !important;
 }
 
+.single-issue {
+  z-index: 2000;
+  margin-top: -400px;
+  img {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+.subscribe-icon {
+  img {
+    width: 65px;
+  }
+  vertical-align: top !important;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.border-top {
+  border-top: 1px solid $light-gray;
+}
+
+.border-bottom {
+  border-bottom: 3px solid #ff0022;
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+
+.single-issue {
+  z-index: 2000;
+  margin-top: 0px;
+  padding-top: 30px;
+  img {
+    max-width: 600px;
+    width: 100%;
+  }
+  color: #111 !important;
+}
+
+}
+
+
+/* Wrap entire feature in this to apply styles */
+.feature-wrapper {
+  color: $black;
+  background-color: $white;
+}
+
+body {
+  color: $dark-gray;
+  background-color: $off-black;
+}
+
+.first-visit {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 22222;
+}
+
+.first-visit-hide {
+  display: none;
+}
+
+.alert-plus {
+  margin-bottom: -5px;
+  padding-top: 20px;
+  // background-image: url(../journal/woodsman/images/woodsman-header.jpg);
+}
+
+.alert {
+  margin-bottom: -5px;
+}
+
+.soft-page {
+  background-color: white;
+  padding: 3*$space;
+  margin-top: 4*$space;
+  margin-bottom: 4*$space;
+}
+
+
+.transition-top {
+  transition: top .15s ease-out;
+}
+
+.rule {
+  height: $rule-height;
+}
+
+.alert-image {
+  padding-right: 50px;
+}
+
+.issue-title .rule {
+  width: 100%;
+  height: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.issue-title-box {
+  border: 8px solid white;
+  width: 64%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+/*Fixes top alignment*/
+.float-image {
+  padding-top: 1.2rem !important;
+}
+
+.issue-title-wrapper {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 50px;
+}
+
+.site-footer a {
+  margin-right: 30px;
+}
+
+.site-footer li, .social-footer li {
+    display: inline;
+}
+
+.site-footer ul , .social-footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.social-footer {
+  font-size: $h6;
+}
+
+.social-footer a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+/*issue footer*/
+
+.issue-footer a {
+  color: $dark-gray;
+}
+
+/*For Testing*/
+.border {
+  border: 5px solid red;
+}
 
 // RSS Feed
 
 .rss-feed {
   margin-top: -45px;
+  margin-right: -20px;
 }
 
 .feedEkList {
@@ -56,18 +244,46 @@ a {
 }
 
 .itemTitle {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: $red;
-  color: #fff;
+  padding: 30px;
+  min-height: 78px !important;
+  color: $black;
+  background-color: $white;
+  text-align: left;
   transition-duration: .2s;
   transition-timing-function: ease;
   transition-property: box-shadow , background-color;
   &:hover,
   &:focus {
     outline: none;
-    background-color: darken($red, 20%);
+    color: $white;
+    background-color: darken($light-gray, 20%);
   }
+}
+
+.videoWrapper-16-9 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper-vimeo {
+  position: relative;
+  padding-bottom: 55.25%; /* Johns Videos */
+  padding-top: 16px;
+  height: 0;
+}
+.videoWrapper-16-9, .videoWrapper-vimeo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.itemRead-more {
+  color: $light-gray;
+  padding-top: 10px;
 }
 
 .itemContent p {
@@ -80,8 +296,8 @@ a {
   padding-right: 0;
   padding-left: 0;
   border-right-style: solid;
-  border-width: 2px;
-  border-color: $off-black;
+  border-width: 20px;
+  border-color: $mid-gray;
 }
 
 // Featured Issue
@@ -124,16 +340,13 @@ a {
 //Subscription
 
 .subscription {
-  background: url(../images/subscription.jpg) no-repeat;
+  background: url(../images/year-2-subscribe.jpg) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: 90%;
-  background-position: center center;
-  background-color: #ddd8d3;
-  .logo {
-    width: 150px;
-  }
+  background-size: 100%;
+  background-position: center bottom;
+  background-color: #fff;
 }
 
 .nav-logo {
@@ -144,34 +357,74 @@ a {
   max-width: 300px;
 }
 
+  .email {
+    width: 100%;
+  }
+
+
+// @media screen and (min-width: $breakpoint-desktop) {
+//   .email {
+//     width: 100%;
+//   }
+// }
+
 // Mobile Styling
 @media screen and (max-width: $breakpoint-mobile) {
   .rss-feed-spacer {
     display: none;
   }
 
+  .email {
+    width: 80%;
+  }
+
+  .videoWrapper-vimeo {
+  position: relative;
+  padding-bottom: 52%; /* Johns Videos */
+  padding-top: 20px;
+  height: 0;
+  }
+
+  .issue-title-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+  }
+
+  .rss-feed {
+    margin-right: 0px;
+  }
+
+  .feedEkList {
+    margin-right: -20px;
+  }
+
   .featured-content {
     height: auto;
   }
 
-  .subscription {
-    background: none;
+  .alert-image {
+  padding-right: 0px;
   }
 
-  .tagline, .nav-mark {
-    padding-right: 1rem;
-    padding-left: 1rem;
+  .social-footer a {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
-  .slider {
-    padding-top: 6rem;
+  .site-footer a {
+    margin-right: 0px;
   }
 
-  //Footer
-
-  .social-footer {
-  float: none;
-  margin-right: 30px;
-}
+  .site-footer svg {
+    padding-bottom: 20px;
+  }
+  .site-footer li {
+      display: block;
+      text-align: center;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
 
 }

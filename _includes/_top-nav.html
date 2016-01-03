@@ -1,0 +1,47 @@
+{% include _social.html %}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div id="mobile-top-nav" class="bg-highlight py3 center" style="display: none;">
+  <ul class="list-reset white" style="line-height: 30px; letter-spacing: .1em; text-transform: uppercase;" class="link-white">
+<!--     <li class="link-white"><a href="#">About</a></li> -->
+    <li class="link-white"><a href="/issues">Issues</a></li>
+    <li class="link-white"><a href="/subscribe">Subscribe</a></li>
+<!--     <li class="link-white"><a href="http://www.singlesclub.fm/blog">Blog</a></li> -->
+<!--     <li class="link-white"><a href="#">Mixtape</a></li> -->
+    <li class="link-white"><a href="http://shop.singlesclub.fm">The Shop</a></li>
+    <li class="link-white"><a href="http://singlesclub.fm/blog">Blog</a></li>
+  </ul>
+</div>
+<div class="main-nav border-highlight px2">
+  <div class="px2">
+    <div class="table">
+      <div class="table-cell">
+        <div class="mobile-center">
+          <a href="http://www.singlesclub.fm" class="mobile-hide no-hover">
+            <img src="/../images/logo-straight.svg" class="" style="width: 200px; padding-top: 25px; padding-bottom: 20px; padding-left: 20px;">
+          </a>
+          <a href="#" id="toggle-top-nav" class="desktop-hide no-hover">
+            <img src="/images/logo-hinted-white.svg" class="logo">
+          </a>
+        </div>
+      </div>
+      <div class="table-cell mobile-hide">
+        <div class="right-align top-nav-links">
+<!--           <a href="#">About</a> -->
+          <a href="/issues">Issues</a>
+          <a href="/subscribe">Subscribe</a>
+<!--           <a href="http://www.singlesclub.fm/blog">Blog</a> -->
+<!--           <a href="#">Mixtapes</a> -->
+          <a href="http://shop.singlesclub.fm">The Shop</a>
+          <a href="http://singlesclub.fm/blog">Blog</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

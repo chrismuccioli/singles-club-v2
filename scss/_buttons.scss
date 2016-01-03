@@ -1,8 +1,8 @@
 // Buttons
 
 .button {
-  font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
-  font-weight: 600;
+  font-family: $sans-serif;
+  font-weight: 700;
   font-style: normal;
   text-decoration: none;
   text-align: center;
@@ -24,36 +24,6 @@
   &:focus {
     text-decoration: none;
   }
-  h4 {
-    margin-top: 0.3rem;
-  }
-}
-
-.button-custom {
-  font-family: 'Apercu Medium', 'Helvetica-Medium', sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-  -webkit-appearance: none;
-  appearance: none;
-  white-space: nowrap;
-  display: inline-block;
-  line-height: $ui-height;
-  height: auto;
-  min-height: $ui-height;
-  padding-top: $ui-padding;
-  padding-bottom: $ui-padding;
-  letter-spacing: $ls05;
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
-  h4 {
-    margin-top: 0.3rem;
-  }
 }
 
 .form-button {
@@ -61,13 +31,58 @@
   line-height: 0;
 }
 
-.button-big {
-  line-height: $ui-height-big;
-  min-height: $ui-height-big;
-  padding: 0 1.5*$ui-padding;
-}
-
 .button-small {
   line-height: $ui-height-small;
   min-height: $ui-height-small;
+}
+
+// Button Themes
+
+.button {
+  border-radius: $border-radius;
+  text-transform: uppercase;
+  transition-duration: .2s;
+  transition-timing-function: ease;
+  transition-property: box-shadow , background-color;
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff, 0 0 1px 4px rgba($blue, .5);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.button-standard {
+  color: $white;
+  background-color: $gray;
+  &:hover {
+    color: #fff;
+    background-color: darken($gray, 20%);
+  }
+}
+
+.button-dark {
+  color: #fff;
+  background-color: $dark-gray;
+  &:hover {
+    color: #fff;
+    background-color: darken($dark-gray, 20%);
+  }
+}
+
+.button-highlight {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.button-white {
+  color: $purple;
+  text-transform: uppercase;
+  background-color: $white;
+  &:hover {
+    color: $purple;
+    background-color: $light-gray;
+  }
+  &:focus {}
 }

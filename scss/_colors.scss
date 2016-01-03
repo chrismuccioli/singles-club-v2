@@ -1,27 +1,65 @@
 // Colors
 
-.white      { color: #fff; }
-.dark-gray  { color: $dark-gray; }
-.mid-gray   { color: $mid-gray; }
-.light-gray { color: $light-gray; }
-.blue       { color: $blue; }
-.green      { color: $green; }
-.yellow     { color: $yellow; }
-.red        { color: $red; }
-.off-black  { color: $off-black; }
-.off-white  { color: $off-white; }
+.white         { color: $white; }
+.black         { color: $black; }
+.light-gray    { color: $light-gray; }
+.dark-gray     { color: $dark-gray; }
+.mid-gray     { color: $mid-gray; }
+.gray          { color: $gray; }
+.blue          { color: $blue ; }
+.red           { color: $red; }
+.green         { color: $green; }
+.yellow        { color: $yellow; }
+.orange        { color: $orange; }
 
-.bg-white      { background-color: #fff; }
 .bg-dark-gray  { background-color: $dark-gray; }
-.bg-mid-gray   { background-color: $mid-gray; }
+.bg-mid-gray { background-color: $mid-gray; }
+.bg-gray   { background-color: $gray; }
 .bg-light-gray { background-color: $light-gray; }
 .bg-blue       { background-color: $blue; }
 .bg-green      { background-color: $green; }
 .bg-yellow     { background-color: $yellow; }
 .bg-red        { background-color: $red; }
-.bg-off-black  { background-color: $off-black; }
-.bg-off-white  { background-color: $off-white; }
+.bg-orange        { background-color: $orange; }
+.bg-black        { background-color: $black; }
+.bg-off-black        { background-color: $off-black; }
+.bg-off-white, .bg-white  { background-color: $white; }
 
-.link-dark-gray a { color: $dark-gray; }
-.link-mid-gray a { color: $mid-gray; }
+.link-dark-gray a {
+  color: $dark-gray;
+  &:hover {
+    color: $gray !important;
+  }
+}
 
+.link-gray a {
+  color: $gray;
+  &:hover {
+    color: $mid-gray !important;
+  }
+}
+
+.link-white a {
+  color: $white !important;
+  &:hover {
+    color: $dark-gray !important;
+  }
+}
+
+.link-light-gray a {
+  color: $light-gray;
+  &:hover {
+    color: $mid-gray !important;
+  }
+}
+
+.link-mid-gray a {
+  color: $mid-gray;
+  &:hover {
+    color: $gray !important;
+  }
+}
+
+.clean-link a {
+  text-decoration: none;
+}

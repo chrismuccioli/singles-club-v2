@@ -7,6 +7,7 @@
 .p2  { padding: $space; }
 .px2 { padding-right: $space; padding-left: $space; }
 .py2 { padding-top: $space; padding-bottom: $space; }
+.pr2 { padding-right: $space;}
 
 .p3  { padding: 2*$space; }
 .px3 { padding-right: 2*$space; padding-left: 2*$space; }
@@ -30,6 +31,7 @@
 .pt4  { padding-top: 4*$space; }
 .pt5  { padding-top: 6*$space; }
 .pt6  { padding-top: 8*$space; }
+.pt7  { padding-top: 10*$space; }
 
 .pb1  { padding-bottom: .5*$space; }
 .pb2  { padding-bottom: $space; }
@@ -42,9 +44,16 @@
 .pl2  { padding-left: $space; }
 .pl3  { padding-left: 2*$space; }
 
+.image-set { padding-top: 2*$space; padding-bottom: 2*$space; }
+
+
 @media screen and (max-width: $breakpoint-mobile) {
-  .m-px10 {
-    padding-left: 5%;
-    padding-right: 5%;
+  .clear-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
+  .clear-padding-top {
+    padding-top: 0 !important;
+  }
+  .m-px2 { padding-right: $space; padding-left: $space; }
 }

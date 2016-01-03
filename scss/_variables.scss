@@ -4,31 +4,31 @@
 $space: 1rem !default;
 
 // Typography
-$font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-family: "aktiv-grotesk-std", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 $line-height: 1.5 !default;
-$line-height-heading: 1.25 !default;
+$line-height-heading: 1.5 !default;
 
-// Type Scale
-$h1: 2.5rem !default;
-$h2: 2rem !default;
-$h3: 1.25rem !default;
-$h4: 1rem !default;
-$h5: .875rem !default;
-$h6: .75rem !default;
+// Type
+$h1: 3.157em;                 $base-h1-lh: 1.1em;
+$h2: 2.369em;                 $base-h2-lh: 1.2em;
+$h3: 1.777em;                 $base-h3-lh: 1.4em;
+$h4: 1.4em;                 $base-h4-lh: 1.5em;
+$h5: 1.1em;                     $base-h5-lh: 1.45em;
+$h6: 0.875em;                  $base-h6-lh: 1.45em;
+$p: 1.1em;                      $base-p-lh: 1.4em;
+$feature-p: 1.3125em;            $feature-p-lh: 1.6em;
 
-// Responsive type scale
-$responsive-type: true !default;
-$desktop-h1: 3.5rem !default;
-$desktop-h2: 2rem !default;
-$desktop-h3: 1.5rem !default;
-$desktop-h4: 1.125rem !default;
-$desktop-h5: .875rem !default;
-$desktop-h6: .875rem !default;
+// Typography
+$sans-serif-headline: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-serif: 'Karla', sans-serif;
+$sans-serif-light: "aktiv-grotesk-std", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serif: "leitura-news", "TimesNewRoman", "Times New Roman", serif;
 
 //line height
-$lh1: 1;
-$lh2: 1.25;
-$lh3: 1.5;
+$lh1: 1em;
+$lh2: 1.25em;
+$lh3: 1.5em;
+$lh4: 2em;
 
 // Letter Spacing
 $ls-1: -.1em;
@@ -39,15 +39,19 @@ $ls2: .2em;
 $ls3: .3em;
 
 // Breakpoints
+$breakpoint-iphone: 580px;
 $breakpoint-mobile: 768px;
-$breakpoint-desktop: 48em !default;
+$breakpoint-desktop: 769px !default;
 
 // Heights for buttons, forms, nav, etc.
-$ui-height: 2.25rem !default;
-$ui-height-small: 1.75rem !default;
+$ui-height: 1.75rem !default;
+$ui-height-small: 1rem !default;
 $ui-height-big: 3rem !default;
 
 $ui-padding: .75*$space !default;
+
+// Rules
+$rule-height: 5px;
 
 // Grid
 // $grid-max-width: 75rem !default;
@@ -55,16 +59,20 @@ $grid-max-width: 70rem !default;
 $grid-gutter: 2 * $space !default;
 
 // Theme
-$blue: #0096cc !default;
-$light-gray: #eee !default;
-$mid-gray: #555 !default;
-$dark-gray: #232323 !default;
-$off-black: #111;
-$off-white: #F7F7F7;
-
-$red: #FF0033 !default;
-$green: #11e966 !default;
-$yellow: #ffdc00 !default;
+$light-gray: #f0f0f0 !default;
+$mid-gray: #e2e2e2 !default;
+$gray: #c7c7c7 !default;
+$dark-gray: #111111 !default;
+$off-black: #111111 !default;
+$black: #000000 !default;
+$off-white: #f7f7f7 !default;
+$white: #ffffff !default;
+$blue: #3b00cc !default;
+$red: #ff0033 !default;
+$yellow: #ffb600 !default;
+$green: #00ffaa !default;
+$orange: #ff3000 !default;
+$purple: #6600FF !default;
 
 // Alpha blacks for UI elements
 $darken-1: rgba(#000,.125) !default;
@@ -75,4 +83,3 @@ $darken-3: rgba(#000,.375) !default;
 $border-color: #ccc !default;
 $border-width: 1px !default;
 $border-radius: 0 !default;
-
