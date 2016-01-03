@@ -9,10 +9,15 @@
 h1, h2, h3, h4, h5, h6, p  {
   line-height: $line-height-heading;
   margin-bottom: 5px;
-  font-weight: 600;
+  font-weight: 500;
   -webkit-font-smoothing:antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
+}
+
+h6 {
+  font-weight: 600 !important;
+  letter-spacing: .1em;
 }
 
 // h1, h2, h3, h4, h5, h6 {
@@ -198,4 +203,3 @@ a {
 .lydia, .lydia-italic {
   letter-spacing: .025em;
 }
-

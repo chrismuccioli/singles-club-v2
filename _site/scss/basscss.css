@@ -23,10 +23,14 @@ h1, h2, h3, h4, h5, h6, p {
 h1, h2, h3, h4, h5, h6, p {
   line-height: 1.5;
   margin-bottom: 5px;
-  font-weight: 600;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
+
+h6 {
+  font-weight: 600 !important;
+  letter-spacing: .1em; }
 
 .light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p {
   font-weight: 400 !important; }
@@ -48,7 +52,7 @@ h3 {
 
 h4 {
   font-size: 1.4em;
-  line-height: 1.35em; }
+  line-height: 1.5em; }
 
 h5 {
   font-size: 1.1em;
@@ -61,7 +65,7 @@ h6 {
 
 p {
   font-size: 1.1em;
-  line-height: 1.3em; }
+  line-height: 1.4em; }
 
 .feature p {
   font-size: 1.3125em;
@@ -74,7 +78,7 @@ p {
 @media screen and (min-width: 769px) {
   p {
     font-size: 1.1em;
-    line-height: 1.3em; }
+    line-height: 1.4em; }
 
   .feature p {
     font-size: 1.3125em;
@@ -693,6 +697,13 @@ button:focus {
 .table-small th, .table-small td {
   padding: 0.1875rem 0.75rem;
   line-height: 1rem; }
+
+.dustin {
+  background: url(../journal/dustin-wong-takako-minekawa/images/dt-train.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center center; }
 
 .you-blew-it {
   background-image: url(../journal/you-blew-it/images/hero-2.jpg);
@@ -1617,6 +1628,13 @@ img {
 
 .faq h6 {
   padding-bottom: 20px; }
+
+.christmas {
+  background: url(../images/christmas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center center; }
 
 .year1-subscription {
   background: url(../images/year1-subscription.jpg);
