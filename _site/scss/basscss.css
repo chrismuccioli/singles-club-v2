@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("//hello.myfonts.net/count/31ef49");
 body, button, input, select, textarea, pre {
   margin: 0; }
 
@@ -148,7 +149,7 @@ p {
   letter-spacing: 0.3em; }
 
 body {
-  font-family: "Karla", sans-serif;
+  font-family: "AvantGardeGothicITCW02Md", sans-serif;
   font-weight: 700;
   letter-spacing: -0.03em !important;
   -webkit-font-smoothing: antialiased !important;
@@ -156,14 +157,14 @@ body {
   text-size-adjust: none; }
 
 p {
-  font-family: "Karla", sans-serif;
+  font-family: "AvantGardeGothicITCW02Md", sans-serif;
   -webkit-font-smoothing: antialiased !important;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
 
 a {
   color: #c7c7c7;
-  font-family: "Karla", sans-serif;
+  font-family: "AvantGardeGothicITCW02Md", sans-serif;
   font-weight: 700;
   text-decoration: none;
   -webkit-text-size-adjust: none;
@@ -199,7 +200,7 @@ a {
   text-size-adjust: none; }
 
 .sans-serif {
-  font-family: "Karla", sans-serif;
+  font-family: "AvantGardeGothicITCW02Md", sans-serif;
   font-weight: 400;
   font-style: normal; }
 
@@ -1018,8 +1019,50 @@ progress::-moz-progress-bar {
 .issue-label {
   float: left; }
 
+/**
+ * @license
+ * MyFonts Webfont Build ID 3272521, 2016-08-21T16:46:19-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: AvantGardeGothicITCW01Bd by ITC
+ * URL: http://www.myfonts.com/fonts/itc/avant-garde-gothic/std-bold/
+ *
+ * Webfont: AvantGardeGothicITCW02Dm by ITC
+ * URL: http://www.myfonts.com/fonts/itc/avant-garde-gothic/std-demi-bold/
+ *
+ * Webfont: AvantGardeGothicITCW02Md by ITC
+ * URL: http://www.myfonts.com/fonts/itc/avant-garde-gothic/std-medium/
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3272521
+ * Licensed pageviews: 250,000
+ * Webfonts copyright: Font software Copyright 1993, 1994, 2001 Adobe Systems Incorporated. Typeface designs Copyright 2005 International Typeface Corporation. All rights reserved.
+ *
+ * © 2016 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'AvantGardeGothicITCW01Bd';
+  src: url("../fonts/31EF49_0_0.eot");
+  src: url("../fonts/31EF49_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/31EF49_0_0.woff2") format("woff2"), url("../fonts//31EF49_0_0.woff") format("woff"), url("../fonts/31EF49_0_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvantGardeGothicITCW02Dm';
+  src: url("../fonts/31EF49_1_0.eot");
+  src: url("../fonts/31EF49_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/31EF49_1_0.woff2") format("woff2"), url("../fonts/31EF49_1_0.woff") format("woff"), url("../fonts/31EF49_1_0.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'AvantGardeGothicITCW02Md';
+  src: url("../fonts/31EF49_2_0.eot");
+  src: url("../fonts/31EF49_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/31EF49_2_0.woff2") format("woff2"), url("../fonts/31EF49_2_0.woff") format("woff"), url("../fonts/31EF49_2_0.ttf") format("truetype"); }
+
 .button {
-  font-family: "Karla", sans-serif;
+  font-family: "AvantGardeGothicITCW02Md", sans-serif;
   font-weight: 700;
   font-style: normal;
   text-decoration: none;
@@ -1264,9 +1307,7 @@ progress::-moz-progress-bar {
 .main-nav {
   top: 0;
   padding-top: 50px;
-  z-index: 2000;
-  background-color: black;
-  border-top: 5px solid; }
+  z-index: 2000; }
 
 .main-nav .logo {
   width: 120px;
