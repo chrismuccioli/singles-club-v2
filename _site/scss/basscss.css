@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h6 {
   font-weight: 600 !important;
-  letter-spacing: .1em; }
+  letter-spacing: .05em; }
 
 .light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p {
   font-weight: 400 !important; }
@@ -699,7 +699,14 @@ button:focus {
   line-height: 1rem; }
 
 .dustin {
-  background: url(../journal/dustin-wong-takako-minekawa/images/dt-train.jpg);
+  background: url(../journal/dustin-wong-takako-minekawa/images/dt-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center center; }
+
+.dustin-vid-bg {
+  background: url(../journal/dustin-wong-takako-minekawa/images/video.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -792,6 +799,26 @@ button:focus {
 .monoton h1 {
   font-family: 'Passion One', sans-serif;
   line-height: 1.6em;
+  text-transform: uppercase !important; }
+
+.hammersmith h1 {
+  font-family: 'Hammersmith One', sans-serif;
+  text-transform: uppercase; }
+
+.interview-response {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.d {
+  color: #494542; }
+
+.t {
+  color: #746e6a; }
+
+.roboto h5 {
+  font-family: 'Roboto Mono';
+  line-height: 1.6em;
+  letter-spacing: 3px;
   text-transform: uppercase !important; }
 
 @media screen and (max-width: 768px) {

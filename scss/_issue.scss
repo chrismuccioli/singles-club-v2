@@ -1,7 +1,15 @@
 //Backgrounds
 
 .dustin {
-  background: url(../journal/dustin-wong-takako-minekawa/images/dt-train.jpg);
+  background: url(../journal/dustin-wong-takako-minekawa/images/dt-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center center;
+}
+
+.dustin-vid-bg {
+  background: url(../journal/dustin-wong-takako-minekawa/images/video.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -112,6 +120,32 @@
 .monoton h1 {
   font-family: 'Passion One', sans-serif;
   line-height: 1.6em;
+  text-transform: uppercase !important;
+}
+
+.hammersmith h1 {
+  font-family: 'Hammersmith One', sans-serif;
+  text-transform: uppercase;
+}
+
+.interview-response {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.d {
+  color: #494542;
+}
+
+.t {
+  color: #746e6a;
+}
+
+
+.roboto h5 {
+  font-family: 'Roboto Mono';
+  line-height: 1.6em;
+  letter-spacing: 3px;
   text-transform: uppercase !important;
 }
 
