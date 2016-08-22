@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("//hello.myfonts.net/count/31ef49");
+@import url("//hello.myfonts.net/count/31ef4c");
 body, button, input, select, textarea, pre {
   margin: 0; }
 
@@ -22,63 +23,95 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0; }
 
 h1, h2, h3, h4, h5, h6, p {
-  line-height: 1.5;
-  margin-bottom: 5px;
-  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
 
-h6 {
-  font-weight: 600 !important;
-  letter-spacing: .05em; }
-
-.light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p {
-  font-weight: 400 !important; }
-
-.bold h1, .bold h2, .bold h3, .bold h4, .bold h5, .bold h6, .bold p {
-  font-weight: 700 !important; }
+.headline h6 {
+  letter-spacing: .08em;
+  padding-left: 3px; }
 
 h1 {
-  font-size: 3.157em;
-  line-height: 1.1em; }
+  font-size: 56px;
+  line-height: 1em;
+  letter-spacing: 0.02em; }
 
 h2 {
-  font-size: 2.369em;
-  line-height: 1.2em; }
+  font-size: 42px;
+  line-height: 1.2em;
+  letter-spacing: 0em; }
 
 h3 {
-  font-size: 1.777em;
-  line-height: 1.4em; }
+  font-size: 32px;
+  line-height: 1em;
+  letter-spacing: 0.02em; }
 
 h4 {
-  font-size: 1.4em;
-  line-height: 1.5em; }
+  font-size: 24px;
+  line-height: 1.5em;
+  letter-spacing: 0em; }
 
 h5 {
-  font-size: 1.1em;
+  font-size: 18px;
   line-height: 1.45em;
-  font-weight: 300; }
+  letter-spacing: 0.02em; }
 
 h6 {
-  font-size: 0.875em;
-  line-height: 1.45em; }
+  font-size: 14px;
+  line-height: 1.45em;
+  letter-spacing: 0em; }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.4em; }
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0em; }
 
 .feature p {
   font-size: 1.3125em;
   line-height: 1.6em; }
 
 .mega {
-  font-size: 3.157em;
+  font-size: 72px;
   line-height: 1em; }
+
+.h1 {
+  font-size: 56px;
+  line-height: 1em;
+  letter-spacing: 0.02em; }
+
+.h2 {
+  font-size: 42px;
+  line-height: 1.2em;
+  letter-spacing: 0em; }
+
+.h3 {
+  font-size: 32px;
+  line-height: 1em;
+  letter-spacing: 0.02em; }
+
+.h4 {
+  font-size: 24px;
+  line-height: 1.5em;
+  letter-spacing: 0em; }
+
+.h5 {
+  font-size: 18px;
+  line-height: 1.45em;
+  letter-spacing: 0.02em; }
+
+.h6 {
+  font-size: 14px;
+  line-height: 1.45em;
+  letter-spacing: 0em; }
+
+.p {
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 0em; }
 
 @media screen and (min-width: 769px) {
   p {
-    font-size: 1.1em;
+    font-size: 14px;
     line-height: 1.4em; }
 
   .feature p {
@@ -87,7 +120,7 @@ p {
     letter-spacing: .01em; }
 
   .mega {
-    font-size: 4.157em;
+    font-size: 72px;
     line-height: 1em; } }
 .bold {
   font-weight: bold; }
@@ -150,11 +183,16 @@ p {
 
 body {
   font-family: "AvantGardeGothicITCW02Md", sans-serif;
-  font-weight: 700;
   letter-spacing: -0.03em !important;
   -webkit-font-smoothing: antialiased !important;
   -webkit-text-size-adjust: none;
   text-size-adjust: none; }
+
+.demi {
+  font-family: "AvantGardeGothicITCW02Dm", sans-serif; }
+
+.bold {
+  font-family: "AvantGardeGothicITCW01Bd", sans-serif; }
 
 p {
   font-family: "AvantGardeGothicITCW02Md", sans-serif;
@@ -163,17 +201,19 @@ p {
   text-size-adjust: none; }
 
 a {
-  color: #c7c7c7;
-  font-family: "AvantGardeGothicITCW02Md", sans-serif;
-  font-weight: 700;
+  color: black;
   text-decoration: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   -webkit-font-smoothing: antialiased !important; }
-  a:hover {
-    border-bottom: 1px solid;
-    padding-bottom: 3px;
-    text-decoration: none; }
+
+.mono {
+  font-family: "Space Mono", monospace;
+  font-weight: 400; }
+
+.mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700; }
 
 .underline {
   border-bottom: 1px solid;
@@ -201,7 +241,17 @@ a {
 
 .sans-serif {
   font-family: "AvantGardeGothicITCW02Md", sans-serif;
-  font-weight: 400;
+  font-weight: normal;
+  font-style: normal; }
+
+.sans-serif-bold {
+  font-family: "AvantGardeGothicITCW01Bd", sans-serif;
+  font-weight: normal;
+  font-style: normal; }
+
+.sans-serif-medium {
+  font-family: "AvantGardeGothicITCW02Dm", sans-serif;
+  font-weight: normal;
   font-style: normal; }
 
 .headline-type {
@@ -487,6 +537,12 @@ a {
 .no-hover:hover {
   text-decoration: none;
   border-bottom: 0px; }
+
+.clear-padding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important; }
 
 .fit {
   max-width: 100%; }
@@ -1061,10 +1117,163 @@ progress::-moz-progress-bar {
   src: url("../fonts/31EF49_2_0.eot");
   src: url("../fonts/31EF49_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/31EF49_2_0.woff2") format("woff2"), url("../fonts/31EF49_2_0.woff") format("woff"), url("../fonts/31EF49_2_0.ttf") format("truetype"); }
 
-.button {
-  font-family: "AvantGardeGothicITCW02Md", sans-serif;
+/**
+ * @license
+ * MyFonts Webfont Build ID 3272524, 2016-08-21T17:12:19-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: CaslonGraD by URW++
+ * URL: http://www.myfonts.com/fonts/urw/caslon-graphique/d/
+ * Copyright: Copyright 2010 URW++ Design &amp; Development Hamburg
+ * Licensed pageviews: 10,000
+ *
+ *
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3272524
+ *
+ * © 2016 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'CaslonGraD';
+  src: url("webfonts/31EF4C_0_0.eot");
+  src: url("webfonts/31EF4C_0_0.eot?#iefix") format("embedded-opentype"), url("webfonts/31EF4C_0_0.woff2") format("woff2"), url("webfonts/31EF4C_0_0.woff") format("woff"), url("webfonts/31EF4C_0_0.ttf") format("truetype"); }
+
+.header-homepage {
+  background: url(../images/homepage-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center center; }
+  .header-homepage a {
+    color: white; }
+
+.header-homepage .caslon {
+  padding-left: 22px; }
+
+.hp-issue-fix {
+  padding-left: 20px; }
+
+.header-homepage h1 a {
+  padding: 25px 20px 10px 20px;
+  line-height: 1.1em; }
+
+.header-homepage .db:hover {
+  background: url(../journal/daniel-bachman/images/daniel-bachman-social.jpg); }
+
+.header-homepage .ss:hover {
+  background: url(../journal/small-sur/images/hero-smallsur.jpg); }
+
+.header-homepage .wo:hover {
+  background: url(../journal/daniel-bachman/images/daniel-bachman-social.jpg); }
+
+.header-homepage .wt:hover {
+  background: url(../journal/daniel-bachman/images/daniel-bachman-social.jpg); }
+
+.header-homepage .mr:hover {
+  background: url(../journal/daniel-bachman/images/daniel-bachman-social.jpg); }
+
+.header-homepage .yb:hover {
+  background: url(../journal/daniel-bachman/images/daniel-bachman-social.jpg); }
+
+.header-homepage .mn:hover {
+  background: url(../journal/daniel-bachman/images/daniel-bachman-social.jpg); }
+
+.header-homepage .dw:hover {
+  background: url(../journal/daniel-bachman/images/daniel-bachman-social.jpg); }
+
+.caslon {
+  font-family: CaslonGraD;
+  font-weight: normal;
+  font-style: normal; }
+
+.homepage-wall .brick {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.latest-mixtape {
+  background: linear-gradient(rgba(134, 62, 243, 0.4), rgba(134, 62, 243, 0.4)), url(../mixtapes/images/mixtape-may-2016.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center center; }
+
+.homepage-wall .listening {
+  background: linear-gradient(270deg, #261f1e, #3e3432);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 0s ease infinite;
+  -moz-animation: AnimationName 0s ease infinite;
+  animation: AnimationName 0s ease infinite;
+  @-webkit-keyframes AnimationName {
+    0% {
+      background-position: 0% 50%; }
+
+    50% {
+      background-position: 100% 50%; }
+
+    100% {
+      background-position: 0% 50%; } }
+
+  @-moz-keyframes AnimationName {
+    0% {
+      background-position: 0% 50%; }
+
+    50% {
+      background-position: 100% 50%; }
+
+    100% {
+      background-position: 0% 50%; } }
+
+  @keyframes AnimationName {
+    0% {
+      background-position: 0% 50%; }
+
+    50% {
+      background-position: 100% 50%; }
+
+    100% {
+      background-position: 0% 50%; } }
+ }
+
+.homepage-wall .shop {
+  background: linear-gradient(rgba(255, 154, 133, 0.2), rgba(255, 154, 133, 0.2)), url(../images/homepage-record-in-hand.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center center; }
+
+.homepage-wall .recommended-reading {
+  background: linear-gradient(rgba(61, 240, 167, 0.4), rgba(61, 240, 167, 0.4)), url(../journal/monster-rally/images/ted-couch.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-position: center center; }
+
+.homepage-wall .recommended-reading-content {
+  padding-top: 8rem;
+  padding-bottom: 8rem; }
+
+.homepage-wall .button {
+  margin-top: 1rem; }
+
+.title-sup {
+  font-size: 18px;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
+  margin-left: 10px; }
+
+.button {
+  font-family: "AvantGardeGothicITCW01Bd", sans-serif;
+  font-weight: normal;
   font-style: normal;
+  font-size: 14px;
+  letter-spacing: .1em;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -1073,16 +1282,17 @@ progress::-moz-progress-bar {
   appearance: none;
   white-space: nowrap;
   display: inline-block;
-  line-height: 1.75rem;
   height: auto;
-  min-height: 1.75rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  letter-spacing: 0.05em; }
-  .button:hover, .button:focus {
-    text-decoration: none; }
+  padding: 15px 26px 12px 26px;
+  border-radius: 50px;
+  text-transform: uppercase; }
+
+button {
+  opacity: 1; }
+
+button:hover {
+  opacity: 0.75;
+  transition: all 0.3s ease 0.01s; }
 
 .form-button {
   padding: 0.375rem 0.75rem;
@@ -1091,18 +1301,6 @@ progress::-moz-progress-bar {
 .button-small {
   line-height: 1rem;
   min-height: 1rem; }
-
-.button {
-  border-radius: 0;
-  text-transform: uppercase;
-  transition-duration: .2s;
-  transition-timing-function: ease;
-  transition-property: box-shadow , background-color; }
-  .button:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px white, 0 0 1px 4px rgba(59, 0, 204, 0.5); }
-  .button:focus {
-    outline: none; }
 
 .button-standard {
   color: white;
@@ -1123,11 +1321,11 @@ progress::-moz-progress-bar {
   text-transform: uppercase; }
 
 .button-white {
-  color: #6600ff;
+  color: #863ef3;
   text-transform: uppercase;
   background-color: white; }
   .button-white:hover {
-    color: #6600ff;
+    color: #863ef3;
     background-color: #f0f0f0; }
 
 .container {
@@ -1842,7 +2040,7 @@ body {
   padding: 0; }
 
 .social-footer {
-  font-size: 0.875em; }
+  font-size: 14px; }
 
 .social-footer a {
   margin-left: 20px;
@@ -2037,16 +2235,31 @@ body {
   color: #3b00cc; }
 
 .red {
-  color: #ff0033; }
+  color: #ef3845; }
 
 .green {
-  color: #00ffaa; }
+  color: #3df0a7; }
 
 .yellow {
-  color: #ffb600; }
+  color: #f9b432; }
 
 .orange {
   color: #ff3000; }
+
+.peach {
+  color: #ff9a85; }
+
+.cream {
+  color: #ebceb7; }
+
+.gray-1 {
+  color: #e8e8e8; }
+
+.gray-2 {
+  color: #3e3432; }
+
+.gray-3 {
+  color: #261f1e; }
 
 .bg-dark-gray {
   background-color: #111111; }
@@ -2064,13 +2277,19 @@ body {
   background-color: #3b00cc; }
 
 .bg-green {
-  background-color: #00ffaa; }
+  background-color: #3df0a7; }
 
 .bg-yellow {
-  background-color: #ffb600; }
+  background-color: #f9b432; }
 
 .bg-red {
-  background-color: #ff0033; }
+  background-color: #ef3845; }
+
+.bg-peach {
+  background-color: #ff9a85; }
+
+.bg-cream {
+  background-color: #ebceb7; }
 
 .bg-orange {
   background-color: #ff3000; }
@@ -2083,6 +2302,15 @@ body {
 
 .bg-off-white, .bg-white {
   background-color: white; }
+
+.bg-gray-1 {
+  background-color: #e8e8e8; }
+
+.bg-gray-2 {
+  background-color: #3e3432; }
+
+.bg-gray-3 {
+  background-color: #261f1e; }
 
 .link-dark-gray a {
   color: #111111; }

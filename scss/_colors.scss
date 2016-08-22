@@ -11,6 +11,12 @@
 .green         { color: $green; }
 .yellow        { color: $yellow; }
 .orange        { color: $orange; }
+.peach        { color: $peach; }
+.cream        { color: $cream; }
+.gray-1        { color: $gray-1; }
+.gray-2        { color: $gray-2; }
+.gray-3       { color: $gray-3; }
+
 
 .bg-dark-gray  { background-color: $dark-gray; }
 .bg-mid-gray { background-color: $mid-gray; }
@@ -20,10 +26,16 @@
 .bg-green      { background-color: $green; }
 .bg-yellow     { background-color: $yellow; }
 .bg-red        { background-color: $red; }
+.bg-peach     { background-color: $peach; }
+.bg-cream        { background-color: $cream; }
 .bg-orange        { background-color: $orange; }
 .bg-black        { background-color: $black; }
 .bg-off-black        { background-color: $off-black; }
 .bg-off-white, .bg-white  { background-color: $white; }
+
+.bg-gray-1        { background-color: $gray-1; }
+.bg-gray-2        { background-color: $gray-2; }
+.bg-gray-3        { background-color: $gray-3; }
 
 .link-dark-gray a {
   color: $dark-gray;

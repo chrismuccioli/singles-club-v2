@@ -1,52 +1,65 @@
 // Type
 
 h1, h2, h3, h4, h5, h6, p  {
-  line-height: $line-height-heading;
-  margin-bottom: 5px;
-  font-weight: 500;
+  // line-height: $line-height-heading;
+  // margin-bottom: 5px;
+  // font-weight: 500;
   -webkit-font-smoothing:antialiased;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
 }
 
-h6 {
-  font-weight: 600 !important;
-  letter-spacing: .05em;
-}
+// h6 {
+//   font-weight: 600 !important;
+//   letter-spacing: .05em;
+// }
 
 // h1, h2, h3, h4, h5, h6 {
 //   letter-spacing: -0.03em;
 // }
 
-.light {
-  h1, h2, h3, h4, h5, h6, p {
-  font-weight: 400 !important;
-  }
-}
+// .light {
+//   h1, h2, h3, h4, h5, h6, p {
+//   font-weight: 400 !important;
+//   }
+// }
 
-.bold {
-  h1, h2, h3, h4, h5, h6, p {
-    font-weight: 700 !important;
-  }
-}
+// .bold {
+//   h1, h2, h3, h4, h5, h6, p {
+//     font-weight: 700 !important;
+//   }
+// }
 
+.headline h6 {
+  letter-spacing: .08em;
+  padding-left: 3px;
+}
 
 // Base Type Scale
-h1 { font-size: $h1; line-height: $base-h1-lh;}
-h2 { font-size: $h2; line-height: $base-h2-lh; }
-h3 { font-size: $h3; line-height: $base-h3-lh; }
-h4 { font-size: $h4; line-height: $base-h4-lh; }
-h5 { font-size: $h5; line-height: $base-h5-lh; font-weight: 300;}
-h6 { font-size: $h6; line-height: $base-h6-lh; }
-p { font-size: $p; line-height: $base-p-lh; }
+h1 { font-size: $h1; line-height: $base-h1-lh; letter-spacing: $base-h1-ls; }
+h2 { font-size: $h2; line-height: $base-h2-lh; letter-spacing: $base-h2-ls; }
+h3 { font-size: $h3; line-height: $base-h3-lh; letter-spacing: $base-h3-ls; }
+h4 { font-size: $h4; line-height: $base-h4-lh; letter-spacing: $base-h4-ls; }
+h5 { font-size: $h5; line-height: $base-h5-lh; letter-spacing: $base-h5-ls; }
+h6 { font-size: $h6; line-height: $base-h6-lh; letter-spacing: $base-h6-ls; }
+p { font-size: $p; line-height: $base-p-lh; letter-spacing: $base-p-ls; }
 .feature p { font-size: $feature-p; line-height: $feature-p-lh; }
-.mega { font-size : 3.157em; line-height: 1em; }
+.mega { font-size : 72px; line-height: 1em; }
+
+
+.h1 { font-size: $h1; line-height: $base-h1-lh; letter-spacing: $base-h1-ls; }
+.h2 { font-size: $h2; line-height: $base-h2-lh; letter-spacing: $base-h2-ls; }
+.h3 { font-size: $h3; line-height: $base-h3-lh; letter-spacing: $base-h3-ls; }
+.h4 { font-size: $h4; line-height: $base-h4-lh; letter-spacing: $base-h4-ls; }
+.h5 { font-size: $h5; line-height: $base-h5-lh; letter-spacing: $base-h5-ls; }
+.h6 { font-size: $h6; line-height: $base-h6-lh; letter-spacing: $base-h6-ls; }
+.p { font-size: $p; line-height: $base-p-lh; letter-spacing: $base-p-ls; }
 
 // Responsive Type Scale
 @media screen and (min-width: $breakpoint-desktop) {
   p { font-size: $p; line-height: $base-p-lh;}
   .feature p { font-size: $feature-p; line-height: $feature-p-lh; letter-spacing: .01em; }
-  .mega { font-size : 4.157em; line-height: 1em; }
+  .mega { font-size : 72px; line-height: 1em; }
 }
 
 // Utilities
@@ -82,11 +95,18 @@ p { font-size: $p; line-height: $base-p-lh; }
 //Typefaces
 body {
   font-family: $sans-serif;
-  font-weight: 700;
   letter-spacing: -0.03em!important;
   -webkit-font-smoothing: antialiased !important;
   -webkit-text-size-adjust: none;
           text-size-adjust: none;
+}
+
+.demi {
+ font-family: $sans-demi;
+}
+
+.bold {
+ font-family: $sans-bold;
 }
 
 p {
@@ -97,18 +117,23 @@ p {
 }
 
 a {
-  color: $gray;
-  font-family: $sans-serif;
-  font-weight: 700;
+  color: $black;
   text-decoration: none;
   -webkit-text-size-adjust: none;
         text-size-adjust: none;
   -webkit-font-smoothing: antialiased !important;
-  &:hover {
-    border-bottom: 1px solid;
-    padding-bottom: 3px;
-    text-decoration: none;
-  }
+}
+
+
+
+.mono {
+  font-family: $mono;
+  font-weight: 400;
+}
+
+.mono-bold {
+  font-family: $mono;
+  font-weight: 700;
 }
 
 .underline {
@@ -141,7 +166,19 @@ a {
 
 .sans-serif {
   font-family: $sans-serif;
-  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sans-serif-bold {
+  font-family: $sans-bold;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sans-serif-medium {
+  font-family: $sans-demi;
+  font-weight: normal;
   font-style: normal;
 }
 
